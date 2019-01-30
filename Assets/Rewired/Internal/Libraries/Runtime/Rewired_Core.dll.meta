@@ -23,8 +23,10 @@ PluginImporter:
   iconMap: {}
   executionOrder:
     Rewired.Internal.OnGUIHelper: -31990
+  defineConstraints: []
   isPreloaded: 0
   isOverridable: 0
+  isExplicitlyReferenced: 0
   platformData:
   - first:
       '': BlackBerry
