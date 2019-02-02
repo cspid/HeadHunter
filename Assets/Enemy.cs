@@ -19,6 +19,6 @@ public class Enemy : MonoBehaviour
     // IMPLEMENT DMG LATER
     public void takeDamage()
     {
-
+        Debug.Log("Enemy has taken damage");
     }
 }

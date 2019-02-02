@@ -109,10 +109,10 @@ NavMeshSettings:
     cellSize: 0.11666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: a442daae1366a4875838aacd27bfa11a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c6c7fef8b243dda43bd73512d96703df, type: 2}
 --- !u!1 &11543513
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 11543514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13272949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandThumb4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 20484703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandRing4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 76494570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftUpperLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 100493557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,13 +270,163 @@ Transform:
   m_Father: {fileID: 837391116}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106545219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: HitTargets FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.9,"type":"FlowCanvas.FlowScript","comments":"attack
+    controller\n","translation":{"x":-5291.0,"y":-4732.0},"nodes":[{"_field":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent|unityEvent"},"_inputPortValues":{},"_position":{"x":4935.0,"y":5133.0},"_comment":"2","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"2"},{"_method":{"_baseInfo":"InteractionFollowUp|StartLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5225.0,"y":5132.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"5"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{"Value":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":5388.0,"y":5033.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"8"},{"_field":{"_baseInfo":"InteractionFollowUp|InteractionDone"},"_inputPortValues":{},"_position":{"x":4514.0,"y":5444.0},"_comment":"3","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"10"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{},"_position":{"x":4725.0,"y":5448.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"13"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|ResumeAll|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":4940.0,"y":5454.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"15"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":5231.0,"y":5390.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"18"},{"_method":{"_baseInfo":"InteractionFollowUp|ResetLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5211.0,"y":5265.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"21"},{"_field":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent|unityEvent"},"_inputPortValues":{},"_position":{"x":4969.0,"y":5717.0},"_comment":"2","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"24"},{"_method":{"_baseInfo":"InteractionFollowUp|StartLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5229.0,"y":5713.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"27"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{"Value":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":5414.0,"y":5643.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"30"},{"_field":{"_baseInfo":"InteractionFollowUp|InteractionDone"},"_inputPortValues":{},"_position":{"x":4538.0,"y":6081.0},"_comment":"3","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"32"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{},"_position":{"x":4728.0,"y":6052.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"35"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|ResumeAll|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":4974.0,"y":6038.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"37"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":5288.0,"y":6011.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"40"},{"_method":{"_baseInfo":"InteractionFollowUp|ResetLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5254.0,"y":5870.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"43"},{"_field":{"_baseInfo":"attackEnum|rightPunch"},"_inputPortValues":{},"_position":{"x":4146.0,"y":4999.0},"_comment":"1","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"46"},{"_method":{"_baseInfo":"TargetLock|CheckRadius|System.Void","_paramsInfo":"UnityEngine.Transform|UnityEngine.Transform|UnityEngine.Transform|System.Single|System.Boolean|System.Single"},"_callable":true,"_inputPortValues":{"right":{"$content":true,"$type":"System.Boolean"}},"_verboseLevel":"Partial","_position":{"x":4261.0,"y":5131.0},"_tag":"Aim","_comment":"AIm","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"49"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|StartInteraction|System.Boolean","_paramsInfo":"RootMotion.FinalIK.FullBodyBipedEffector|RootMotion.FinalIK.InteractionObject|System.Boolean"},"_callable":true,"_inputPortValues":{"interrupt":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":4504.0,"y":5300.0},"_comment":"Wind
+    up","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"52"},{"_field":{"_baseInfo":"attackEnum|leftPunch"},"_inputPortValues":{},"_position":{"x":4134.0,"y":5618.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"55"},{"_method":{"_baseInfo":"TargetLock|CheckRadius|System.Void","_paramsInfo":"UnityEngine.Transform|UnityEngine.Transform|UnityEngine.Transform|System.Single|System.Boolean|System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":4295.0,"y":5715.0},"_tag":"Aim","_comment":"AIm","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"58"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|StartInteraction|System.Boolean","_paramsInfo":"RootMotion.FinalIK.FullBodyBipedEffector|RootMotion.FinalIK.InteractionObject|System.Boolean"},"_callable":true,"_inputPortValues":{"interrupt":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":4540.0,"y":5914.0},"_comment":"Wind
+    up","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"61"},{"_field":{"_baseInfo":"attackEnum|rightKick"},"_inputPortValues":{},"_position":{"x":6022.0,"y":5002.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"64"},{"_macro":1,"_inputPortValues":{"0b876ced-7566-4560-8f3b-f56fab423581":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":6329.0,"y":5048.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"67"},{"_field":{"_baseInfo":"attackEnum|leftKick"},"_inputPortValues":{},"_position":{"x":6027.0,"y":5425.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"69"},{"_macro":1,"_inputPortValues":{},"_position":{"x":6322.0,"y":5548.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"72"},{"value":{"_value":2},"_position":{"x":4020.0,"y":5081.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"74"},{"value":{"_name":"lock
+    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":4025.0,"y":5249.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"76"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":4025.0,"y":5302.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"78"},{"value":{},"_position":{"x":6036.0,"y":5172.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"80"},{"value":{},"_position":{"x":6037.0,"y":5267.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"82"},{"value":{"_name":"lock
+    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":6042.0,"y":5322.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"84"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":6034.0,"y":5216.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"86"},{"value":{},"_position":{"x":6050.0,"y":5563.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"88"},{"value":{},"_position":{"x":6034.0,"y":5668.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"90"},{"value":{"_name":"lock
+    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":6049.0,"y":5713.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"92"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":6050.0,"y":5615.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"94"},{"value":{"_value":"RightFoot"},"_position":{"x":6031.0,"y":5115.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"96"},{"value":{"_value":"LeftFoot"},"_position":{"x":6049.0,"y":5517.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"98"},{"value":{"_value":"RightHand"},"_position":{"x":4023.0,"y":5415.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"100"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4023.0,"y":5149.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"102"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":6026.0,"y":5060.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"104"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":6035.0,"y":5473.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"106"},{"value":{"_value":3},"_position":{"x":4018.0,"y":5485.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"108"},{"fieldName":"events","targetType":"RootMotion.FinalIK.InteractionObject","_inputPortValues":{},"_position":{"x":4517.0,"y":5123.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"110"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent[]|Get|RootMotion.FinalIK.InteractionObject+InteractionEvent","_paramsInfo":"System.Int32"},"_inputPortValues":{},"_position":{"x":4718.0,"y":5124.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"112"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4021.0,"y":5360.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"115"},{"value":{"_value":4},"_position":{"x":4018.0,"y":5198.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"117"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4765.0,"y":5380.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"119"},{"value":{"_value":5},"_position":{"x":4048.0,"y":5693.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"121"},{"value":{"_name":"lock
+    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":4053.0,"y":5846.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"123"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":4053.0,"y":5899.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"125"},{"value":{"_value":"LeftHand"},"_position":{"x":4059.0,"y":6019.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"127"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4051.0,"y":5746.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"129"},{"value":{"_value":6},"_position":{"x":4051.0,"y":6091.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"131"},{"fieldName":"events","targetType":"RootMotion.FinalIK.InteractionObject","_inputPortValues":{},"_position":{"x":4551.0,"y":5707.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"133"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent[]|Get|RootMotion.FinalIK.InteractionObject+InteractionEvent","_paramsInfo":"System.Int32"},"_inputPortValues":{},"_position":{"x":4752.0,"y":5708.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"135"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4056.0,"y":5963.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"138"},{"value":{"_value":7},"_position":{"x":4046.0,"y":5795.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"140"},{"value":{"_name":"interaction
+    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4830.0,"y":5982.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"142"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":4013.0,"y":5017.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"144"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":4016.0,"y":5624.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"146"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":6240.0,"y":5299.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"148"},{"value":{"_name":"rightHand","_targetVariableID":"ba2d764f-b20a-4b42-aa62-cc8d80380cb7"},"_position":{"x":5127.0,"y":4997.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"150"},{"value":{"_name":"leftHand","_targetVariableID":"cdd74fcc-2852-48ad-9a55-771f1b92bd11"},"_position":{"x":5280.0,"y":5627.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"152"},{"value":{"_name":"rightHand","_targetVariableID":"ba2d764f-b20a-4b42-aa62-cc8d80380cb7"},"_position":{"x":4616.0,"y":5231.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"154"},{"value":{"_name":"leftHand","_targetVariableID":"cdd74fcc-2852-48ad-9a55-771f1b92bd11"},"_position":{"x":4778.0,"y":5845.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"156"}],"connections":[{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"13"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"15"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":"In","_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Done","_targetPortName":"
+    ","_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"27"},"_targetNode":{"$ref":"30"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"35"},"_targetNode":{"$ref":"37"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":"In","_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"40"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Done","_targetPortName":"
+    ","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
+    ","_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"58"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"6b286fda-a146-4937-a85f-0ab448a987ab","_sourceNode":{"$ref":"64"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"6b286fda-a146-4937-a85f-0ab448a987ab","_sourceNode":{"$ref":"69"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"center","_sourceNode":{"$ref":"74"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"radius","_sourceNode":{"$ref":"76"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"offset","_sourceNode":{"$ref":"78"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"ed77d408-b942-4d65-a0e7-ebe4c86844aa","_sourceNode":{"$ref":"80"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"d810671d-f8d9-4fed-8daf-d1d3e8224194","_sourceNode":{"$ref":"82"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"08f94a32-022b-4483-8532-574170abaddc","_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"7d55d2b8-6499-44f8-921c-f6ed7f36d45d","_sourceNode":{"$ref":"86"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"ed77d408-b942-4d65-a0e7-ebe4c86844aa","_sourceNode":{"$ref":"88"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"d810671d-f8d9-4fed-8daf-d1d3e8224194","_sourceNode":{"$ref":"90"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"08f94a32-022b-4483-8532-574170abaddc","_sourceNode":{"$ref":"92"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"7d55d2b8-6499-44f8-921c-f6ed7f36d45d","_sourceNode":{"$ref":"94"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"1b5caf9c-15c9-4824-af68-75b1fb7303b3","_sourceNode":{"$ref":"96"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"1b5caf9c-15c9-4824-af68-75b1fb7303b3","_sourceNode":{"$ref":"98"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"effectorType","_sourceNode":{"$ref":"100"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"self","_sourceNode":{"$ref":"102"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"65469d1b-0b4f-4358-96b2-768f3ddb677e","_sourceNode":{"$ref":"104"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"e098eefa-b38a-44fc-9885-eebb8700d4f0","_sourceNode":{"$ref":"104"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"65469d1b-0b4f-4358-96b2-768f3ddb677e","_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"e098eefa-b38a-44fc-9885-eebb8700d4f0","_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"interactionObject","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionObject","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"110"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionEvent[]","_sourceNode":{"$ref":"110"},"_targetNode":{"$ref":"112"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent[],
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"112"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"115"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"117"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"119"},"_targetNode":{"$ref":"15"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"center","_sourceNode":{"$ref":"121"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"radius","_sourceNode":{"$ref":"123"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"offset","_sourceNode":{"$ref":"125"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"effectorType","_sourceNode":{"$ref":"127"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"self","_sourceNode":{"$ref":"129"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"interactionObject","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionObject","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"133"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"43"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionEvent[]","_sourceNode":{"$ref":"133"},"_targetNode":{"$ref":"135"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent[],
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"135"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"138"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"140"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"142"},"_targetNode":{"$ref":"37"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
+    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"144"},"_targetNode":{"$ref":"46"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"146"},"_targetNode":{"$ref":"55"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"148"},"_targetNode":{"$ref":"64"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"148"},"_targetNode":{"$ref":"69"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"150"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"152"},"_targetNode":{"$ref":"30"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"154"},"_targetNode":{"$ref":"13"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"156"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"canvasGroups":[{"name":"Right
+    Punch","rect":{"xMin":3996.409,"yMin":4906.052,"xMax":5555.982,"yMax":5550.518}},{"name":"right  kick","rect":{"xMin":6004.11,"yMin":4964.897,"xMax":6553.11,"yMax":5375.897}},{"name":"left
+    kick","rect":{"xMin":6023.645,"yMin":5393.026,"xMax":6536.645,"yMax":5784.026}},{"name":"Left
+    Punch","rect":{"xMin":4002.791,"yMin":5574.012,"xMax":5586.242,"yMax":6172.642}},{"name":"TO
+    BE REDONE","rect":{"xMin":5962.28,"yMin":4934.358,"xMax":6573.889,"yMax":5841.306}}],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 836d6714830227f40ac2742d56a1a513, type: 2}
+  - {fileID: 329942396}
+  - {fileID: 1486526149}
+  - {fileID: 965586208}
+  - {fileID: 1975686809}
+  - {fileID: 266215092}
+  - {fileID: 2033228716}
+  _deserializationFailed: 0
 --- !u!43 &107332591
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh212898
+  m_Name: pb_Mesh61178
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -444,7 +594,7 @@ GameObject:
   - component: {fileID: 134332954}
   - component: {fileID: 134332953}
   - component: {fileID: 134332956}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: EthanRightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &168558987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,7 +820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177197980
 GameObject:
@@ -686,7 +836,7 @@ GameObject:
   - component: {fileID: 177197983}
   - component: {fileID: 177197982}
   - component: {fileID: 177197985}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: EthanLeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +1007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 177522673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +1038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 180444632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftEye_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +1068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186698934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandIndex4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192323428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +1133,7 @@ GameObject:
   - component: {fileID: 211335586}
   - component: {fileID: 211335588}
   - component: {fileID: 211335587}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanLeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1294,7 @@ GameObject:
   - component: {fileID: 266215093}
   - component: {fileID: 266215092}
   - component: {fileID: 266215091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'left punch '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1587,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 1
-  far clip plane: 19
+  far clip plane: 45
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1518,7 +1668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 285857486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 294548985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftToe2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1579,7 +1729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302789322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,7 +1764,7 @@ GameObject:
   - component: {fileID: 303847626}
   - component: {fileID: 303847628}
   - component: {fileID: 303847627}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanRightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,7 +1921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 308596647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1805,12 +1955,13 @@ GameObject:
   - component: {fileID: 311970481}
   - component: {fileID: 311970480}
   - component: {fileID: 311970479}
+  - component: {fileID: 311970483}
   m_Layer: 10
   m_Name: floor plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &311970479
 MeshCollider:
@@ -1883,8 +2034,20 @@ Transform:
   m_LocalScale: {x: 22.823446, y: 22.823446, z: 22.823446}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311970483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311970478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868e5f32cc3f83f429dfa50899e84dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &316182855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,7 +2087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 329373609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1988,7 +2151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 332101544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2019,7 +2182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 341087538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandMiddle4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2053,7 +2216,7 @@ GameObject:
   - component: {fileID: 347929138}
   - component: {fileID: 347929137}
   - component: {fileID: 347929136}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2200,156 +2363,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &351323252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
-  m_Name: HitTargets FlowScript
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.9,"type":"FlowCanvas.FlowScript","comments":"attack
-    controller\n","translation":{"x":-5291.0,"y":-4732.0},"nodes":[{"_field":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent|unityEvent"},"_inputPortValues":{},"_position":{"x":4935.0,"y":5133.0},"_comment":"2","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"2"},{"_method":{"_baseInfo":"InteractionFollowUp|StartLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5225.0,"y":5132.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"5"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{"Value":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":5388.0,"y":5033.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"8"},{"_field":{"_baseInfo":"InteractionFollowUp|InteractionDone"},"_inputPortValues":{},"_position":{"x":4514.0,"y":5444.0},"_comment":"3","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"10"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{},"_position":{"x":4725.0,"y":5448.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"13"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|ResumeAll|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":4940.0,"y":5454.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"15"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":5231.0,"y":5390.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"18"},{"_method":{"_baseInfo":"InteractionFollowUp|ResetLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5211.0,"y":5265.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"21"},{"_field":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent|unityEvent"},"_inputPortValues":{},"_position":{"x":4969.0,"y":5717.0},"_comment":"2","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"24"},{"_method":{"_baseInfo":"InteractionFollowUp|StartLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5229.0,"y":5713.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"27"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{"Value":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":5414.0,"y":5643.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"30"},{"_field":{"_baseInfo":"InteractionFollowUp|InteractionDone"},"_inputPortValues":{},"_position":{"x":4538.0,"y":6081.0},"_comment":"3","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"32"},{"fieldName":"canDamage","targetType":"HealthSubtractor","accessMode":"SetField","_inputPortValues":{},"_position":{"x":4728.0,"y":6052.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"35"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|ResumeAll|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":4974.0,"y":6038.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"37"},{"_simplexNode":{},"_inputPortValues":{"time":{"$content":1.0,"$type":"System.Single"}},"_position":{"x":5288.0,"y":6011.0},"$type":"FlowCanvas.Nodes.SimplexNodeWrapper`1[[FlowCanvas.Nodes.Wait,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"40"},{"_method":{"_baseInfo":"InteractionFollowUp|ResetLerp|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5254.0,"y":5870.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"43"},{"_field":{"_baseInfo":"attackEnum|rightPunch"},"_inputPortValues":{},"_position":{"x":4146.0,"y":4999.0},"_comment":"1","$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"46"},{"_method":{"_baseInfo":"TargetLock|CheckRadius|System.Void","_paramsInfo":"UnityEngine.Transform|UnityEngine.Transform|UnityEngine.Transform|System.Single|System.Boolean|System.Single"},"_callable":true,"_inputPortValues":{"right":{"$content":true,"$type":"System.Boolean"}},"_verboseLevel":"Partial","_position":{"x":4261.0,"y":5131.0},"_tag":"Aim","_comment":"AIm","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"49"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|StartInteraction|System.Boolean","_paramsInfo":"RootMotion.FinalIK.FullBodyBipedEffector|RootMotion.FinalIK.InteractionObject|System.Boolean"},"_callable":true,"_inputPortValues":{"interrupt":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":4504.0,"y":5300.0},"_comment":"Wind
-    up","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"52"},{"_field":{"_baseInfo":"attackEnum|leftPunch"},"_inputPortValues":{},"_position":{"x":4134.0,"y":5618.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"55"},{"_method":{"_baseInfo":"TargetLock|CheckRadius|System.Void","_paramsInfo":"UnityEngine.Transform|UnityEngine.Transform|UnityEngine.Transform|System.Single|System.Boolean|System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":4295.0,"y":5715.0},"_tag":"Aim","_comment":"AIm","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"58"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionSystem|StartInteraction|System.Boolean","_paramsInfo":"RootMotion.FinalIK.FullBodyBipedEffector|RootMotion.FinalIK.InteractionObject|System.Boolean"},"_callable":true,"_inputPortValues":{"interrupt":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":4540.0,"y":5914.0},"_comment":"Wind
-    up","$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"61"},{"_field":{"_baseInfo":"attackEnum|rightKick"},"_inputPortValues":{},"_position":{"x":6022.0,"y":5002.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"64"},{"_macro":1,"_inputPortValues":{"0b876ced-7566-4560-8f3b-f56fab423581":{"$content":true,"$type":"System.Boolean"}},"_position":{"x":6329.0,"y":5048.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"67"},{"_field":{"_baseInfo":"attackEnum|leftKick"},"_inputPortValues":{},"_position":{"x":6027.0,"y":5425.0},"$type":"FlowCanvas.Nodes.UnityEventAutoCallbackEvent","$id":"69"},{"_macro":1,"_inputPortValues":{},"_position":{"x":6322.0,"y":5548.0},"$type":"FlowCanvas.Macros.MacroNodeWrapper","$id":"72"},{"value":{"_value":2},"_position":{"x":4020.0,"y":5081.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"74"},{"value":{"_name":"lock
-    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":4025.0,"y":5249.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"76"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":4025.0,"y":5302.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"78"},{"value":{},"_position":{"x":6036.0,"y":5172.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"80"},{"value":{},"_position":{"x":6037.0,"y":5267.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"82"},{"value":{"_name":"lock
-    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":6042.0,"y":5322.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"84"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":6034.0,"y":5216.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"86"},{"value":{},"_position":{"x":6050.0,"y":5563.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"88"},{"value":{},"_position":{"x":6034.0,"y":5668.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"90"},{"value":{"_name":"lock
-    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":6049.0,"y":5713.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"92"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":6050.0,"y":5615.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"94"},{"value":{"_value":"RightFoot"},"_position":{"x":6031.0,"y":5115.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"96"},{"value":{"_value":"LeftFoot"},"_position":{"x":6049.0,"y":5517.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"98"},{"value":{"_value":"RightHand"},"_position":{"x":4023.0,"y":5415.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"100"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4023.0,"y":5149.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"102"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":6026.0,"y":5060.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"104"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":6035.0,"y":5473.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"106"},{"value":{"_value":3},"_position":{"x":4018.0,"y":5485.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"108"},{"fieldName":"events","targetType":"RootMotion.FinalIK.InteractionObject","_inputPortValues":{},"_position":{"x":4517.0,"y":5123.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"110"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent[]|Get|RootMotion.FinalIK.InteractionObject+InteractionEvent","_paramsInfo":"System.Int32"},"_inputPortValues":{},"_position":{"x":4718.0,"y":5124.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"112"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4021.0,"y":5360.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"115"},{"value":{"_value":4},"_position":{"x":4018.0,"y":5198.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"117"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4765.0,"y":5380.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"119"},{"value":{"_value":5},"_position":{"x":4048.0,"y":5693.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"121"},{"value":{"_name":"lock
-    range","_targetVariableID":"eae9434a-f5af-4b48-9790-98cd7554758c"},"_position":{"x":4053.0,"y":5846.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"123"},{"value":{"_name":"offset","_targetVariableID":"cc6c1aea-21ca-45b9-b1e1-1da026b8ebba"},"_position":{"x":4053.0,"y":5899.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","$id":"125"},{"value":{"_value":"LeftHand"},"_position":{"x":4059.0,"y":6019.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"127"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4051.0,"y":5746.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"129"},{"value":{"_value":6},"_position":{"x":4051.0,"y":6091.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"131"},{"fieldName":"events","targetType":"RootMotion.FinalIK.InteractionObject","_inputPortValues":{},"_position":{"x":4551.0,"y":5707.0},"$type":"FlowCanvas.Nodes.ReflectedFieldNodeWrapper","$id":"133"},{"_method":{"_baseInfo":"RootMotion.FinalIK.InteractionObject+InteractionEvent[]|Get|RootMotion.FinalIK.InteractionObject+InteractionEvent","_paramsInfo":"System.Int32"},"_inputPortValues":{},"_position":{"x":4752.0,"y":5708.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"135"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4056.0,"y":5963.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"138"},{"value":{"_value":7},"_position":{"x":4046.0,"y":5795.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"140"},{"value":{"_name":"interaction
-    sys","_targetVariableID":"4bd45ead-ab47-410e-981e-f24c99edfff7"},"_position":{"x":4830.0,"y":5982.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"142"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":4013.0,"y":5017.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"144"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":4016.0,"y":5624.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"146"},{"value":{"_name":"attackEvent","_targetVariableID":"5292c6fa-8285-49c7-982c-b56b4903a38e"},"_position":{"x":6240.0,"y":5299.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"148"},{"value":{"_name":"rightHand","_targetVariableID":"ba2d764f-b20a-4b42-aa62-cc8d80380cb7"},"_position":{"x":5127.0,"y":4997.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"150"},{"value":{"_name":"leftHand","_targetVariableID":"cdd74fcc-2852-48ad-9a55-771f1b92bd11"},"_position":{"x":5280.0,"y":5627.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"152"},{"value":{"_name":"rightHand","_targetVariableID":"ba2d764f-b20a-4b42-aa62-cc8d80380cb7"},"_position":{"x":4616.0,"y":5231.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"154"},{"value":{"_name":"leftHand","_targetVariableID":"cdd74fcc-2852-48ad-9a55-771f1b92bd11"},"_position":{"x":4778.0,"y":5845.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"156"}],"connections":[{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"13"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"15"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":"In","_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"18"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Done","_targetPortName":"
-    ","_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"27"},"_targetNode":{"$ref":"30"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"35"},"_targetNode":{"$ref":"37"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":"In","_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"40"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Done","_targetPortName":"
-    ","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"
-    ","_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"58"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"6b286fda-a146-4937-a85f-0ab448a987ab","_sourceNode":{"$ref":"64"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Event","_targetPortName":"6b286fda-a146-4937-a85f-0ab448a987ab","_sourceNode":{"$ref":"69"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"center","_sourceNode":{"$ref":"74"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"radius","_sourceNode":{"$ref":"76"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"offset","_sourceNode":{"$ref":"78"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"ed77d408-b942-4d65-a0e7-ebe4c86844aa","_sourceNode":{"$ref":"80"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"d810671d-f8d9-4fed-8daf-d1d3e8224194","_sourceNode":{"$ref":"82"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"08f94a32-022b-4483-8532-574170abaddc","_sourceNode":{"$ref":"84"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"7d55d2b8-6499-44f8-921c-f6ed7f36d45d","_sourceNode":{"$ref":"86"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"ed77d408-b942-4d65-a0e7-ebe4c86844aa","_sourceNode":{"$ref":"88"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"d810671d-f8d9-4fed-8daf-d1d3e8224194","_sourceNode":{"$ref":"90"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"08f94a32-022b-4483-8532-574170abaddc","_sourceNode":{"$ref":"92"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"7d55d2b8-6499-44f8-921c-f6ed7f36d45d","_sourceNode":{"$ref":"94"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"1b5caf9c-15c9-4824-af68-75b1fb7303b3","_sourceNode":{"$ref":"96"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"1b5caf9c-15c9-4824-af68-75b1fb7303b3","_sourceNode":{"$ref":"98"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"effectorType","_sourceNode":{"$ref":"100"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"self","_sourceNode":{"$ref":"102"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"65469d1b-0b4f-4358-96b2-768f3ddb677e","_sourceNode":{"$ref":"104"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"e098eefa-b38a-44fc-9885-eebb8700d4f0","_sourceNode":{"$ref":"104"},"_targetNode":{"$ref":"67"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"65469d1b-0b4f-4358-96b2-768f3ddb677e","_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"e098eefa-b38a-44fc-9885-eebb8700d4f0","_sourceNode":{"$ref":"106"},"_targetNode":{"$ref":"72"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"interactionObject","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionObject","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"110"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"5"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"10"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"108"},"_targetNode":{"$ref":"21"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionEvent[]","_sourceNode":{"$ref":"110"},"_targetNode":{"$ref":"112"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent[],
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"112"},"_targetNode":{"$ref":"2"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"115"},"_targetNode":{"$ref":"52"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"117"},"_targetNode":{"$ref":"49"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"119"},"_targetNode":{"$ref":"15"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"center","_sourceNode":{"$ref":"121"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"radius","_sourceNode":{"$ref":"123"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"offset","_sourceNode":{"$ref":"125"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"effectorType","_sourceNode":{"$ref":"127"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.FullBodyBipedEffector,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"self","_sourceNode":{"$ref":"129"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"interactionObject","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionObject","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"133"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionFollowUp","_sourceNode":{"$ref":"131"},"_targetNode":{"$ref":"43"},"$type":"FlowCanvas.BinderConnection`1[[InteractionFollowUp,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionEvent[]","_sourceNode":{"$ref":"133"},"_targetNode":{"$ref":"135"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent[],
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"135"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionObject+InteractionEvent,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"138"},"_targetNode":{"$ref":"61"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"target","_sourceNode":{"$ref":"140"},"_targetNode":{"$ref":"58"},"$type":"FlowCanvas.BinderConnection`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"InteractionSystem","_sourceNode":{"$ref":"142"},"_targetNode":{"$ref":"37"},"$type":"FlowCanvas.BinderConnection`1[[RootMotion.FinalIK.InteractionSystem,
-    Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"144"},"_targetNode":{"$ref":"46"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"146"},"_targetNode":{"$ref":"55"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"148"},"_targetNode":{"$ref":"64"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Instance","_sourceNode":{"$ref":"148"},"_targetNode":{"$ref":"69"},"$type":"FlowCanvas.BinderConnection`1[[attackEnum,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"150"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"152"},"_targetNode":{"$ref":"30"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"154"},"_targetNode":{"$ref":"13"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"HealthSubtractor","_sourceNode":{"$ref":"156"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[HealthSubtractor,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"canvasGroups":[{"name":"Right
-    Punch","rect":{"xMin":3996.409,"yMin":4906.052,"xMax":5555.982,"yMax":5550.518}},{"name":"right  kick","rect":{"xMin":6004.11,"yMin":4964.897,"xMax":6553.11,"yMax":5375.897}},{"name":"left
-    kick","rect":{"xMin":6023.645,"yMin":5393.026,"xMax":6536.645,"yMax":5784.026}},{"name":"Left
-    Punch","rect":{"xMin":4002.791,"yMin":5574.012,"xMax":5586.242,"yMax":6172.642}},{"name":"TO
-    BE REDONE","rect":{"xMin":5962.28,"yMin":4934.358,"xMax":6573.889,"yMax":5841.306}}],"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 836d6714830227f40ac2742d56a1a513, type: 2}
-  - {fileID: 329942396}
-  - {fileID: 1486526149}
-  - {fileID: 965586208}
-  - {fileID: 1975686809}
-  - {fileID: 266215092}
-  - {fileID: 2033228716}
-  _deserializationFailed: 0
 --- !u!1 &377842132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,7 +2404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 396560864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftBrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 398369935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanUpperLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,7 +2466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421209289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2484,7 +2497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 444999985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2519,7 +2532,7 @@ GameObject:
   - component: {fileID: 467212067}
   - component: {fileID: 467212069}
   - component: {fileID: 467212068}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanRightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2676,7 +2689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493024541}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2698,6 +2711,87 @@ Transform:
   m_Father: {fileID: 1405619201}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &518652300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Name
+      value: CoverBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.574516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.34001207
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38371912
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9234499
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45.129
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239473399534820, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660774770234306, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218653312909346, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246108431828320, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637364577118190, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73362598129d299489a5e1794a9f793a, type: 3}
 --- !u!1 &536553669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,7 +3007,7 @@ MonoBehaviour:
   - {fileID: 2033228716}
   enableAction: 0
   disableAction: 0
-  _graph: {fileID: 351323252}
+  _graph: {fileID: 106545219}
   _blackboard: {fileID: 536553671}
 --- !u!1 &564473722
 GameObject:
@@ -2924,7 +3018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564473723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2955,7 +3049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580087261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftUpperLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3286,7 +3380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 616827283}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3319,7 +3413,7 @@ GameObject:
   - component: {fileID: 621456396}
   - component: {fileID: 621456398}
   - component: {fileID: 621456397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: right punch bend target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3515,7 +3609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679219628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3550,7 +3644,7 @@ GameObject:
   - component: {fileID: 692533272}
   - component: {fileID: 692533271}
   - component: {fileID: 692533270}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanRightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4002,7 +4096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706326204
 GameObject:
@@ -4013,7 +4107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 706326205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4044,7 +4138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 732832898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightBlink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4066,6 +4160,36 @@ Transform:
   m_Father: {fileID: 1252946922}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &758306449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758306450}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &758306450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758306449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762254483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,7 +4199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762254484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightBlink_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4105,7 +4229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 763238808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftCorner_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4126,6 +4250,87 @@ Transform:
   m_Father: {fileID: 823321875}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &770329761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1420402938938586, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Name
+      value: CoverPillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420402938938586, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.11221
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.285284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399816582387744, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182523615693330, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365094428085604, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104012284327624, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005481767574490, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227061602831568, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85eb0d9445810384d88443c757c8ce1b, type: 3}
 --- !u!1 &775122080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,7 +4340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 775122081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandPinky4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4165,7 +4370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781519454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftBlink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4198,7 +4403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785695598}
   - component: {fileID: 785695599}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: PuppetMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4557,7 +4762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 790379634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4669,8 +4874,89 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &817074898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Name
+      value: CoverBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 38.650642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7705936
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239473399534820, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660774770234306, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218653312909346, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246108431828320, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637364577118190, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73362598129d299489a5e1794a9f793a, type: 3}
 --- !u!1 &819795718
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,7 +4966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 819795719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4711,7 +4997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823321875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4742,7 +5028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837391116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanSkeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4773,7 +5059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 870429278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4804,7 +5090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 896735966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4835,7 +5121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 904896281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4866,7 +5152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 928175072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftLowerLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4896,7 +5182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939963621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanSpine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4918,6 +5204,87 @@ Transform:
   m_Father: {fileID: 1675289933}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &963122039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Name
+      value: CoverBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7705936
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.74244344
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6699088
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.880005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239473399534820, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660774770234306, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218653312909346, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246108431828320, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637364577118190, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73362598129d299489a5e1794a9f793a, type: 3}
 --- !u!1 &965586207
 GameObject:
   m_ObjectHideFlags: 0
@@ -4929,7 +5296,7 @@ GameObject:
   - component: {fileID: 965586208}
   - component: {fileID: 965586210}
   - component: {fileID: 965586209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'right punch extended '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5007,7 +5374,7 @@ GameObject:
   - component: {fileID: 992023167}
   - component: {fileID: 992023166}
   - component: {fileID: 992023165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5147,7 +5514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002137657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5868,10 +6235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puppet: {fileID: 587045717}
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 1024
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
   m_JumpPower: 12
@@ -5912,7 +6275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030387455}
   - component: {fileID: 1030387454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5960,7 +6323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052319996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5995,7 +6358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1057062852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6026,7 +6389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058379813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6061,7 +6424,7 @@ GameObject:
   - component: {fileID: 1058704689}
   - component: {fileID: 1058704691}
   - component: {fileID: 1058704690}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanLeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6209,51 +6572,6 @@ CapsuleCollider:
   m_Height: 1.6679258
   m_Direction: 1
   m_Center: {x: 0.000000022351607, y: 0.7581499, z: -0.000000040978172}
---- !u!114 &1062967900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
-  m_Name: Character 3 skinned Root FlowScript
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.9,"type":"FlowCanvas.FlowScript","comments":"player
-    input","translation":{"x":-3179.0,"y":-3205.0},"zoomFactor":0.6992663,"nodes":[{"_position":{"x":5142.0,"y":5024.0},"$type":"FlowCanvas.Nodes.ConstructionEvent","$id":"2"},{"_method":{"_baseInfo":"PierInputManager|Setup|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5378.0,"y":5024.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"3"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5162.0,"y":5569.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"6"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Move_Vertical","$type":"PierInputManager+ButtonName"}},"_position":{"x":5421.0,"y":5571.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"8"},{"_method":{"_baseInfo":"Strafe|setV|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5900.0,"y":5572.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"11"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5164.0,"y":5683.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"14"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{},"_position":{"x":5416.0,"y":5680.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"16"},{"_method":{"_baseInfo":"Strafe|setH|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5899.0,"y":5681.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"19"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5172.0,"y":5804.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"22"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Look_Vertical","$type":"PierInputManager+ButtonName"}},"_position":{"x":5428.0,"y":5804.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"24"},{"_method":{"_baseInfo":"Turn|setV|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5934.0,"y":5806.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"27"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5174.0,"y":5912.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"30"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Look_Horizontal","$type":"PierInputManager+ButtonName"}},"_position":{"x":5426.0,"y":5909.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"32"},{"_method":{"_baseInfo":"Turn|setH|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5927.0,"y":5908.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"35"},{"value":{"_value":1,"_name":"strafeScript","_targetVariableID":"2085d963-36e3-471f-93ac-3344292a9f81"},"_position":{"x":5749.0,"y":5651.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[Strafe,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"38"},{"value":{"_value":2,"_name":"TurnScript","_targetVariableID":"286ed370-e2ed-45c9-b3d7-6e646c1a3054"},"_position":{"x":5762.0,"y":5883.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[Turn,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"40"},{"value":{"_name":"pierInput","_targetVariableID":"2fe882e9-ddb9-4a29-805f-27b544ba2b27"},"_position":{"x":5137.0,"y":5127.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"42"}],"connections":[{"_sourcePortName":"Once","_targetPortName":"
-    ","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
-    ","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
-    ","_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"16"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
-    ","_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Out","_targetPortName":"
-    ","_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
-    ","_targetPortName":" ","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"Strafe","_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[Strafe,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Strafe","_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection`1[[Strafe,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Turn","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[Turn,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Turn","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[Turn,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"16"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 1019588682}
-  - {fileID: 1030387454}
-  _deserializationFailed: 0
 --- !u!1 &1070369129
 GameObject:
   m_ObjectHideFlags: 0
@@ -6263,7 +6581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070369130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6303,7 +6621,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1087172964
 MeshCollider:
@@ -7477,7 +7795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087709898
 GameObject:
@@ -7488,7 +7806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1087709899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7549,7 +7867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146291997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7580,7 +7898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147031451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7608,7 +7926,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh212726
+  m_Name: pb_Mesh61002
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7771,7 +8089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168941191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7802,7 +8120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1172416387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightToe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7833,7 +8151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1174384464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7868,7 +8186,7 @@ GameObject:
   - component: {fileID: 1192201715}
   - component: {fileID: 1192201717}
   - component: {fileID: 1192201716}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanLeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8025,7 +8343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216727188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8058,7 +8376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1223667885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8089,7 +8407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1236481513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftToe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8120,7 +8438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1246385150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8151,7 +8469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1251337690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandRing4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8181,7 +8499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1252946922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8219,7 +8537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257368572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8254,7 +8572,7 @@ GameObject:
   - component: {fileID: 1267053608}
   - component: {fileID: 1267053610}
   - component: {fileID: 1267053609}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8414,7 +8732,7 @@ GameObject:
   - component: {fileID: 1270649319}
   - component: {fileID: 1270649321}
   - component: {fileID: 1270649320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: left punch bend target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8490,7 +8808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275537882}
   - component: {fileID: 1275537883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8659,7 +8977,7 @@ GameObject:
   - component: {fileID: 1328563739}
   - component: {fileID: 1328563741}
   - component: {fileID: 1328563740}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanLeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8807,6 +9125,71 @@ CapsuleCollider:
   m_Height: 1.5492253
   m_Direction: 1
   m_Center: {x: 0.000000014901165, y: 0.7041947, z: 0.00000031802767}
+--- !u!1001 &1334090922
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 113348, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_Name
+      value: AIThirdPersonController
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.49928
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6777542
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436670, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402594, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2066413998}
+    - target: {fileID: 11402594, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54eb5844754051b40a918a84c33b7c1a, type: 3}
 --- !u!1 &1339535814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8816,7 +9199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339535815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightUpperLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8910,7 +9293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1366590800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8941,7 +9324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1366642610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8972,7 +9355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1379791950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9003,7 +9386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1394523856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanJaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9473,7 +9856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404219032
 GameObject:
@@ -9484,7 +9867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1404219033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftBrow_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9514,7 +9897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405064561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightUpperLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9545,7 +9928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405619201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9576,7 +9959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421921443}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9607,7 +9990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426394109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightBrow_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9639,7 +10022,7 @@ GameObject:
   - component: {fileID: 1429318711}
   - component: {fileID: 1429318713}
   - component: {fileID: 1429318712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L hand Forward/Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9705,6 +10088,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429318710}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1469460984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 113348, guid: 54eb5844754051b40a918a84c33b7c1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1334090922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1469460992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469460984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aabbd78d61e5a74198fcd74d2a5b8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applicableTags:
+  - Player
+  applicableLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  detectionRange: 15.1
+  fleeRange: 5
 --- !u!1 &1486526146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9718,7 +10126,7 @@ GameObject:
   - component: {fileID: 1486526150}
   - component: {fileID: 1486526149}
   - component: {fileID: 1486526148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'right punch '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9952,7 +10360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1496205448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9983,7 +10391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503331583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10014,7 +10422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504859195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightCorner_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10044,7 +10452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1514866074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10077,7 +10485,7 @@ GameObject:
   - component: {fileID: 1516112488}
   - component: {fileID: 1516112490}
   - component: {fileID: 1516112489}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: right punch pulled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10243,7 +10651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1559560152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10274,7 +10682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1565728986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightBrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10305,7 +10713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1568469314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftBlink_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10335,7 +10743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580276326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10366,7 +10774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601560179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10401,7 +10809,7 @@ GameObject:
   - component: {fileID: 1604801125}
   - component: {fileID: 1604801124}
   - component: {fileID: 1604801123}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanLeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10590,7 +10998,7 @@ GameObject:
   - component: {fileID: 1625016344}
   - component: {fileID: 1625016346}
   - component: {fileID: 1625016345}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10752,7 +11160,7 @@ GameObject:
   - component: {fileID: 1627569457}
   - component: {fileID: 1627569459}
   - component: {fileID: 1627569458}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanRightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10900,6 +11308,51 @@ CapsuleCollider:
   m_Height: 1.6679342
   m_Direction: 1
   m_Center: {x: 0, y: 0.75815064, z: 0.00000023469352}
+--- !u!114 &1632309628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d31b62ec9d586a4e94389d9071559ca, type: 3}
+  m_Name: Character 3 skinned Root FlowScript
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.9,"type":"FlowCanvas.FlowScript","comments":"player
+    input","translation":{"x":-3179.0,"y":-3205.0},"zoomFactor":0.6992663,"nodes":[{"_position":{"x":5142.0,"y":5024.0},"$type":"FlowCanvas.Nodes.ConstructionEvent","$id":"2"},{"_method":{"_baseInfo":"PierInputManager|Setup|System.Void","_paramsInfo":""},"_callable":true,"_inputPortValues":{},"_position":{"x":5378.0,"y":5024.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"3"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5162.0,"y":5569.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"6"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Move_Vertical","$type":"PierInputManager+ButtonName"}},"_position":{"x":5421.0,"y":5571.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"8"},{"_method":{"_baseInfo":"Strafe|setV|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5900.0,"y":5572.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"11"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5164.0,"y":5683.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"14"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{},"_position":{"x":5416.0,"y":5680.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"16"},{"_method":{"_baseInfo":"Strafe|setH|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5899.0,"y":5681.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"19"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5172.0,"y":5804.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"22"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Look_Vertical","$type":"PierInputManager+ButtonName"}},"_position":{"x":5428.0,"y":5804.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"24"},{"_method":{"_baseInfo":"Turn|setV|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5934.0,"y":5806.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"27"},{"updateInterval":{},"_color":{"r":1.0,"g":0.3607843,"b":0.3607843,"a":1.0},"_position":{"x":5174.0,"y":5912.0},"$type":"FlowCanvas.Nodes.UpdateEvent","$id":"30"},{"_method":{"_baseInfo":"PierInputManager|GetAxis|System.Single","_paramsInfo":"PierInputManager+ButtonName"},"_callable":true,"_inputPortValues":{"AxisName":{"$content":"Look_Horizontal","$type":"PierInputManager+ButtonName"}},"_position":{"x":5426.0,"y":5909.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"32"},{"_method":{"_baseInfo":"Turn|setH|System.Void","_paramsInfo":"System.Single"},"_callable":true,"_inputPortValues":{},"_position":{"x":5927.0,"y":5908.0},"$type":"FlowCanvas.Nodes.ReflectedMethodNodeWrapper","$id":"35"},{"value":{"_value":1,"_name":"strafeScript","_targetVariableID":"2085d963-36e3-471f-93ac-3344292a9f81"},"_position":{"x":5749.0,"y":5651.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[Strafe,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"38"},{"value":{"_value":2,"_name":"TurnScript","_targetVariableID":"286ed370-e2ed-45c9-b3d7-6e646c1a3054"},"_position":{"x":5762.0,"y":5883.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[Turn,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"40"},{"value":{"_name":"pierInput","_targetVariableID":"2fe882e9-ddb9-4a29-805f-27b544ba2b27"},"_position":{"x":5137.0,"y":5127.0},"$type":"FlowCanvas.Nodes.GetVariable`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","$id":"42"}],"connections":[{"_sourcePortName":"Once","_targetPortName":"
+    ","_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"16"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Out","_targetPortName":"
+    ","_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"
+    ","_targetPortName":" ","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection"},{"_sourcePortName":"Value","_targetPortName":"val","_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[System.Single,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_sourcePortName":"Value","_targetPortName":"Strafe","_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"11"},"$type":"FlowCanvas.BinderConnection`1[[Strafe,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Strafe","_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"19"},"$type":"FlowCanvas.BinderConnection`1[[Strafe,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Turn","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"27"},"$type":"FlowCanvas.BinderConnection`1[[Turn,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"Turn","_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"35"},"$type":"FlowCanvas.BinderConnection`1[[Turn,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"8"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"16"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"24"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"32"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"_sourcePortName":"Value","_targetPortName":"PierInputManager","_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"3"},"$type":"FlowCanvas.BinderConnection`1[[PierInputManager,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 1019588682}
+  - {fileID: 1030387454}
+  _deserializationFailed: 0
 --- !u!1 &1633526905
 GameObject:
   m_ObjectHideFlags: 0
@@ -10911,7 +11364,7 @@ GameObject:
   - component: {fileID: 1633526906}
   - component: {fileID: 1633526908}
   - component: {fileID: 1633526907}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: left punch pulled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10986,7 +11439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1649186954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightLowerLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11017,7 +11470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1662191063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11049,9 +11502,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1662605345}
   - component: {fileID: 1662605346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Behaviours
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11101,7 +11554,7 @@ GameObject:
   - component: {fileID: 1664092661}
   - component: {fileID: 1664092660}
   - component: {fileID: 1664092659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11232,6 +11685,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664092657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1668408041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668408045}
+  - component: {fileID: 1668408044}
+  - component: {fileID: 1668408043}
+  - component: {fileID: 1668408042}
+  m_Layer: 13
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!65 &1668408042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668408041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1668408043
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668408041}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1668408044
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668408041}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1668408045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668408041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32, y: 0.13, z: -5.75}
+  m_LocalScale: {x: 0.5145375, y: 0.6743529, z: 3.5847752}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1675289932
 GameObject:
   m_ObjectHideFlags: 0
@@ -11241,7 +11785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1675289933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11365,7 +11909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1704295999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanHead1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11400,7 +11944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715628287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11435,7 +11979,7 @@ GameObject:
   - component: {fileID: 1716891949}
   - component: {fileID: 1716891951}
   - component: {fileID: 1716891950}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: EthanRightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11592,7 +12136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726665261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11681,7 +12225,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 50.000004, y: 48.395, z: 0}
 --- !u!1 &1772805259
 GameObject:
@@ -11692,7 +12236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1772805260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightToe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11724,7 +12268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1786288509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11755,7 +12299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1786511191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanUpperLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11785,7 +12329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1790971052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11823,7 +12367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1793119492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11879,7 +12423,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820175615
 GameObject:
@@ -11890,7 +12434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1820175616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandIndex4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11920,7 +12464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828873113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftLowerLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11951,7 +12495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1831770371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightLowerLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12043,7 +12587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1891140380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12074,7 +12618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1907368935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12105,7 +12649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912386407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandMiddle4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12126,6 +12670,87 @@ Transform:
   m_Father: {fileID: 1366590800}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1913246368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Name
+      value: CoverBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551076903741992, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38371912
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9234499
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45.129
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605054674750230, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239473399534820, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660774770234306, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218653312909346, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246108431828320, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637364577118190, guid: 73362598129d299489a5e1794a9f793a, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73362598129d299489a5e1794a9f793a, type: 3}
 --- !u!1 &1928546149
 GameObject:
   m_ObjectHideFlags: 0
@@ -12135,7 +12760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1928546150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLowerLip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12166,7 +12791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1954349492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLowerLip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12196,7 +12821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957068034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightEye_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12353,7 +12978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019533806}
   - component: {fileID: 2019533807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12422,7 +13047,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026218086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12455,7 +13080,7 @@ GameObject:
   - component: {fileID: 2033228716}
   - component: {fileID: 2033228718}
   - component: {fileID: 2033228717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 'left punch extended '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12530,7 +13155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2037970241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftToe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12561,7 +13186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061306944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12592,7 +13217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063010852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12628,9 +13253,9 @@ GameObject:
   - component: {fileID: 2066414001}
   - component: {fileID: 2066414002}
   - component: {fileID: 2066414003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character 3 skinned Root
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12650,7 +13275,7 @@ Transform:
   - {fileID: 785695598}
   - {fileID: 1019588679}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 87.638, z: 0}
 --- !u!114 &2066413999
 MonoBehaviour:
@@ -12698,7 +13323,7 @@ MonoBehaviour:
   - {fileID: 1030387454}
   enableAction: 0
   disableAction: 0
-  _graph: {fileID: 1062967900}
+  _graph: {fileID: 1632309628}
   _blackboard: {fileID: 2066414002}
 --- !u!114 &2066414000
 MonoBehaviour:
@@ -12800,7 +13425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067114628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightToe2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12830,7 +13455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2076437690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12861,7 +13486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079088118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12923,7 +13548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2123067607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanLeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12954,7 +13579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130379383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandThumb4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12984,7 +13609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132456614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightHandPinky4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13014,7 +13639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138857734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EthanRightCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13048,6 +13673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPlaceholder
       objectReference: {fileID: 0}
+    - target: {fileID: 6805731037887909966, guid: 73afbff94885eea44b39c1a0666df76e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13056,12 +13686,12 @@ PrefabInstance:
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3620768
+      value: 0.743
       objectReference: {fileID: 0}
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
@@ -13086,7 +13716,7 @@ PrefabInstance:
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9144738038311335806, guid: 73afbff94885eea44b39c1a0666df76e,
         type: 3}
@@ -13128,3 +13758,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868e5f32cc3f83f429dfa50899e84dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6805731037887909968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6805731037887909966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aabbd78d61e5a74198fcd74d2a5b8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applicableTags:
+  - Player
+  applicableLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  detectionRange: 20
+  fleeRange: 5
+--- !u!114 &6805731037887909969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6805731037887909966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 12
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: 0.1
+--- !u!54 &6805731037887909970
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6805731037887909966}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!95 &6805731037887909971
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6805731037887909966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!195 &6805731037887909972
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6805731037887909966}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
