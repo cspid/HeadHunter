@@ -4,36 +4,68 @@ using UnityEngine;
 
 public class SeeEnemy : MonoBehaviour
 {
+    public GameObject body;
     public Renderer rend;
-    float a = 0;
+    public float a = 0;
     float opaque = 1;
-    bool EnemyVisable;
+    public bool EnemyVisable;
     float speed = 0.1f;
+    bool canClone;
+    GameObject bodClone;
 
     private void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = body.GetComponent<Renderer>();
     }
 
     void Update()
     {
-        if(EnemyVisable == true)
+        // rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, a);
+        if (EnemyVisable == true)
         {
-            if(rend.material.color.a < opaque)
+            canClone = true;
+
+            if (rend.material.color.a < opaque)
             {
                 a = a + speed;
                 rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, a);
             }
+        }
+        if (EnemyVisable == false)
+        {
+            //if (rend.material.color.a > 0)
+            //{
+            //    a = a - speed;
+            //    rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, a);
+            //}
+
+            if (rend.material.color.a > 0.3)
+            {
+                a = a - speed;
+                rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, a);
+            }
             else
             {
-                if (rend.material.color.a > 0)
+                if (canClone == true)
                 {
-                    a = a - speed;
-                    rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, a);
+                    bodClone = Instantiate(gameObject, gameObject.transform.position, gameObject.transform.rotation);
+                    bodClone.GetComponent<Animator>().enabled= false;
+                    bodClone.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+
+                    a = 0;
+                    canClone = false;
                 }
             }
+            
         }
+        if (rend.material.color.a > opaque) rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, opaque);
+        if (rend.material.color.a < 0) rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, 0);
+
+
+
+
     }
+
 
     public void EnemySpotted()
     {

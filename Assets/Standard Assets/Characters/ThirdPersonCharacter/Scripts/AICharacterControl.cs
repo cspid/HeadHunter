@@ -12,6 +12,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public Transform target;
         public Transform target1;
         public Transform target2;
+        Transform goal1;
+        Transform goal2;
+
 
         private void Start()
         {
@@ -31,14 +34,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             if (agent.remainingDistance <= agent.stoppingDistance)
                 character.Move(agent.desiredVelocity, false, false);
-            if (target == target1)
-            {
-                target = target2;
-            }
-            else
-            {
-                target = target1;
-
+                    if (agent.destination == target1.position)
+                    {
+                        target = target2;
+                         print("switch to target 2");
+                    }
+                    else
+                    {
+                        target = target1;
+                          print("switch to target 1");
             }
             // else
             //      character.Move(Vector3.zero, false, false);
