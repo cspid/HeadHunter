@@ -28,9 +28,11 @@ public class Guard : MonoBehaviour
     public Transform pathHolder;
     Transform player;
     Color originalSpotlightColour;
+    public Transform goal;
 
     void Start()
     {
+        //UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
@@ -42,7 +44,7 @@ public class Guard : MonoBehaviour
             waypoints[i] = new Vector3(waypoints[i].x, transform.position.y, waypoints[i].z);
         }
 
-        StartCoroutine(FollowPath(waypoints));
+        //StartCoroutine(FollowPath(waypoints));
 
     }
 
