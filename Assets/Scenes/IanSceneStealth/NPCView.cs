@@ -2,13 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class guardNav : MonoBehaviour
+public class NPCView : MonoBehaviour
 {
     public static event System.Action OnGuardHasSpottedPlayer;
-
-    public float speed = 5;
-    public float waitTime = .3f;
-    public float turnSpeed = 90;
     public float timeToSpotPlayer = .5f;
 
     public AudioClip caughtSound;
@@ -24,10 +20,8 @@ public class guardNav : MonoBehaviour
 
     Vector3 playerPos;
 
-    public Transform pathHolder;
     Transform player;
     Color originalSpotlightColour;
-    public Transform goal;
 
     void Start()
     {
@@ -35,13 +29,6 @@ public class guardNav : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
-
-        Vector3[] waypoints = new Vector3[pathHolder.childCount];
-        for (int i = 0; i < waypoints.Length; i++)
-        {
-            waypoints[i] = pathHolder.GetChild(i).position;
-            waypoints[i] = new Vector3(waypoints[i].x, transform.position.y, waypoints[i].z);
-        }
 
         //StartCoroutine(FollowPath(waypoints));
 
@@ -59,10 +46,6 @@ public class guardNav : MonoBehaviour
                     AudioSource.PlayClipAtPoint(caughtSound, Camera.main.transform.position);
                 }
                 callSurprise = false;
-                playerPos = player.transform.position;
-                playerPos.z = -0.769f;
-                Debug.Log(playerPos);
-                //move guard to playerPos
             }
         }
         else
@@ -82,7 +65,7 @@ public class guardNav : MonoBehaviour
         }
     }
 
-    bool CanSeePlayer()
+    public bool CanSeePlayer()
     {
         if (Vector3.Distance(transform.position, player.position) < viewDistance)
         { //if player is in guard viewDistance
@@ -98,32 +81,5 @@ public class guardNav : MonoBehaviour
             }
         }
         return false;
-    }
-
-    IEnumerator Investigate()
-    {
-        while (this.transform.position != playerPos)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, playerPos, speed * Time.deltaTime);
-
-            yield return null;
-        }
-    }
-
-    void OnDrawGizmos()
-    {
-        Vector3 startPosition = pathHolder.GetChild(0).position;
-        Vector3 previousPosition = startPosition;
-
-        foreach (Transform waypoint in pathHolder)
-        {
-            Gizmos.DrawSphere(waypoint.position, .3f);
-            Gizmos.DrawLine(previousPosition, waypoint.position);
-            previousPosition = waypoint.position;
-        }
-        Gizmos.DrawLine(previousPosition, startPosition);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
     }
 }

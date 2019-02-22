@@ -29,9 +29,14 @@ public class NPCSimpleControl : MonoBehaviour
     bool _patrolForward;
     float _waitTimer;
 
+    Vector3 playerPos;
+    Transform player;
+    bool travellingToPlayer = false;
+
     // Use this for initialization
     public void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         _navMeshAgent = this.GetComponent<NavMeshAgent>();
 
         if (_navMeshAgent == null)
@@ -55,6 +60,15 @@ public class NPCSimpleControl : MonoBehaviour
 
     public void Update()
     {
+        if (GetComponent<NPCView>().CanSeePlayer())
+        {
+            playerPos = player.transform.position; //move guard to playerPos
+            playerPos.z = -0.769f;
+            Debug.Log(playerPos);
+            SetPlayerDestination();
+            travellingToPlayer = true;
+        }
+
         //Check if we're close to the destination.
         if (_travelling && _navMeshAgent.remainingDistance <= 1.0f)
         {
@@ -77,6 +91,11 @@ public class NPCSimpleControl : MonoBehaviour
         if (_waiting)
         {
             _waitTimer += Time.deltaTime;
+            if (travellingToPlayer == true)
+            {
+                _waitTimer += 3f;
+                travellingToPlayer = false;
+            }
             if (_waitTimer >= _totalWaitTime)
             {
                 _waiting = false;
@@ -95,6 +114,13 @@ public class NPCSimpleControl : MonoBehaviour
             _navMeshAgent.SetDestination(targetVector);
             _travelling = true;
         }
+    }
+
+    private void SetPlayerDestination()
+    {
+        Vector3 targetVector = playerPos;
+        _navMeshAgent.SetDestination(targetVector);
+        _travelling = true;
     }
 
     /// <summary>
