@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Guard : MonoBehaviour
+public class guardNav : MonoBehaviour
 {
-
     public static event System.Action OnGuardHasSpottedPlayer;
 
     public float speed = 5;
@@ -101,45 +100,6 @@ public class Guard : MonoBehaviour
         return false;
     }
 
-    /*IEnumerator FollowPath(Vector3[] waypoints)
-    {
-        transform.position = waypoints[0];
-
-        int targetWaypointIndex = 1;
-        Vector3 targetWaypoint = waypoints[targetWaypointIndex];
-        transform.LookAt(targetWaypoint);
-
-        while (true)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
-            if (CanSeePlayer())
-            {
-                yield return StartCoroutine(Investigate());
-            }
-            if (transform.position == targetWaypoint)
-            {
-                targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
-                targetWaypoint = waypoints[targetWaypointIndex];
-                yield return new WaitForSeconds(waitTime);
-                yield return StartCoroutine(TurnToFace(targetWaypoint));
-            }
-            yield return null;
-        }
-    }
-
-    IEnumerator TurnToFace(Vector3 lookTarget)
-    {
-        Vector3 dirToLookTarget = (lookTarget - transform.position).normalized;
-        float targetAngle = 90 - Mathf.Atan2(dirToLookTarget.z, dirToLookTarget.x) * Mathf.Rad2Deg;
-
-        while (Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.y, targetAngle)) > 0.05f)
-        {
-            float angle = Mathf.MoveTowardsAngle(transform.eulerAngles.y, targetAngle, turnSpeed * Time.deltaTime);
-            transform.eulerAngles = Vector3.up * angle;
-            yield return null;
-        }
-    }
-
     IEnumerator Investigate()
     {
         while (this.transform.position != playerPos)
@@ -165,6 +125,5 @@ public class Guard : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.forward * viewDistance);
-    }*/
-
+    }
 }
