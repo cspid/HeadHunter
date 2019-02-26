@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7146682061700578951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048812669716853993}
+  m_Layer: 0
+  m_Name: CupboardSink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048812669716853993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146682061700578951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.577188, y: 10.805376, z: 3.3573892}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3279584141920021106}
+  - {fileID: 1347603294364362225}
+  - {fileID: 6659502360181267395}
+  - {fileID: 6985234155058872044}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1347603294364499825
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1048812669716853993}
+    m_Modifications:
+    - target: {fileID: 100000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_Name
+      value: Kitchen_CounterSink
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5254269
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15764236
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.4179106
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3e58f27797374e46a3e09449b79409f, type: 3}
+--- !u!4 &1347603294364362225 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b3e58f27797374e46a3e09449b79409f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1347603294364499825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3279584141919891698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1048812669716853993}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_Name
+      value: Kitchen_CupboardDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8111877
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67262363
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7853892
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+--- !u!4 &3279584141920021106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875,
+    type: 3}
+  m_PrefabInstance: {fileID: 3279584141919891698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6659502360181391683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1048812669716853993}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_Name
+      value: Kitchen_CupboardDoor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.307188
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67262363
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7853892
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+--- !u!4 &6659502360181267395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875,
+    type: 3}
+  m_PrefabInstance: {fileID: 6659502360181391683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6985234155058734188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1048812669716853993}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_Name
+      value: Kitchen_CupboardDoor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81118774
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67262363
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7853892
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fba0335d075d83843ad5b10f1d098875, type: 3}
+--- !u!4 &6985234155058872044 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fba0335d075d83843ad5b10f1d098875,
+    type: 3}
+  m_PrefabInstance: {fileID: 6985234155058734188}
+  m_PrefabAsset: {fileID: 0}
