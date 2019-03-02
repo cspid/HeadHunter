@@ -151,7 +151,7 @@ public class SeekCoverBehavior : MonoBehaviour
 
     }
 
-    public void CheckIfDestinationReached()
+    public bool CheckIfDestinationReached()
     {
         if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
         {
@@ -166,7 +166,7 @@ public class SeekCoverBehavior : MonoBehaviour
 
             agent.isStopped = true;
             character.Move(Vector3.zero, shouldCrouch, false);
-
+            return true;
 
 
             //coverPosition = Vector3.zero;
@@ -178,6 +178,7 @@ public class SeekCoverBehavior : MonoBehaviour
             agent.isStopped = false;
             character.Move(agent.desiredVelocity, false, false);
         }
+        return false;
     }
 
 

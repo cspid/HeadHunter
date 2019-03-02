@@ -28,12 +28,15 @@ public class EnemyAIController : MonoBehaviour
             case aiState.Patrol:
                 break;
             case aiState.Flanked:
-
+                myCoverScript.Detect();
+                myCoverScript.CheckIfTargetIsInRange();
+                if (myCoverScript.CheckIfDestinationReached())
+                    myState = aiState.Combat;
                 break;
             case aiState.Combat:
                 checkIfFlanked();
-                myCoverScript.Detect();
-                myCoverScript.CheckIfTargetIsInRange();
+                //myCoverScript.Detect();
+                //myCoverScript.CheckIfTargetIsInRange();
                 myCoverScript.CheckIfDestinationReached();
                 break;
             default:
@@ -65,9 +68,11 @@ public class EnemyAIController : MonoBehaviour
             if (Physics.Raycast(flankCheckPos.position, player.transform.position - flankCheckPos.position, out hit, Mathf.Infinity))
             {
                 //if (hit.transform.gameObject == player)
-                if (hit.transform.tag == "Player")
+                //if (hit.transform.tag == "Player")
+                if(hit.transform.gameObject.GetComponentInParent<PierInputManager>())
                 {
                     Debug.Log("FLANKED!!!!!!");
+                    myState = aiState.Flanked;
                     return true;
                 }
                 Debug.Log("flank check hit: " + hit.transform.gameObject);
@@ -77,6 +82,7 @@ public class EnemyAIController : MonoBehaviour
 
 
         Debug.Log("not flanked");
+        myState = aiState.Combat;
             return false;
     }
 
