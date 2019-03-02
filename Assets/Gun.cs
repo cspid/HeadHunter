@@ -30,7 +30,7 @@ public class Gun : MonoBehaviour
 
             if (hit1.rigidbody != null)
             {
-                print(hit1.rigidbody.gameObject.name);
+                //print(hit1.rigidbody.gameObject.name);
                 lineColor = Color.green;
             }
             else
