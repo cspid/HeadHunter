@@ -83,6 +83,7 @@ public class SeekCoverBehavior : MonoBehaviour
         agent.updateRotation = false;
         agent.updatePosition = true;
 
+        this.enabled = false;
     }
 
     private void Update()
@@ -98,7 +99,7 @@ public class SeekCoverBehavior : MonoBehaviour
 
     }
 
-    private void Detect()
+    public void Detect()
     {
         detectionColliders = Physics.OverlapSphere(transform.position, detectionRange, applicableLayers);
 
@@ -117,7 +118,7 @@ public class SeekCoverBehavior : MonoBehaviour
         }
     }
 
-    private void CheckIfTargetIsInRange()
+    public void CheckIfTargetIsInRange()
     {
         if(fleeTarget == null)
         {
@@ -150,7 +151,7 @@ public class SeekCoverBehavior : MonoBehaviour
 
     }
 
-    private void CheckIfDestinationReached()
+    public void CheckIfDestinationReached()
     {
         if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
         {
