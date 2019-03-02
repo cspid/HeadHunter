@@ -1,71 +1,69 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RootMotion.Dynamics;
-
 
 public class Gun : MonoBehaviour
 {
+    [SerializeField] Transform gunBarrel, aimPoint;
+    bool isShooting = false;
 
-    public Transform firePoint;
-    bool targeted;
-    public Color lineColor;
-    public Animator recoilAnimator;
+    [SerializeField] float verticalSpread, horizontalSpread;
 
-    public LayerMask layers;
-    public float unpin = 10f;
-    public float force = 10f;
-    public ParticleSystem blood;
+    Quaternion defaultRot;
+    // Start is called before the first frame update
+    void Start()
+    {
+        defaultRot = gunBarrel.transform.localRotation;
+    }
 
     // Update is called once per frame
     void Update()
-
     {
-        RaycastHit hit1;
-        var ray1 = new Ray(firePoint.position, firePoint.forward);
-
-        if (Physics.Raycast(ray1, out hit1))
+        if (!isShooting && Input.GetAxis("Fire1") > 0.2f)
         {
-            Debug.DrawRay(firePoint.position, firePoint.forward * 50f, lineColor);
-
-            if (hit1.rigidbody != null)
-            {
-                print(hit1.rigidbody.gameObject.name);
-                lineColor = Color.green;
-            }
-            else
-            {
-                lineColor = Color.red;
-            }
+            isShooting = true;
+            //startShooting();
+            shoot();
         }
-
-        //Vector3 forward = firePoint.TransformDirection(Vector3.forward) * 10;
-        //Debug.DrawRay(firePoint.position, forward, lineColor);
-
-        if (Input.GetButtonDown("Fire1"))
+        else if (isShooting && Input.GetAxis("Fire1") < 0.2f)
         {
-            print("fire");
-            //recoilAnimator.SetTrigger("Go");
-            var ray = new Ray(firePoint.position, firePoint.forward);
-
-            // Raycast to find a ragdoll collider
-            RaycastHit hit = new RaycastHit();
-            if (Physics.Raycast(ray, out hit, 100f, layers))
-            {
-                var broadcaster = hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
-                //Debug.DrawRay(firePoint.position, firePoint.forward, lineColor);
-
-                if (broadcaster != null)
-                {
-                    broadcaster.Hit(unpin, ray.direction * force, hit.point);
-
-                    blood.transform.position = hit.point;
-                    blood.transform.rotation = Quaternion.LookRotation(ray.direction);
-                    blood.Emit(20);
-                }
-            }
+            isShooting = false;
+            gunBarrel.transform.localRotation = defaultRot;
+            Debug.Log("spread reset");
         }
     }
+
+    public void startShooting()
+    {
+
+
+
+        // dir = Quaternion.AngleAxis(Random.Range(-horizontalSpread, horizontalSpread), this.transform.forward));
+
+        // Check if something is hit
+        
+
+
+        // Calculate suppression
+    }
+
+    void shoot()
+    {
+        gunBarrel.Rotate(Vector3.up * Random.Range(-horizontalSpread, horizontalSpread));
+        gunBarrel.Rotate(Vector3.right * Random.Range(-verticalSpread, verticalSpread));
+        Vector3 dir = aimPoint.position - gunBarrel.position;
+        dir.Normalize();
+
+        RaycastHit hit;
+        if (Physics.Raycast(gunBarrel.position, dir, out hit))
+        {
+            if (hit.transform.GetComponent<Enemy>())
+            {
+                hit.transform.GetComponent<Enemy>().takeDamage();
+            }
+            
+        }
+        Debug.DrawRay(gunBarrel.position, dir * 100, Color.red, 10f);
+
+    }
 }
-
-

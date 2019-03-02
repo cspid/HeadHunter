@@ -1,5 +1,4 @@
 using UnityEngine;
-using RootMotion.Dynamics;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -8,9 +7,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonCharacter : MonoBehaviour
 	{
-
-        public BehaviourPuppet puppet;
-        public LayerMask groundLayers;
 		[SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
 		[SerializeField] float m_JumpPower = 12f;
@@ -93,7 +89,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
 				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, groundLayers, QueryTriggerInteraction.Ignore))
+				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
 					return;
@@ -111,8 +107,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
 				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-                if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, groundLayers, QueryTriggerInteraction.Ignore)) //Physics.AllLayers
-                {
+				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+				{
 					m_Crouching = true;
 				}
 			}
@@ -182,7 +178,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		void ApplyExtraTurnRotation()
 		{
-            if (puppet.state != BehaviourPuppet.State.Puppet) return;
 			// help the character turn faster (this is in addition to root rotation in the animation)
 			float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
 			transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
