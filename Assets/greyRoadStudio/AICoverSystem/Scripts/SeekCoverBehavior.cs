@@ -20,7 +20,7 @@ public class SeekCoverBehavior : MonoBehaviour
     private bool shouldCrouch;
 
     //public for debug
-    private Transform fleeTarget;
+    [SerializeField] private Transform fleeTarget;
     private Cover coverObject;
     private Vector3 coverPosition = Vector3.zero;
     //public Vector3 fleePosition = Vector3.zero;
