@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] Transform aimPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +22,10 @@ public class Enemy : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("Enemy has taken damage");
+    }
+
+    public Transform getAimPos()
+    {
+        return aimPos;
     }
 }
