@@ -9,6 +9,8 @@ public class Gun : MonoBehaviour
     bool targeted;
     public Color lineColor;
     public Animator recoilAnimator;
+    public AudioClip gunShot;
+    public bool firing = false;
 
     // Update is called once per frame
     void Update()
@@ -35,7 +37,12 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             print("fire");
+            AudioSource.PlayClipAtPoint(gunShot, Camera.main.transform.position);
+            firing = true;
             recoilAnimator.SetTrigger("Go");
+        }
+        else {
+            firing = false;
         }
     }
 

@@ -30,6 +30,7 @@ public class NPCSimpleControl : MonoBehaviour
     float _waitTimer;
 
     Vector3 playerPos;
+    public Gun gun;
     Transform player;
     bool travellingToPlayer = false;
 
@@ -60,7 +61,7 @@ public class NPCSimpleControl : MonoBehaviour
 
     public void Update()
     {
-        if (GetComponent<NPCView>().CanSeePlayer())
+        if (GetComponent<NPCView>().CanSeePlayer())// || gun.firing == true)
         {
             playerPos = player.transform.position; //move guard to playerPos
             playerPos.z = -0.769f;

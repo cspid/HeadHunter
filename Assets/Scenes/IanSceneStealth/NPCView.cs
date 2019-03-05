@@ -14,6 +14,7 @@ public class NPCView : MonoBehaviour
     public LayerMask viewMask;
 
     bool callSurprise = false;
+    public Gun gun;
 
     float viewAngle;
     float playerVisibleTimer;
@@ -36,7 +37,7 @@ public class NPCView : MonoBehaviour
 
     void Update()
     {
-        if (CanSeePlayer())
+        if (CanSeePlayer())// || gun.firing == true)
         {
             playerVisibleTimer += Time.deltaTime;
             if (callSurprise)
