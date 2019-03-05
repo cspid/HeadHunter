@@ -55,23 +55,22 @@ public class NPCSimpleControl : MonoBehaviour
             {
                 Debug.Log("Insufficient patrol points for basic patrolling behaviour.");
             }
-
         }
     }
 
     public void Update()
     {
-        if (GetComponent<NPCView>().CanSeePlayer())// || gun.firing == true)
+        if (GetComponent<NPCView>().CanSeePlayer() || gun.firing == true)
         {
             playerPos = player.transform.position; //move guard to playerPos
             playerPos.z = -0.769f;
-            Debug.Log(playerPos);
+            //Debug.Log(playerPos);
             SetPlayerDestination();
             travellingToPlayer = true;
         }
 
         //Check if we're close to the destination.
-        if (_travelling && _navMeshAgent.remainingDistance <= 1.0f)
+        if (_travelling && _navMeshAgent.remainingDistance <= 0.7f)
         {
             _travelling = false;
 
@@ -79,7 +78,7 @@ public class NPCSimpleControl : MonoBehaviour
             if (_patrolWaiting)
             {
                 _waiting = true;
-                _waitTimer = 0f;
+                _waitTimer = 5f;
             }
             else
             {
@@ -94,7 +93,7 @@ public class NPCSimpleControl : MonoBehaviour
             _waitTimer += Time.deltaTime;
             if (travellingToPlayer == true)
             {
-                _waitTimer += 3f;
+                _waitTimer += 8f;
                 travellingToPlayer = false;
             }
             if (_waitTimer >= _totalWaitTime)
@@ -147,4 +146,9 @@ public class NPCSimpleControl : MonoBehaviour
             }
         }
     }
+
+    IEnumerator Waiting(){
+                yield return new WaitForSeconds(5f);
+                Debug.Log("PAUSED");
+        }
 }

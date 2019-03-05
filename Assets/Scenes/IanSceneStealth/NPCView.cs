@@ -37,7 +37,7 @@ public class NPCView : MonoBehaviour
 
     void Update()
     {
-        if (CanSeePlayer())// || gun.firing == true)
+        if (CanSeePlayer())
         {
             playerVisibleTimer += Time.deltaTime;
             if (callSurprise)

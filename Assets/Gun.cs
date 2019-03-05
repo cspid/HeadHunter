@@ -14,25 +14,25 @@ public class Gun : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    
+    {
+        RaycastHit hit;
+        var ray = new Ray(firePoint.position, firePoint.forward);
+
+        if (Physics.Raycast(ray, out hit))
         {
-            RaycastHit hit;
-            var ray = new Ray(firePoint.position, firePoint.forward);
-
-            if (Physics.Raycast(ray, out hit))
+            if (hit.rigidbody != null)
             {
-                if (hit.rigidbody != null)
-                {
-                    print(hit.rigidbody.gameObject.name);
-                    lineColor = Color.green;
-                }
-                else {
-                lineColor = Color.red;
-                }
+                print(hit.rigidbody.gameObject.name);
+                lineColor = Color.green;
             }
+            else
+            {
+                lineColor = Color.red;
+            }
+        }
 
-            Vector3 forward = firePoint.TransformDirection(Vector3.forward) * 10;
-            Debug.DrawRay(firePoint.position, forward, lineColor);
+        Vector3 forward = firePoint.TransformDirection(Vector3.forward) * 10;
+        Debug.DrawRay(firePoint.position, forward, lineColor);
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -41,7 +41,8 @@ public class Gun : MonoBehaviour
             firing = true;
             recoilAnimator.SetTrigger("Go");
         }
-        else {
+        else
+        {
             firing = false;
         }
     }
