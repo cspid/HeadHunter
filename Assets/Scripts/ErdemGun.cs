@@ -15,6 +15,8 @@ public class ErdemGun : MonoBehaviour
     LookAtIK lookAtScript;
     Quaternion defaultGunCntrlRot;
     float LOCK_ANGLE = 20f;
+
+    [SerializeField] GameObject trailObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -128,6 +130,25 @@ public class ErdemGun : MonoBehaviour
             }
             
         }
+        GameObject trail = Instantiate(trailObj, gunBarrel.transform.position, Quaternion.identity);
+
+        var broadcaster = hit.collider;
+
+        if (broadcaster != null)
+        {
+            Debug.Log("moving trail to hit point");
+            trail.GetComponent<TrailRenderer>().AddPosition(hit.point);
+        }
+        else
+        {
+            Debug.Log("moving trail to  forward");
+            trail.GetComponent<TrailRenderer>().AddPosition(gunBarrel.position + (dir * 50));
+        }
+            
+
+        
+        //trail.transform.position = hit.transform.position;
+        
         Debug.DrawRay(gunBarrel.position, dir * 100, Color.yellow, 10f);
 
     }
