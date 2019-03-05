@@ -18,8 +18,6 @@ public class NPCView : MonoBehaviour
     float viewAngle;
     float playerVisibleTimer;
 
-    public Gun gun;
-
     Vector3 playerPos;
 
     Transform player;
@@ -27,14 +25,18 @@ public class NPCView : MonoBehaviour
 
     void Start()
     {
+        //UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
+
+        //StartCoroutine(FollowPath(waypoints));
+
     }
 
     void Update()
     {
-        if (CanSeePlayer() || gun.firing == true)
+        if (CanSeePlayer())
         {
             playerVisibleTimer += Time.deltaTime;
             if (callSurprise)
@@ -73,6 +75,7 @@ public class NPCView : MonoBehaviour
             { //if player is in guard ViewAngle
                 if (!Physics.Linecast(transform.position, player.position, viewMask))
                 { //raycast to player
+
                     return true;
                 }
             }

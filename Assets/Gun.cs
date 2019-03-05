@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
     bool targeted;
     public Color lineColor;
     public Animator recoilAnimator;
-    public bool firing = false;
 
     // Update is called once per frame
     void Update()
@@ -37,10 +36,6 @@ public class Gun : MonoBehaviour
         {
             print("fire");
             recoilAnimator.SetTrigger("Go");
-            firing = true;
-        }
-        else {
-            firing = false;
         }
     }
 
