@@ -17,6 +17,11 @@ public class ErdemGun : MonoBehaviour
     float LOCK_ANGLE = 20f;
 
     [SerializeField] GameObject trailObj;
+
+
+    float MAX_SUPRESS_DISTANCE = 10f;
+    float MAX_SUPPRESSION_PERC = .9f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -151,5 +156,29 @@ public class ErdemGun : MonoBehaviour
         
         Debug.DrawRay(gunBarrel.position, dir * 100, Color.yellow, 10f);
 
+    }
+
+
+    void supress(Vector3 linePnt, Vector3 lineDir)
+    {
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
+
+        foreach (Enemy enemy in enemies)
+        {
+            Vector3 nearestPos = NearestPointOnLine(linePnt, lineDir, enemy.transform.position);
+            if (Vector3.Distance(nearestPos, enemy.transform.position) <= MAX_SUPRESS_DISTANCE) // Close enough to supress
+            {
+                enemy.getSupressed(MAX_SUPPRESSION_PERC * (Vector3.Distance(nearestPos, enemy.transform.position) / MAX_SUPRESS_DISTANCE));
+            }
+
+        }
+    }
+
+    public static Vector3 NearestPointOnLine(Vector3 linePnt, Vector3 lineDir, Vector3 pnt)
+    {
+        lineDir.Normalize();//this needs to be a unit vector
+        var v = pnt - linePnt;
+        var d = Vector3.Dot(v, lineDir);
+        return linePnt + lineDir * d;
     }
 }
