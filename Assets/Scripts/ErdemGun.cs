@@ -26,7 +26,7 @@ public class ErdemGun : MonoBehaviour
     void Start()
     {
         defaultRot = gunBarrel.transform.localRotation;
-        lookAtScript = GetComponentInParent<LookAtIK>();
+        lookAtScript = transform.parent.GetComponent<LookAtIK>();
         defaultGunCntrlRot = lookAtScript.transform.localRotation;
 
     }
@@ -149,11 +149,11 @@ public class ErdemGun : MonoBehaviour
             Debug.Log("moving trail to  forward");
             trail.GetComponent<TrailRenderer>().AddPosition(gunBarrel.position + (dir * 50));
         }
-            
 
-        
-        //trail.transform.position = hit.transform.position;
-        
+
+
+        trail.transform.position = hit.transform.position;
+
         Debug.DrawRay(gunBarrel.position, dir * 100, Color.yellow, 10f);
 
     }
