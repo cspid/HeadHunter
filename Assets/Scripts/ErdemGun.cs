@@ -12,7 +12,7 @@ public class ErdemGun : MonoBehaviour
 
     Quaternion defaultRot;
 
-    LookAtIK lookAtScript;
+    [SerializeField] LookAtIK lookAtScript;
     Quaternion defaultGunCntrlRot;
     float LOCK_ANGLE = 20f;
 
@@ -26,7 +26,7 @@ public class ErdemGun : MonoBehaviour
     void Start()
     {
         defaultRot = gunBarrel.transform.localRotation;
-        lookAtScript = transform.parent.GetComponent<LookAtIK>();
+        //lookAtScript = transform.parent.GetComponent<LookAtIK>();
         defaultGunCntrlRot = lookAtScript.transform.localRotation;
 
     }
@@ -152,7 +152,7 @@ public class ErdemGun : MonoBehaviour
 
 
 
-        trail.transform.position = hit.transform.position;
+        //trail.transform.position = hit.transform.position;
 
         Debug.DrawRay(gunBarrel.position, dir * 100, Color.yellow, 10f);
 
