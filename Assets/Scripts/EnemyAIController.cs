@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAIController : MonoBehaviour
 {
+    EnemyRaiseGun raiseGunScript;
     enum aiState {Patrol, Flanked, Combat};
     [SerializeField] aiState myState;
     float supression = 0;
@@ -19,6 +20,7 @@ public class EnemyAIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        raiseGunScript = GetComponentInChildren<EnemyRaiseGun>();
         myCoverScript = GetComponent<SeekCoverBehavior>();
         players = GameObject.FindGameObjectsWithTag("Player");
     }
@@ -111,6 +113,7 @@ public class EnemyAIController : MonoBehaviour
 
         Debug.Log("not flanked");
         myState = aiState.Combat;
+        raiseGunScript.setGunRaise(true);
             return false;
     }
 

@@ -96,4 +96,9 @@ public class EnemyRaiseGun : MonoBehaviour
 
 
     }
+
+    public void setGunRaise(bool isRaised)
+    {
+        enemyRaiseGun = isRaised;
+    }
 }
