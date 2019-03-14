@@ -12,6 +12,9 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] Transform flankCheckPos;
 
     GameObject[] players;
+    bool isShooting = false;
+    float shootCounter = 0;
+    float SHOOT_COOLDOWN = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,18 +41,43 @@ public class EnemyAIController : MonoBehaviour
                 //myCoverScript.Detect();
                 //myCoverScript.CheckIfTargetIsInRange();
                 myCoverScript.CheckIfDestinationReached();
+                Combat();
                 break;
             default:
                 break;
         }
+
+
+        if (isShooting)
+        {
+            shootCounter += Time.deltaTime;
+
+            if (shootCounter >= SHOOT_COOLDOWN)
+            {
+                shootCounter -= SHOOT_COOLDOWN;
+                Shoot();
+            }
+        }
     }
 
+    void Shoot()
+    {
+
+    }
 
     void Combat()
     {
+        if (myState != aiState.Combat)
+            return;
+
         if (supression < 0.5f)
         {
-
+            isShooting = true;
+        }
+        else
+        {
+            isShooting = false;
+            shootCounter = 0;
         }
     }
 
