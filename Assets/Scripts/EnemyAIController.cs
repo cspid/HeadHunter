@@ -23,12 +23,15 @@ public class EnemyAIController : MonoBehaviour
     Animator myAnimator;
 
     Transform target;
+    ErdemGun myGunScript;
 
     // Start is called before the first frame update
     void Start()
     {
         //Change later, shortcut for testing
         target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        myGunScript = GetComponentInChildren<ErdemGun>();
 
         myAnimator = GetComponent<Animator>();
         raiseGunScript = GetComponentInChildren<EnemyRaiseGun>();
@@ -94,6 +97,7 @@ public class EnemyAIController : MonoBehaviour
     void Shoot()
     {
         Debug.Log("pew pew~~~~~~");
+        myGunScript.shoot();
     }
 
     void Combat()

@@ -113,7 +113,7 @@ public class ErdemGun : MonoBehaviour
         // Calculate suppression
     }
 
-    void shoot()
+    public void shoot()
     {
         gunBarrel.Rotate(Vector3.up * Random.Range(-horizontalSpread, horizontalSpread));
         gunBarrel.Rotate(Vector3.right * Random.Range(-verticalSpread, verticalSpread));
@@ -132,6 +132,10 @@ public class ErdemGun : MonoBehaviour
             if (hit.transform.GetComponent<Enemy>())
             {
                 hit.transform.GetComponent<Enemy>().takeDamage();
+            }
+            else if (hit.transform.GetComponent<HealthManager>())
+            {
+                // Implement damage
             }
             
         }
