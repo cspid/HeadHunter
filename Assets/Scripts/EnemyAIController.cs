@@ -13,13 +13,24 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] Transform flankCheckPos;
 
     GameObject[] players;
+
     bool isShooting = false;
+    bool isAiming = false;
+
     float shootCounter = 0;
-    float SHOOT_COOLDOWN = 1.5f;
+    float SHOOT_COOLDOWN = 4.5f;
+
+    Animator myAnimator;
+
+    Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Change later, shortcut for testing
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        myAnimator = GetComponent<Animator>();
         raiseGunScript = GetComponentInChildren<EnemyRaiseGun>();
         myCoverScript = GetComponent<SeekCoverBehavior>();
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -50,21 +61,39 @@ public class EnemyAIController : MonoBehaviour
         }
 
 
-        if (isShooting)
+        if (isAiming && !isShooting)
         {
             shootCounter += Time.deltaTime;
+            Vector3 dir = target.position - this.transform.position;
+            dir.Normalize();
+            float turnAmount = Mathf.Atan2(dir.x, dir.y);
+            myAnimator.SetFloat("Turn", turnAmount, 0.1f, Time.deltaTime);
 
             if (shootCounter >= SHOOT_COOLDOWN)
             {
+                isShooting = true;
                 shootCounter -= SHOOT_COOLDOWN;
-                Shoot();
+                //Shoot();
+                StartCoroutine(ShootOverTime());
             }
         }
     }
 
+    IEnumerator ShootOverTime()
+    {
+        bool tempBool = myAnimator.GetBool("Crouch");
+        myAnimator.SetBool("Crouch", false);
+
+        yield return new WaitForSeconds(1f);
+        Shoot();
+        yield return new WaitForSeconds(.5f);
+        myAnimator.SetBool("Crouch", tempBool);
+        isShooting = false;
+    }
+
     void Shoot()
     {
-
+        Debug.Log("pew pew~~~~~~");
     }
 
     void Combat()
@@ -74,11 +103,11 @@ public class EnemyAIController : MonoBehaviour
 
         if (supression < 0.5f)
         {
-            isShooting = true;
+            isAiming = true;
         }
         else
         {
-            isShooting = false;
+            isAiming = false;
             shootCounter = 0;
         }
     }
