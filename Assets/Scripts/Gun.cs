@@ -52,22 +52,29 @@ public class Gun : MonoBehaviour
             RaycastHit hit = new RaycastHit();
             if (Physics.Raycast(ray, out hit, 100f, layers))
             {
-                var broadcaster = hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
-                //Debug.DrawRay(firePoint.position, firePoint.forward, lineColor);
-
-                if (broadcaster != null)
+                if (hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>() != null)
                 {
-                    broadcaster.Hit(unpin, ray.direction * force, hit.point);
+                    var broadcaster = hit.collider.attachedRigidbody.GetComponent<MuscleCollisionBroadcaster>();
+                    //Debug.DrawRay(firePoint.position, firePoint.forward, lineColor);
 
-                    blood.transform.position = hit.point;
-                    blood.transform.rotation = Quaternion.LookRotation(ray.direction);
-                    blood.Emit(20);
+                    if (broadcaster != null)
+                    {
+                        broadcaster.Hit(unpin, ray.direction * force, hit.point);
+
+                        blood.transform.position = hit.point;
+                        blood.transform.rotation = Quaternion.LookRotation(ray.direction);
+                        blood.Emit(20);
+                    }
+                }
+
+                if (hit.collider.gameObject.layer == 11)
+                {
+                    print("Hit interactive object");
                 }
             }
         }
     }
-
-
+    
     public void fire(Ray ray)
     {
         RaycastHit hit = new RaycastHit();
@@ -87,5 +94,6 @@ public class Gun : MonoBehaviour
         }
     }
 }
+
 
 

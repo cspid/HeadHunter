@@ -10,6 +10,9 @@ public class RaiseGun : MonoBehaviour
     float gunRotation = 80.0f;
     float speed;
     Animator anim;
+    bool raised;
+    public bool isEnemy;
+    public bool enemyAim;
 
     void Start()
     {
@@ -17,13 +20,27 @@ public class RaiseGun : MonoBehaviour
     }
         void Update()
     {
-        if (CrossPlatformInputManager.GetButton("RaiseGun"))
+        if (isEnemy == false)
         {
-            anim.SetBool("Raise", true);
+            if (CrossPlatformInputManager.GetButton("RaiseGun"))
+            {
+                anim.SetBool("Raise", true);
+            }
+            else
+            {
+                anim.SetBool("Raise", false);
+            }
         }
-        else {
-            anim.SetBool("Raise", false);
-
+        else
+        {
+            if (enemyAim == true)
+            {
+                anim.SetBool("Raise", true);
+            }
+            else
+            {
+                anim.SetBool("Raise", false);
+            }
         }
         //if (CrossPlatformInputManager.GetButton("RaiseGun"))
         //{

@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class HitTarget : MonoBehaviour
 {
-   
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	}
+  //Dont delete this script it is used for aiming
 }
