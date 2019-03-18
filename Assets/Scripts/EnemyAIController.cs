@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAIController : MonoBehaviour
 {
-    EnemyRaiseGun raiseGunScript;
+    RaiseGun raiseGunScript;
     enum aiState {Patrol, Flanked, Combat};
     [SerializeField] aiState myState;
     float supression = 0;
@@ -34,7 +34,7 @@ public class EnemyAIController : MonoBehaviour
         myGunScript = GetComponentInChildren<ErdemGun>();
 
         myAnimator = GetComponent<Animator>();
-        raiseGunScript = GetComponentInChildren<EnemyRaiseGun>();
+        raiseGunScript = GetComponentInChildren<RaiseGun>();
         myCoverScript = GetComponent<SeekCoverBehavior>();
         players = GameObject.FindGameObjectsWithTag("Player");
     }
@@ -146,7 +146,7 @@ public class EnemyAIController : MonoBehaviour
 
         Debug.Log("not flanked");
         myState = aiState.Combat;
-        raiseGunScript.setGunRaise(true);
+        raiseGunScript.enemyAim = true;
             return false;
     }
 
