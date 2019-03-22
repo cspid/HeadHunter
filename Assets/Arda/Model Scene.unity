@@ -187,6 +187,206 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7fabdae5c8a3ece4e9c2bec81c3f169a, type: 2}
+    - target: {fileID: 13700012, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 615bbaccb967cdc4c89b22b71f8e5b8a, type: 2}
+    - target: {fileID: 100064, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanHips
+      objectReference: {fileID: 0}
+    - target: {fileID: 100098, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine
+      objectReference: {fileID: 0}
+    - target: {fileID: 100104, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftUpLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100106, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightUpLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100100, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 100102, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 100062, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanNeck
+      objectReference: {fileID: 0}
+    - target: {fileID: 100120, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100044, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftForeArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightForeArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100050, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100052, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100066, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100068, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100082, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100110, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100072, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100086, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100088, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100112, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100114, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100058, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100074, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100090, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100092, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100116, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100118, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee735615097ae9349b1b63db591fc0cc, type: 3}
 --- !u!1001 &380021253
@@ -198,15 +398,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30
+      value: 17.047
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.411
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalRotation.x
@@ -344,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8a687007ad920dc49adf3154a410106d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.199127
+      value: 23.82
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8a687007ad920dc49adf3154a410106d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -680,83 +880,263 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1526934574
+--- !u!1001 &1264065468
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 100012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: EnemyMale
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 100004, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightFoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandIndex3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100044, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandIndex3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftForeArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightForeArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100052, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100058, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandMiddle3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100062, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandMiddle3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanNeck
+      objectReference: {fileID: 0}
+    - target: {fileID: 100066, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanHips
+      objectReference: {fileID: 0}
+    - target: {fileID: 100068, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100072, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100074, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandPinky3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandPinky3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100080, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100082, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100086, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100088, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandRing3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100090, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandRing3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100098, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine
+      objectReference: {fileID: 0}
+    - target: {fileID: 100100, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100102, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanSpine2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100104, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftUpLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100106, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightUpLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100110, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100112, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100114, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100116, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftHandThumb3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100118, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightHandThumb3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100120, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanLeftArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 100122, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
+      propertyPath: m_Name
+      value: EthanRightArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.438337
+      value: 20.46148
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.6383133
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5793443
+      value: -2.72377
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 400012, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 13700000, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+    - target: {fileID: 13700006, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4e45575a366d3e74fbb9e32f6f501031, type: 2}
-    - target: {fileID: 13700002, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 84b59cc6cc08d5d42bb59a7e54bb50c4, type: 2}
-    - target: {fileID: 13700004, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e43dee866b823714cbb78ca70460fe97, type: 2}
-    - target: {fileID: 13700006, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ea73eb1153e73074b92fb212bbb03be5, type: 2}
-    - target: {fileID: 13700012, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c9e92dbb240c644982dd825cdc4e38a, type: 2}
+      objectReference: {fileID: 2100000, guid: fca1250223fb6ad4882f8b794f44e839, type: 2}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f643dcd1483f2324fb0a5c630879ded6, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: e5a7da73723183a47b094dd33f25a56d, type: 3}
 --- !u!1 &1638610396
 GameObject:
   m_ObjectHideFlags: 0
