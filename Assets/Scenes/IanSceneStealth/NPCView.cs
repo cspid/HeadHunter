@@ -14,6 +14,7 @@ public class NPCView : MonoBehaviour
     public LayerMask viewMask;
 
     bool callSurprise = false;
+    public Gun gun;
 
     float viewAngle;
     float playerVisibleTimer;
