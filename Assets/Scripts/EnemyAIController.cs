@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAIController : MonoBehaviour
 {
     RaiseGun raiseGunScript;
-    enum aiState {Patrol, Flanked, Combat};
+    enum aiState {Patrol, Flanked, Combat, Maneuver};
     [SerializeField] aiState myState;
     float supression = 0;
 
@@ -24,6 +24,10 @@ public class EnemyAIController : MonoBehaviour
 
     Transform target;
     ErdemGun myGunScript;
+
+    GameObject retreatPoint;
+    GameObject defaultPoint;
+    GameObject advancePoint;
 
     // Start is called before the first frame update
     void Start()
@@ -150,4 +154,18 @@ public class EnemyAIController : MonoBehaviour
             return false;
     }
 
+    void retreat()
+    {
+        myCoverScript.GoToCover(retreatPoint.transform.position);
+    }
+
+    void advance()
+    {
+        myCoverScript.GoToCover(advancePoint.transform.position);
+    }
+
+    void failedManeuver()
+    {
+        myCoverScript.GoToCover(defaultPoint.transform.position);
+    }
 }
