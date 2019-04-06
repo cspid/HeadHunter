@@ -83,6 +83,7 @@ public class Strafe : MonoBehaviour {
 		_newVelocity = v * m_CamForward * vel + h * m_Cam.right * vel;
 
 		rb.velocity = _newVelocity;
+//        print(_newVelocity);
 
 		if (Input.GetButton("Run"))
 		{
