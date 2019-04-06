@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     float suppressionNormSpeed = 0.1f;
 
     //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
-    [SerializeField] Transform flankCheckPos;   //This should be at the bottom of the enemy
+    [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the enemy
 
     // Start is called before the first frame update
     void Start()
