@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] Image LoadingBar;
     [SerializeField] Transform aimPos;
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
 
-    [SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
+    //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
     [SerializeField] Transform flankCheckPos;   //This should be at the bottom of the enemy
 
     // Start is called before the first frame update
@@ -30,8 +32,8 @@ public class Enemy : MonoBehaviour
                 suppression = 0;
             }
         }
-
-        suppText.text = suppression.ToString();
+        LoadingBar.fillAmount = suppression;
+        //suppText.text = suppression.ToString();
     }
 
     // IMPLEMENT DMG LATER
