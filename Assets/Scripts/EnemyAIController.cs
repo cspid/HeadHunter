@@ -182,7 +182,7 @@ public class EnemyAIController : MonoBehaviour
 
         Debug.Log("not flanked");
         myState = aiState.Combat;
-        raiseGunScript.enemyAim = true;
+        //raiseGunScript.enemyAim = true; //gone, old system
             return false;
     }
 

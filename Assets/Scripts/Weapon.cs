@@ -34,16 +34,20 @@ public class Weapon : MonoBehaviour
     void shoot()
     {
         Debug.Log("Pew pew");
-        supress(this.transform.position, target.transform.position - this.transform.position);
-
-        if (target.GetComponent<Enemy>())
+        if (target)
         {
-            if (target.GetComponent<Enemy>().isFlanked(this.transform.position, this.gameObject))
+            supress(this.transform.position, target.transform.position - this.transform.position);
+
+            if (target.GetComponent<Enemy>())
             {
-                target.GetComponent<Enemy>().takeDamage();
+                if (target.GetComponent<Enemy>().isFlanked(this.transform.position, this.gameObject))
+                {
+                    target.GetComponent<Enemy>().takeDamage();
+                }
+
             }
-            
         }
+        
     }
 
     void setTarget(GameObject tar)
