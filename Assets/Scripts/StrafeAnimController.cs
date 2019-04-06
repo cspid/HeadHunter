@@ -28,7 +28,6 @@ public class StrafeAnimController : MonoBehaviour {
 			animator.SetFloat("Forward", transform.InverseTransformDirection(myAgent.velocity).z);
 			animator.SetFloat("Right", transform.InverseTransformDirection(myAgent.velocity).x);
 		}
-		//print(rb.velocity.x);
 
 
 	}
