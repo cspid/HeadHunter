@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] Image LoadingBar;
+    [SerializeField] Image targetIcon;
     [SerializeField] Transform aimPos;
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetIcon.enabled = false;
     }
 
     // Update is called once per frame
@@ -72,5 +73,14 @@ public class Enemy : MonoBehaviour
         {
             suppression = 1;
         }
+    }
+    public void getTargeted()
+    {
+        targetIcon.enabled = true;
+    }
+
+    public void cancelTarget()
+    {
+        targetIcon.enabled = false;
     }
 }
