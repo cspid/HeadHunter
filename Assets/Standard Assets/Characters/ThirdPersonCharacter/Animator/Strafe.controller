@@ -59,7 +59,7 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: New Layer
+    m_Name: Feets
     m_StateMachine: {fileID: 1107500499407454098}
     m_Mask: {fileID: 31900000, guid: 3574e72cd5f53ad459dbe538a3edee7a, type: 2}
     m_Motions:
@@ -71,10 +71,10 @@ AnimatorController:
       m_Motion: {fileID: 7400000, guid: 799dce9081f369e4c95f8cf642b959c6, type: 3}
     - serializedVersion: 2
       m_State: {fileID: 1102486363441260936}
-      m_Motion: {fileID: 7400008, guid: 257e8e72f74ea4ad6b5e51374ad4b96f, type: 3}
+      m_Motion: {fileID: 7400000, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
     - serializedVersion: 2
       m_State: {fileID: 1102258801384983150}
-      m_Motion: {fileID: 7400008, guid: 257e8e72f74ea4ad6b5e51374ad4b96f, type: 3}
+      m_Motion: {fileID: 7400000, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 1
@@ -941,7 +941,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Layer
+  m_Name: Feets
   m_ChildStates: []
   m_ChildStateMachines: []
   m_AnyStateTransitions: []

@@ -14,14 +14,39 @@ namespace RootMotion.Demos {
 		[SerializeField] InteractionObject interactionObject;
 		[Tooltip("The effectors to interact with")]
 		[SerializeField] FullBodyBipedEffector[] effectors;
+        float timer = 0.5f;
+        bool runTimer = true;
 
 		private InteractionSystem interactionSystem;
 		
 		void Awake() {
 			interactionSystem = GetComponent<InteractionSystem>();
-		}
+        }
+        private void Start()
+        {
+            
+        }
+        private void Update()
+        {
+            if (runTimer == true)
+            {
+                timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    SetHands();
+                }
+            }
+        }
 
-		void OnGUI() {
+        void SetHands()
+        {
+            runTimer = false;
+            foreach (FullBodyBipedEffector e in effectors)
+            {
+                interactionSystem.StartInteraction(e, interactionObject, true);
+            }
+        }
+        void OnGUI() {
 			if (interactionSystem == null) return;
 
 			if (GUILayout.Button("Start Interaction With " + interactionObject.name)) {
