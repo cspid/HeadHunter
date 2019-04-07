@@ -10,13 +10,26 @@ public class Weapon : MonoBehaviour
     float LOCK_ANGLE = 40f;
 
     float MAX_SUPRESS_DISTANCE = 10f;
-    float MAX_SUPPRESSION_PERC = .3f;
+    float MAX_SUPPRESSION_PERC = .15f;
+
+    float maxSuppressionAngle = 30f;
+
+    float MAX_AMMO = 30;
+    float ammo;
+
+    float fireRate = 0.1f;
+    float shootCounter = 0;
+
+    bool isReloading = false;
+
+    float reloadTime = 3.0f;
+    float reloadCounter = 0;
 
     bool isShooting = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        ammo = MAX_AMMO;
     }
 
     // Update is called once per frame
@@ -32,11 +45,40 @@ public class Weapon : MonoBehaviour
         {
             isShooting = true;
             //startShooting();
-            shoot();
         }
         else if (isShooting && Input.GetAxis("Fire1") < 0.2f)
         {
             isShooting = false;
+        }
+
+
+        if (isShooting && !isReloading)
+        {
+            shootCounter += Time.deltaTime;
+
+            if (shootCounter >= fireRate)
+            {
+                shoot();
+                ammo--;
+                shootCounter = 0;
+                Debug.Log("ammo: " + ammo);
+
+                if (ammo <= 0)
+                {
+                    isReloading = true;
+                }
+            }
+        }
+        else if (isReloading)
+        {
+            reloadCounter += Time.deltaTime;
+
+            if (reloadCounter >= reloadTime)
+            {
+                isReloading = false;
+                ammo = MAX_AMMO;
+                reloadCounter = 0;
+            }
         }
     }
 
@@ -107,9 +149,13 @@ public class Weapon : MonoBehaviour
 
         foreach (Enemy enemy in enemies)
         {
-            if (Vector3.Distance(enemy.transform.position, target.transform.position) <= MAX_SUPRESS_DISTANCE)
+            if (Vector3.Distance(enemy.transform.position, target.transform.position) <= MAX_SUPRESS_DISTANCE
+                && Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position) <= maxSuppressionAngle)
             {
-                enemy.getSupressed(MAX_SUPPRESSION_PERC * (MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE);
+                enemy.getSupressed(MAX_SUPPRESSION_PERC * 
+                    ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE)
+                    * ((maxSuppressionAngle - Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position)) / maxSuppressionAngle));
+                Debug.Log("suppression: " + MAX_SUPPRESSION_PERC + " * " + ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE) + " * " + (maxSuppressionAngle - Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position) / maxSuppressionAngle));
             }
         }
 
