@@ -6,19 +6,28 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] GameObject target;
 
+    [SerializeField] Transform pivot;
+    float LOCK_ANGLE = 40f;
+
     float MAX_SUPRESS_DISTANCE = 10f;
-    float MAX_SUPPRESSION_PERC = .9f;
+    float MAX_SUPPRESSION_PERC = .3f;
 
     bool isShooting = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        // TOO EXPENSIVE >>> DECREASE CALL AMOUNT LATER >>>>
+        findTarget();
+
+
+
+
         if (!isShooting && Input.GetAxis("Fire1") > 0.2f)
         {
             isShooting = true;
@@ -28,6 +37,43 @@ public class Weapon : MonoBehaviour
         else if (isShooting && Input.GetAxis("Fire1") < 0.2f)
         {
             isShooting = false;
+        }
+    }
+
+    void findTarget()
+    {
+        Enemy[] Enemies = FindObjectsOfType<Enemy>();
+        float minAngle = 180;
+        Enemy lockedEnemy = null;
+        foreach (Enemy enemy in Enemies)
+        {
+            if (Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position) < minAngle
+                && Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position) < LOCK_ANGLE)
+            {
+                minAngle = Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position);
+                lockedEnemy = enemy;
+            }
+        }
+
+        if (target)
+        {
+            if ((lockedEnemy && target != lockedEnemy.gameObject) || (lockedEnemy == null))
+            {
+                target.GetComponent<Enemy>().cancelTarget();
+            }
+        }
+
+
+        if (lockedEnemy)
+        {
+            //lookAtScript.solver.target = lockedEnemy.getAimPos();
+            //lookAtScript.solver.IKPositionWeight = 0.5f;
+            target = lockedEnemy.gameObject;
+            target.GetComponent<Enemy>().getTargeted();
+        }
+        else
+        {
+            target = null;
         }
     }
 

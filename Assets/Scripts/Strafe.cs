@@ -14,7 +14,7 @@ public class Strafe : MonoBehaviour {
 	public Transform torso;
 	public Text topRot;
 	public Text bottomRot;
-	public float angleDeadZone = 30;
+	public float angleDeadZone = 15;
 	public float catchUpSpeed = 0.1f;
 	public bool catchUp;
 	public Vector3 _newVelocity;
@@ -103,7 +103,7 @@ public class Strafe : MonoBehaviour {
 		//show directions
 		Color color = new Color(255, 1, 1, 1);
 		Debug.DrawRay(transform.position, transform.forward * 10, color);
-   		Debug.DrawRay(torso.position, (torso.forward) * 10, color);
+   		Debug.DrawRay(torso.position, (torso.forward) * 10, Color.red);
 
         //Get angle difference
 		Vector3.Angle(torso.forward, transform.forward);
@@ -121,7 +121,7 @@ public class Strafe : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(newDir);
             torso.rotation = Quaternion.LookRotation(offsetDir);
 
-			if (Vector3.Angle(torso.forward, transform.forward) < 10) 
+			if (Vector3.Angle(torso.forward, transform.forward) < 5) 
 			{ 
 				catchUp = false; 
 			}
