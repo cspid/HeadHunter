@@ -33,7 +33,7 @@ public class Patrol : MonoBehaviour
 
         // Set the agent to go to the currently selected destination.
         agent.destination = points[destPoint].position;
-        print(agent.destination);
+        //print(agent.destination);
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
