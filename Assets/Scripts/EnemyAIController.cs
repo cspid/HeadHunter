@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAIController : MonoBehaviour
 {
     RaiseGun raiseGunScript;
-    enum aiState {Patrol, Flanked, Combat};
+    enum aiState {Patrol, Flanked, Combat, Guard, Maneuver};
     [SerializeField] aiState myState;
     float supression = 0;
 
@@ -13,6 +13,14 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] Transform flankCheckPos;
 
     GameObject[] players;
+
+    [SerializeField] const int MAX_AMMO = 20;
+    int ammo;
+
+    [SerializeField] const float RELOAD_TIME = 3.5f;
+    float reloadCounter = 0;
+
+    bool isReloading = false;
 
     bool isShooting = false;
     bool isAiming = false;
@@ -25,9 +33,15 @@ public class EnemyAIController : MonoBehaviour
     Transform target;
     ErdemGun myGunScript;
 
+    GameObject retreatPoint;
+    GameObject defaultPoint;
+    GameObject advancePoint;
+
     // Start is called before the first frame update
     void Start()
     {
+        ammo = MAX_AMMO;
+
         //Change later, shortcut for testing
         target = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -42,6 +56,18 @@ public class EnemyAIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isReloading)
+        {
+            reloadCounter += Time.deltaTime;
+            if (reloadCounter >= RELOAD_TIME)
+            {
+                ammo = MAX_AMMO;
+                reloadCounter = 0;
+                isReloading = false;
+            }
+        }
+
+
         switch (myState)
         {
             case aiState.Patrol:
@@ -59,12 +85,16 @@ public class EnemyAIController : MonoBehaviour
                 myCoverScript.CheckIfDestinationReached();
                 Combat();
                 break;
+            case aiState.Guard:
+                myCoverScript.CheckIfDestinationReached();
+                Combat();
+                break;
             default:
                 break;
         }
 
 
-        if (isAiming && !isShooting)
+        if (isAiming && !isShooting && !isReloading)
         {
             shootCounter += Time.deltaTime;
             Vector3 dir = target.position - this.transform.position;
@@ -79,6 +109,11 @@ public class EnemyAIController : MonoBehaviour
                 //Shoot();
                 StartCoroutine(ShootOverTime());
             }
+        }
+
+        if (!isReloading && ammo <= 0)
+        {
+            isReloading = true;
         }
     }
 
@@ -98,6 +133,7 @@ public class EnemyAIController : MonoBehaviour
     {
         Debug.Log("pew pew~~~~~~");
         myGunScript.shoot();
+        ammo--;
     }
 
     void Combat()
@@ -146,8 +182,24 @@ public class EnemyAIController : MonoBehaviour
 
         Debug.Log("not flanked");
         myState = aiState.Combat;
-        raiseGunScript.enemyAim = true;
+        //raiseGunScript.enemyAim = true; //gone, old system
             return false;
     }
 
+    void retreat()
+    {
+        myState = aiState.Maneuver;
+        myCoverScript.GoToCover(retreatPoint.transform.position);
+    }
+
+    void advance()
+    {
+        myState = aiState.Maneuver;
+        myCoverScript.GoToCover(advancePoint.transform.position);
+    }
+
+    void failedManeuver()
+    {
+        myCoverScript.GoToCover(defaultPoint.transform.position);
+    }
 }

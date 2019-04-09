@@ -293,6 +293,12 @@ public class SeekCoverBehavior : MonoBehaviour
             agent.SetDestination(coverPosition);
     }
 
+    public void GoToCover(Vector3 coverPos)
+    {
+        agent.stoppingDistance = 0.5f;
+        agent.SetDestination(coverPosition);
+    }
+
     private void Flee()
     {
         shouldSeekCover = false;

@@ -6,7 +6,7 @@ using Rewired;
 public class PierInputManager : MonoBehaviour
 {
     public enum PlayerNumber { P1, P2 }
-    public enum ButtonName { Move_Horizontal, Move_Vertical, Look_Horizontal, Look_Vertical, Left_Punch, Left_Kick, Right_Punch, Right_Kick, Run }
+    public enum ButtonName { L1, L2, R1, R2, Move_Horizontal, Move_Vertical, Look_Horizontal, Look_Vertical, LS3, RS3, X, B, A, Y, Start, Select }
     public PlayerNumber playerNumber;
     public Player player;
     public void Setup()

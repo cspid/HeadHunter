@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: d032885ef75186641969b2837cda8d46
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 45ACP_bullet.001
+    100002: 45ACP_case.001
+    100004: barrel
+    100006: bolt.catch
+    100008: bolt.hinge
+    100010: bolt.pull
+    100012: bolt.pull.001
+    100014: Bone
+    100016: Bone_end
+    100018: bstock
+    100020: bstock.hinge
+    100022: bstock.hinge.receiver
+    100024: bstock.rubber
+    100026: bullets.001
+    100028: buttstock
+    100030: buttstock.pin
+    100032: buttstock_end
+    100034: buttstock_release
+    100036: Cartridge Ejector
+    100038: Cartridge Ejector_end
+    100040: clip
+    100042: clip.drop
+    100044: clip_.45ACP_25.001
+    100046: clip_end
+    100048: fire_selector
+    100050: fire_selector_end
+    100052: grip
+    100054: HK_UMP45
+    100056: //RootNode
+    100058: Light.Track
+    100060: Magpul.001
+    100062: pin.duplivert
+    100064: pin.duplivert|pin.mirrored|Dupli|0.20.0.0.0.0.0.0.0.0
+    100066: pin.duplivert|pin.mirrored|Dupli|1.20.0.0.0.0.0.0.0.0
+    100068: pin.duplivert|pin.mirrored|Dupli|2.20.0.0.0.0.0.0.0.0
+    100070: pin.duplivert|pin.mirrored|Dupli|3.20.0.0.0.0.0.0.0.0
+    100072: pin.duplivert|pin.mirrored|Dupli|4.20.0.0.0.0.0.0.0.0
+    100074: pin.duplivert|pin.mirrored|Dupli|5.20.0.0.0.0.0.0.0.0
+    100076: pin.duplivert|pin.mirrored|Dupli|6.20.0.0.0.0.0.0.0.0
+    100078: pin.duplivert|pin.mirrored|Dupli|7.20.0.0.0.0.0.0.0.0
+    100080: pin.mirrored
+    100082: pin.receiver
+    100084: pin.unmirrored
+    100086: receiver.lower
+    100088: receiver.middle
+    100090: receiver.middle.001
+    100092: receiver.middle.003
+    100094: receiver.upper
+    100096: ris.vertical
+    100098: screw_hexagon.duplifa
+    100100: screw_hexagon.duplifa|screw_hxagon|Dupli|0.29.0.0.0.0.0.0.0.0
+    100102: screw_hexagon.duplifa|screw_hxagon|Dupli|1.29.0.0.0.0.0.0.0.0
+    100104: screw_hexagon.duplifa|screw_hxagon|Dupli|2.29.0.0.0.0.0.0.0.0
+    100106: screw_hexagon.duplifa|screw_hxagon|Dupli|3.29.0.0.0.0.0.0.0.0
+    100108: screw_hxagon
+    100110: sight
+    100112: sight 1
+    100114: sight.dial
+    100116: sight.dial.002
+    100118: sight.front
+    100120: sight_end
+    100122: slinge.front
+    100124: slinge.front.001
+    100126: Tactical Foregrip
+    100128: Tactical Foregrip_end
+    100130: tactical_foregrip
+    100132: trigger
+    100134: trigger 1
+    100136: trigger.safeguard
+    100138: trigger.selector
+    100140: trigger_end
+    400000: 45ACP_bullet.001
+    400002: 45ACP_case.001
+    400004: barrel
+    400006: bolt.catch
+    400008: bolt.hinge
+    400010: bolt.pull
+    400012: bolt.pull.001
+    400014: Bone
+    400016: Bone_end
+    400018: bstock
+    400020: bstock.hinge
+    400022: bstock.hinge.receiver
+    400024: bstock.rubber
+    400026: bullets.001
+    400028: buttstock
+    400030: buttstock.pin
+    400032: buttstock_end
+    400034: buttstock_release
+    400036: Cartridge Ejector
+    400038: Cartridge Ejector_end
+    400040: clip
+    400042: clip.drop
+    400044: clip_.45ACP_25.001
+    400046: clip_end
+    400048: fire_selector
+    400050: fire_selector_end
+    400052: grip
+    400054: HK_UMP45
+    400056: //RootNode
+    400058: Light.Track
+    400060: Magpul.001
+    400062: pin.duplivert
+    400064: pin.duplivert|pin.mirrored|Dupli|0.20.0.0.0.0.0.0.0.0
+    400066: pin.duplivert|pin.mirrored|Dupli|1.20.0.0.0.0.0.0.0.0
+    400068: pin.duplivert|pin.mirrored|Dupli|2.20.0.0.0.0.0.0.0.0
+    400070: pin.duplivert|pin.mirrored|Dupli|3.20.0.0.0.0.0.0.0.0
+    400072: pin.duplivert|pin.mirrored|Dupli|4.20.0.0.0.0.0.0.0.0
+    400074: pin.duplivert|pin.mirrored|Dupli|5.20.0.0.0.0.0.0.0.0
+    400076: pin.duplivert|pin.mirrored|Dupli|6.20.0.0.0.0.0.0.0.0
+    400078: pin.duplivert|pin.mirrored|Dupli|7.20.0.0.0.0.0.0.0.0
+    400080: pin.mirrored
+    400082: pin.receiver
+    400084: pin.unmirrored
+    400086: receiver.lower
+    400088: receiver.middle
+    400090: receiver.middle.001
+    400092: receiver.middle.003
+    400094: receiver.upper
+    400096: ris.vertical
+    400098: screw_hexagon.duplifa
+    400100: screw_hexagon.duplifa|screw_hxagon|Dupli|0.29.0.0.0.0.0.0.0.0
+    400102: screw_hexagon.duplifa|screw_hxagon|Dupli|1.29.0.0.0.0.0.0.0.0
+    400104: screw_hexagon.duplifa|screw_hxagon|Dupli|2.29.0.0.0.0.0.0.0.0
+    400106: screw_hexagon.duplifa|screw_hxagon|Dupli|3.29.0.0.0.0.0.0.0.0
+    400108: screw_hxagon
+    400110: sight
+    400112: sight 1
+    400114: sight.dial
+    400116: sight.dial.002
+    400118: sight.front
+    400120: sight_end
+    400122: slinge.front
+    400124: slinge.front.001
+    400126: Tactical Foregrip
+    400128: Tactical Foregrip_end
+    400130: tactical_foregrip
+    400132: trigger
+    400134: trigger 1
+    400136: trigger.safeguard
+    400138: trigger.selector
+    400140: trigger_end
+    2100000: No Name
+    2300000: 45ACP_bullet.001
+    2300002: 45ACP_case.001
+    2300004: barrel
+    2300006: bolt.catch
+    2300008: bolt.hinge
+    2300010: bolt.pull
+    2300012: bolt.pull.001
+    2300014: bstock
+    2300016: bstock.hinge
+    2300018: bstock.hinge.receiver
+    2300020: bstock.rubber
+    2300022: buttstock.pin
+    2300024: buttstock_release
+    2300026: clip.drop
+    2300028: clip_.45ACP_25.001
+    2300030: Magpul.001
+    2300032: pin.duplivert
+    2300034: pin.duplivert|pin.mirrored|Dupli|0.20.0.0.0.0.0.0.0.0
+    2300036: pin.duplivert|pin.mirrored|Dupli|1.20.0.0.0.0.0.0.0.0
+    2300038: pin.duplivert|pin.mirrored|Dupli|2.20.0.0.0.0.0.0.0.0
+    2300040: pin.duplivert|pin.mirrored|Dupli|3.20.0.0.0.0.0.0.0.0
+    2300042: pin.duplivert|pin.mirrored|Dupli|4.20.0.0.0.0.0.0.0.0
+    2300044: pin.duplivert|pin.mirrored|Dupli|5.20.0.0.0.0.0.0.0.0
+    2300046: pin.duplivert|pin.mirrored|Dupli|6.20.0.0.0.0.0.0.0.0
+    2300048: pin.duplivert|pin.mirrored|Dupli|7.20.0.0.0.0.0.0.0.0
+    2300050: pin.mirrored
+    2300052: pin.receiver
+    2300054: pin.unmirrored
+    2300056: receiver.lower
+    2300058: receiver.middle
+    2300060: receiver.middle.001
+    2300062: receiver.middle.003
+    2300064: receiver.upper
+    2300066: ris.vertical
+    2300068: screw_hexagon.duplifa
+    2300070: screw_hexagon.duplifa|screw_hxagon|Dupli|0.29.0.0.0.0.0.0.0.0
+    2300072: screw_hexagon.duplifa|screw_hxagon|Dupli|1.29.0.0.0.0.0.0.0.0
+    2300074: screw_hexagon.duplifa|screw_hxagon|Dupli|2.29.0.0.0.0.0.0.0.0
+    2300076: screw_hexagon.duplifa|screw_hxagon|Dupli|3.29.0.0.0.0.0.0.0.0
+    2300078: screw_hxagon
+    2300080: sight 1
+    2300082: sight.dial
+    2300084: sight.dial.002
+    2300086: sight.front
+    2300088: slinge.front
+    2300090: slinge.front.001
+    2300092: tactical_foregrip
+    2300094: trigger 1
+    2300096: trigger.safeguard
+    2300098: trigger.selector
+    3300000: 45ACP_bullet.001
+    3300002: 45ACP_case.001
+    3300004: barrel
+    3300006: bolt.catch
+    3300008: bolt.hinge
+    3300010: bolt.pull
+    3300012: bolt.pull.001
+    3300014: bstock
+    3300016: bstock.hinge
+    3300018: bstock.hinge.receiver
+    3300020: bstock.rubber
+    3300022: buttstock.pin
+    3300024: buttstock_release
+    3300026: clip.drop
+    3300028: clip_.45ACP_25.001
+    3300030: Magpul.001
+    3300032: pin.duplivert
+    3300034: pin.duplivert|pin.mirrored|Dupli|0.20.0.0.0.0.0.0.0.0
+    3300036: pin.duplivert|pin.mirrored|Dupli|1.20.0.0.0.0.0.0.0.0
+    3300038: pin.duplivert|pin.mirrored|Dupli|2.20.0.0.0.0.0.0.0.0
+    3300040: pin.duplivert|pin.mirrored|Dupli|3.20.0.0.0.0.0.0.0.0
+    3300042: pin.duplivert|pin.mirrored|Dupli|4.20.0.0.0.0.0.0.0.0
+    3300044: pin.duplivert|pin.mirrored|Dupli|5.20.0.0.0.0.0.0.0.0
+    3300046: pin.duplivert|pin.mirrored|Dupli|6.20.0.0.0.0.0.0.0.0
+    3300048: pin.duplivert|pin.mirrored|Dupli|7.20.0.0.0.0.0.0.0.0
+    3300050: pin.mirrored
+    3300052: pin.receiver
+    3300054: pin.unmirrored
+    3300056: receiver.lower
+    3300058: receiver.middle
+    3300060: receiver.middle.001
+    3300062: receiver.middle.003
+    3300064: receiver.upper
+    3300066: ris.vertical
+    3300068: screw_hexagon.duplifa
+    3300070: screw_hexagon.duplifa|screw_hxagon|Dupli|0.29.0.0.0.0.0.0.0.0
+    3300072: screw_hexagon.duplifa|screw_hxagon|Dupli|1.29.0.0.0.0.0.0.0.0
+    3300074: screw_hexagon.duplifa|screw_hxagon|Dupli|2.29.0.0.0.0.0.0.0.0
+    3300076: screw_hexagon.duplifa|screw_hxagon|Dupli|3.29.0.0.0.0.0.0.0.0
+    3300078: screw_hxagon
+    3300080: sight 1
+    3300082: sight.dial
+    3300084: sight.dial.002
+    3300086: sight.front
+    3300088: slinge.front
+    3300090: slinge.front.001
+    3300092: tactical_foregrip
+    3300094: trigger 1
+    3300096: trigger.safeguard
+    3300098: trigger.selector
+    4300000: barrel
+    4300002: bolt.catch
+    4300004: bolt.hinge
+    4300006: bolt.pull.001
+    4300008: bstock.hinge.receiver
+    4300010: buttstock.pin
+    4300012: pin.duplivert
+    4300014: pin.duplivert|pin.mirrored|Dupli|0.20.0.0.0.0.0.0.0.0
+    4300016: pin.mirrored
+    4300018: pin.receiver
+    4300020: pin.unmirrored
+    4300022: receiver.lower
+    4300024: receiver.middle.003
+    4300026: receiver.middle
+    4300028: receiver.upper
+    4300030: ris.vertical
+    4300032: screw_hexagon.duplifa
+    4300034: screw_hexagon.duplifa|screw_hxagon|Dupli|0.29.0.0.0.0.0.0.0.0
+    4300036: screw_hxagon
+    4300038: sight.dial.002
+    4300040: sight.dial
+    4300042: sight.front
+    4300044: slinge.front
+    4300046: slinge.front.001
+    4300048: trigger.safeguard
+    4300050: clip_.45ACP_25.001
+    4300052: 45ACP_bullet.001
+    4300054: 45ACP_case.001
+    4300056: Magpul.001
+    4300058: bstock.hinge
+    4300060: bstock
+    4300062: bstock.rubber
+    4300064: buttstock_release
+    4300066: sight
+    4300068: trigger.selector
+    4300070: trigger
+    4300072: clip.drop
+    4300074: bolt.pull
+    4300076: receiver.middle.001
+    4300078: tactical_foregrip
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,17 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] Image LoadingBar;
+    [SerializeField] Image targetIcon;
     [SerializeField] Transform aimPos;
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
 
+    //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
+    [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the enemy
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetIcon.enabled = false;
     }
 
     // Update is called once per frame
@@ -26,6 +33,8 @@ public class Enemy : MonoBehaviour
                 suppression = 0;
             }
         }
+        LoadingBar.fillAmount = suppression;
+        //suppText.text = suppression.ToString();
     }
 
     // IMPLEMENT DMG LATER
@@ -39,13 +48,39 @@ public class Enemy : MonoBehaviour
         return aimPos;
     }
 
+    public bool isFlanked(Vector3 gunCheckPos, GameObject attacker)
+    {
+        RaycastHit hit;
+        Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.green);
+
+        if (Physics.Raycast(flankCheckPos.position, gunCheckPos - flankCheckPos.position, out hit, Mathf.Infinity))
+        {
+            if (hit.transform.gameObject == attacker)
+            {
+                Debug.Log("flanked.");
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void getSupressed(float amount)
     {
+        Debug.Log("Getting suppressed by: " + amount);
         suppression += amount;
 
         if (suppression > 1)
         {
             suppression = 1;
         }
+    }
+    public void getTargeted()
+    {
+        targetIcon.enabled = true;
+    }
+
+    public void cancelTarget()
+    {
+        targetIcon.enabled = false;
     }
 }

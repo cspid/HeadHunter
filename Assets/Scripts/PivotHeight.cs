@@ -6,6 +6,7 @@ public class PivotHeight : MonoBehaviour
 {
     public Transform heightToMatch;
     public float offset;
+    public float buffer = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,9 @@ public class PivotHeight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, heightToMatch.transform.position.y + offset, transform.position.z);
+        if (transform.position.y - heightToMatch.position.y < -buffer || transform.position.y - heightToMatch.position.y > buffer)
+        {
+             transform.position = new Vector3(transform.position.x, heightToMatch.transform.position.y + offset, transform.position.z);
+        }
     }
 }

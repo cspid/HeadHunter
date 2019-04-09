@@ -47,13 +47,37 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Lateral Movement
+    m_Name: Torso
     m_StateMachine: {fileID: 1107199820301497252}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: ce55ccaad6c8fe14583adf7060c614e9, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Feets
+    m_StateMachine: {fileID: 1107500499407454098}
+    m_Mask: {fileID: 31900000, guid: 3574e72cd5f53ad459dbe538a3edee7a, type: 2}
+    m_Motions:
+    - serializedVersion: 2
+      m_State: {fileID: 1102044119784908598}
+      m_Motion: {fileID: 7400000, guid: 799dce9081f369e4c95f8cf642b959c6, type: 3}
+    - serializedVersion: 2
+      m_State: {fileID: 1102634166378501214}
+      m_Motion: {fileID: 7400000, guid: 799dce9081f369e4c95f8cf642b959c6, type: 3}
+    - serializedVersion: 2
+      m_State: {fileID: 1102486363441260936}
+      m_Motion: {fileID: 7400000, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
+    - serializedVersion: 2
+      m_State: {fileID: 1102258801384983150}
+      m_Motion: {fileID: 7400000, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: 1
     m_DefaultWeight: 1
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
@@ -595,7 +619,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 799dce9081f369e4c95f8cf642b959c6, type: 3}
+  m_Motion: {fileID: 7400000, guid: e6d52cc3a41b13b449416028415ad5d1, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -651,7 +675,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: dffa50cfe77e0434bbfa71245b3dd529, type: 3}
+  m_Motion: {fileID: 7400000, guid: c57714fb81499f94da443096a016def7, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -707,7 +731,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b902ceed1016f504cb9949d5c7fd36f2, type: 3}
+  m_Motion: {fileID: 7400000, guid: 9042ae33112d37e4ebae11253ac4ae13, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -762,7 +786,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b902ceed1016f504cb9949d5c7fd36f2, type: 3}
+  m_Motion: {fileID: 7400000, guid: 8473ee8e18b4815489189393c6eb8bba, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -844,7 +868,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 799dce9081f369e4c95f8cf642b959c6, type: 3}
+  m_Motion: {fileID: 7400000, guid: fa55b2c2d7bff48478184204b9415ebe, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -883,7 +907,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lateral Movement
+  m_Name: Torso
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102634166378501214}
@@ -910,6 +934,25 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102222655927848268}
+--- !u!1107 &1107500499407454098
+AnimatorStateMachine:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Feets
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
 --- !u!1107 &1107613006695470810
 AnimatorStateMachine:
   serializedVersion: 5
