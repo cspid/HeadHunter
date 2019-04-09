@@ -5,11 +5,8 @@ using UnityEngine;
 public class TeleportPlayers : MonoBehaviour
 {
     public Transform teleDestination;
-
-    private void Awake()
-    {
-        teleDestination = GetComponent<Transform>();
-    }
+    public GameObject player;
+    public GameObject nextPlayer;
 
     void Start()
     {
@@ -18,7 +15,12 @@ public class TeleportPlayers : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        other.transform.position = teleDestination.position;
+        //if (other.tag == "Player1" && other.tag == "Player2") {
         //need to make it check for both players to be in the elevator first
+        //Destroy(GameObject.FindWithTag("Player"));
+        //GameObject Player = Instantiate(player, teleDestination.position, teleDestination.rotation);
+        player.SetActive(false);
+        nextPlayer.SetActive(true);
+        //lerp camera to next level segment
     }
 }

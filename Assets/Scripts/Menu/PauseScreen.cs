@@ -11,7 +11,7 @@ public class PauseScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))// || Input.GetButton("Start"))
         {
             if (IsPaused)
                 Resume();
