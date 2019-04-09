@@ -65,6 +65,102 @@ ModelImporter:
     100118: thumb_03_r
     100120: upperarm_l
     100122: upperarm_r
+    100124: 45ACP_bullet.001
+    100126: 45ACP_case.001
+    100128: ball_l_end
+    100130: ball_r_end
+    100132: barrel
+    100134: bolt.catch
+    100136: bolt.hinge
+    100138: bolt.pull
+    100140: bolt.pull.001
+    100142: Bone
+    100144: Bone_end
+    100146: bstock
+    100148: bstock.hinge
+    100150: bstock.hinge.receiver
+    100152: bstock.rubber
+    100154: bullets.001
+    100156: buttstock
+    100158: buttstock.pin
+    100160: buttstock_end
+    100162: buttstock_release
+    100164: Cartridge Ejector
+    100166: Cartridge Ejector_end
+    100168: clip
+    100170: clip.drop
+    100172: clip_.45ACP_25.001
+    100174: clip_end
+    100176: fire_selector
+    100178: fire_selector_end
+    100180: grip
+    100182: head_end
+    100184: HK_UMP45
+    100186: index_03_l_end
+    100188: index_03_r_end
+    100190: Left IK
+    100192: Magpul.001
+    100194: middle_03_l_end
+    100196: middle_03_r_end
+    100198: pin.duplivert
+    100200: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+    100202: pin.duplivert|pin.mirrored|Dupli|1.21.0.0.0.0.0.0.0.0
+    100204: pin.duplivert|pin.mirrored|Dupli|2.21.0.0.0.0.0.0.0.0
+    100206: pin.duplivert|pin.mirrored|Dupli|3.21.0.0.0.0.0.0.0.0
+    100208: pin.duplivert|pin.mirrored|Dupli|4.21.0.0.0.0.0.0.0.0
+    100210: pin.duplivert|pin.mirrored|Dupli|5.21.0.0.0.0.0.0.0.0
+    100212: pin.duplivert|pin.mirrored|Dupli|6.21.0.0.0.0.0.0.0.0
+    100214: pin.duplivert|pin.mirrored|Dupli|7.21.0.0.0.0.0.0.0.0
+    100216: pin.mirrored
+    100218: pin.receiver
+    100220: pin.unmirrored
+    100222: pinky_03_l_end
+    100224: pinky_03_r_end
+    100226: receiver.lower
+    100228: receiver.middle
+    100230: receiver.middle.001
+    100232: receiver.middle.003
+    100234: receiver.upper
+    100236: Right IK
+    100238: ring_03_l_end
+    100240: ring_03_r_end
+    100242: ris.vertical
+    100244: screw_hexagon.duplifa
+    100246: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+    100248: screw_hexagon.duplifa|screw_hxagon|Dupli|1.30.0.0.0.0.0.0.0.0
+    100250: screw_hexagon.duplifa|screw_hxagon|Dupli|2.30.0.0.0.0.0.0.0.0
+    100252: screw_hexagon.duplifa|screw_hxagon|Dupli|3.30.0.0.0.0.0.0.0.0
+    100254: screw_hxagon
+    100256: sight
+    100258: sight 1
+    100260: sight.dial
+    100262: sight.dial.002
+    100264: sight.front
+    100266: sight_end
+    100268: slinge.front
+    100270: slinge.front.001
+    100272: Tactical Foregrip
+    100274: Tactical Foregrip_end
+    100276: tactical_foregrip
+    100278: thumb_03_l_end
+    100280: thumb_03_r_end
+    100282: trigger
+    100284: trigger 1
+    100286: trigger.safeguard
+    100288: trigger.selector
+    100290: trigger_end
+    100292: pin.duplivert|pin.mirrored|Dupli|0.19.0.0.0.0.0.0.0.0
+    100294: pin.duplivert|pin.mirrored|Dupli|1.19.0.0.0.0.0.0.0.0
+    100296: pin.duplivert|pin.mirrored|Dupli|2.19.0.0.0.0.0.0.0.0
+    100298: pin.duplivert|pin.mirrored|Dupli|3.19.0.0.0.0.0.0.0.0
+    100300: pin.duplivert|pin.mirrored|Dupli|4.19.0.0.0.0.0.0.0.0
+    100302: pin.duplivert|pin.mirrored|Dupli|5.19.0.0.0.0.0.0.0.0
+    100304: pin.duplivert|pin.mirrored|Dupli|6.19.0.0.0.0.0.0.0.0
+    100306: pin.duplivert|pin.mirrored|Dupli|7.19.0.0.0.0.0.0.0.0
+    100308: screw_hexagon.duplifa|screw_hxagon|Dupli|0.28.0.0.0.0.0.0.0.0
+    100310: screw_hexagon.duplifa|screw_hxagon|Dupli|1.28.0.0.0.0.0.0.0.0
+    100312: screw_hexagon.duplifa|screw_hxagon|Dupli|2.28.0.0.0.0.0.0.0.0
+    100314: screw_hexagon.duplifa|screw_hxagon|Dupli|3.28.0.0.0.0.0.0.0.0
     400000: ball_l
     400002: ball_r
     400004: calf_l
@@ -127,6 +223,102 @@ ModelImporter:
     400118: thumb_03_r
     400120: upperarm_l
     400122: upperarm_r
+    400124: 45ACP_bullet.001
+    400126: 45ACP_case.001
+    400128: ball_l_end
+    400130: ball_r_end
+    400132: barrel
+    400134: bolt.catch
+    400136: bolt.hinge
+    400138: bolt.pull
+    400140: bolt.pull.001
+    400142: Bone
+    400144: Bone_end
+    400146: bstock
+    400148: bstock.hinge
+    400150: bstock.hinge.receiver
+    400152: bstock.rubber
+    400154: bullets.001
+    400156: buttstock
+    400158: buttstock.pin
+    400160: buttstock_end
+    400162: buttstock_release
+    400164: Cartridge Ejector
+    400166: Cartridge Ejector_end
+    400168: clip
+    400170: clip.drop
+    400172: clip_.45ACP_25.001
+    400174: clip_end
+    400176: fire_selector
+    400178: fire_selector_end
+    400180: grip
+    400182: head_end
+    400184: HK_UMP45
+    400186: index_03_l_end
+    400188: index_03_r_end
+    400190: Left IK
+    400192: Magpul.001
+    400194: middle_03_l_end
+    400196: middle_03_r_end
+    400198: pin.duplivert
+    400200: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+    400202: pin.duplivert|pin.mirrored|Dupli|1.21.0.0.0.0.0.0.0.0
+    400204: pin.duplivert|pin.mirrored|Dupli|2.21.0.0.0.0.0.0.0.0
+    400206: pin.duplivert|pin.mirrored|Dupli|3.21.0.0.0.0.0.0.0.0
+    400208: pin.duplivert|pin.mirrored|Dupli|4.21.0.0.0.0.0.0.0.0
+    400210: pin.duplivert|pin.mirrored|Dupli|5.21.0.0.0.0.0.0.0.0
+    400212: pin.duplivert|pin.mirrored|Dupli|6.21.0.0.0.0.0.0.0.0
+    400214: pin.duplivert|pin.mirrored|Dupli|7.21.0.0.0.0.0.0.0.0
+    400216: pin.mirrored
+    400218: pin.receiver
+    400220: pin.unmirrored
+    400222: pinky_03_l_end
+    400224: pinky_03_r_end
+    400226: receiver.lower
+    400228: receiver.middle
+    400230: receiver.middle.001
+    400232: receiver.middle.003
+    400234: receiver.upper
+    400236: Right IK
+    400238: ring_03_l_end
+    400240: ring_03_r_end
+    400242: ris.vertical
+    400244: screw_hexagon.duplifa
+    400246: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+    400248: screw_hexagon.duplifa|screw_hxagon|Dupli|1.30.0.0.0.0.0.0.0.0
+    400250: screw_hexagon.duplifa|screw_hxagon|Dupli|2.30.0.0.0.0.0.0.0.0
+    400252: screw_hexagon.duplifa|screw_hxagon|Dupli|3.30.0.0.0.0.0.0.0.0
+    400254: screw_hxagon
+    400256: sight
+    400258: sight 1
+    400260: sight.dial
+    400262: sight.dial.002
+    400264: sight.front
+    400266: sight_end
+    400268: slinge.front
+    400270: slinge.front.001
+    400272: Tactical Foregrip
+    400274: Tactical Foregrip_end
+    400276: tactical_foregrip
+    400278: thumb_03_l_end
+    400280: thumb_03_r_end
+    400282: trigger
+    400284: trigger 1
+    400286: trigger.safeguard
+    400288: trigger.selector
+    400290: trigger_end
+    400292: pin.duplivert|pin.mirrored|Dupli|0.19.0.0.0.0.0.0.0.0
+    400294: pin.duplivert|pin.mirrored|Dupli|1.19.0.0.0.0.0.0.0.0
+    400296: pin.duplivert|pin.mirrored|Dupli|2.19.0.0.0.0.0.0.0.0
+    400298: pin.duplivert|pin.mirrored|Dupli|3.19.0.0.0.0.0.0.0.0
+    400300: pin.duplivert|pin.mirrored|Dupli|4.19.0.0.0.0.0.0.0.0
+    400302: pin.duplivert|pin.mirrored|Dupli|5.19.0.0.0.0.0.0.0.0
+    400304: pin.duplivert|pin.mirrored|Dupli|6.19.0.0.0.0.0.0.0.0
+    400306: pin.duplivert|pin.mirrored|Dupli|7.19.0.0.0.0.0.0.0.0
+    400308: screw_hexagon.duplifa|screw_hxagon|Dupli|0.28.0.0.0.0.0.0.0.0
+    400310: screw_hexagon.duplifa|screw_hxagon|Dupli|1.28.0.0.0.0.0.0.0.0
+    400312: screw_hexagon.duplifa|screw_hxagon|Dupli|2.28.0.0.0.0.0.0.0.0
+    400314: screw_hexagon.duplifa|screw_hxagon|Dupli|3.28.0.0.0.0.0.0.0.0
     2100000: enemymale
     2100002: short04
     2100004: high-poly
@@ -134,6 +326,135 @@ ModelImporter:
     2100008: eyelashes01
     2100010: shoes04
     2100012: male_elegantsuit01
+    2100014: No Name
+    2300000: 45ACP_bullet.001
+    2300002: 45ACP_case.001
+    2300004: barrel
+    2300006: bolt.catch
+    2300008: bolt.hinge
+    2300010: bolt.pull
+    2300012: bolt.pull.001
+    2300014: bstock
+    2300016: bstock.hinge
+    2300018: bstock.hinge.receiver
+    2300020: bstock.rubber
+    2300022: buttstock.pin
+    2300024: buttstock_release
+    2300026: clip.drop
+    2300028: clip_.45ACP_25.001
+    2300030: Magpul.001
+    2300032: pin.duplivert
+    2300034: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+    2300036: pin.duplivert|pin.mirrored|Dupli|1.21.0.0.0.0.0.0.0.0
+    2300038: pin.duplivert|pin.mirrored|Dupli|2.21.0.0.0.0.0.0.0.0
+    2300040: pin.duplivert|pin.mirrored|Dupli|3.21.0.0.0.0.0.0.0.0
+    2300042: pin.duplivert|pin.mirrored|Dupli|4.21.0.0.0.0.0.0.0.0
+    2300044: pin.duplivert|pin.mirrored|Dupli|5.21.0.0.0.0.0.0.0.0
+    2300046: pin.duplivert|pin.mirrored|Dupli|6.21.0.0.0.0.0.0.0.0
+    2300048: pin.duplivert|pin.mirrored|Dupli|7.21.0.0.0.0.0.0.0.0
+    2300050: pin.mirrored
+    2300052: pin.receiver
+    2300054: pin.unmirrored
+    2300056: receiver.lower
+    2300058: receiver.middle
+    2300060: receiver.middle.001
+    2300062: receiver.middle.003
+    2300064: receiver.upper
+    2300066: ris.vertical
+    2300068: screw_hexagon.duplifa
+    2300070: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+    2300072: screw_hexagon.duplifa|screw_hxagon|Dupli|1.30.0.0.0.0.0.0.0.0
+    2300074: screw_hexagon.duplifa|screw_hxagon|Dupli|2.30.0.0.0.0.0.0.0.0
+    2300076: screw_hexagon.duplifa|screw_hxagon|Dupli|3.30.0.0.0.0.0.0.0.0
+    2300078: screw_hxagon
+    2300080: sight 1
+    2300082: sight.dial
+    2300084: sight.dial.002
+    2300086: sight.front
+    2300088: slinge.front
+    2300090: slinge.front.001
+    2300092: tactical_foregrip
+    2300094: trigger 1
+    2300096: trigger.safeguard
+    2300098: trigger.selector
+    2300100: pin.duplivert|pin.mirrored|Dupli|0.19.0.0.0.0.0.0.0.0
+    2300102: pin.duplivert|pin.mirrored|Dupli|1.19.0.0.0.0.0.0.0.0
+    2300104: pin.duplivert|pin.mirrored|Dupli|2.19.0.0.0.0.0.0.0.0
+    2300106: pin.duplivert|pin.mirrored|Dupli|3.19.0.0.0.0.0.0.0.0
+    2300108: pin.duplivert|pin.mirrored|Dupli|4.19.0.0.0.0.0.0.0.0
+    2300110: pin.duplivert|pin.mirrored|Dupli|5.19.0.0.0.0.0.0.0.0
+    2300112: pin.duplivert|pin.mirrored|Dupli|6.19.0.0.0.0.0.0.0.0
+    2300114: pin.duplivert|pin.mirrored|Dupli|7.19.0.0.0.0.0.0.0.0
+    2300116: screw_hexagon.duplifa|screw_hxagon|Dupli|0.28.0.0.0.0.0.0.0.0
+    2300118: screw_hexagon.duplifa|screw_hxagon|Dupli|1.28.0.0.0.0.0.0.0.0
+    2300120: screw_hexagon.duplifa|screw_hxagon|Dupli|2.28.0.0.0.0.0.0.0.0
+    2300122: screw_hexagon.duplifa|screw_hxagon|Dupli|3.28.0.0.0.0.0.0.0.0
+    2300124: sight
+    2300126: trigger
+    3300000: 45ACP_bullet.001
+    3300002: 45ACP_case.001
+    3300004: barrel
+    3300006: bolt.catch
+    3300008: bolt.hinge
+    3300010: bolt.pull
+    3300012: bolt.pull.001
+    3300014: bstock
+    3300016: bstock.hinge
+    3300018: bstock.hinge.receiver
+    3300020: bstock.rubber
+    3300022: buttstock.pin
+    3300024: buttstock_release
+    3300026: clip.drop
+    3300028: clip_.45ACP_25.001
+    3300030: Magpul.001
+    3300032: pin.duplivert
+    3300034: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+    3300036: pin.duplivert|pin.mirrored|Dupli|1.21.0.0.0.0.0.0.0.0
+    3300038: pin.duplivert|pin.mirrored|Dupli|2.21.0.0.0.0.0.0.0.0
+    3300040: pin.duplivert|pin.mirrored|Dupli|3.21.0.0.0.0.0.0.0.0
+    3300042: pin.duplivert|pin.mirrored|Dupli|4.21.0.0.0.0.0.0.0.0
+    3300044: pin.duplivert|pin.mirrored|Dupli|5.21.0.0.0.0.0.0.0.0
+    3300046: pin.duplivert|pin.mirrored|Dupli|6.21.0.0.0.0.0.0.0.0
+    3300048: pin.duplivert|pin.mirrored|Dupli|7.21.0.0.0.0.0.0.0.0
+    3300050: pin.mirrored
+    3300052: pin.receiver
+    3300054: pin.unmirrored
+    3300056: receiver.lower
+    3300058: receiver.middle
+    3300060: receiver.middle.001
+    3300062: receiver.middle.003
+    3300064: receiver.upper
+    3300066: ris.vertical
+    3300068: screw_hexagon.duplifa
+    3300070: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+    3300072: screw_hexagon.duplifa|screw_hxagon|Dupli|1.30.0.0.0.0.0.0.0.0
+    3300074: screw_hexagon.duplifa|screw_hxagon|Dupli|2.30.0.0.0.0.0.0.0.0
+    3300076: screw_hexagon.duplifa|screw_hxagon|Dupli|3.30.0.0.0.0.0.0.0.0
+    3300078: screw_hxagon
+    3300080: sight 1
+    3300082: sight.dial
+    3300084: sight.dial.002
+    3300086: sight.front
+    3300088: slinge.front
+    3300090: slinge.front.001
+    3300092: tactical_foregrip
+    3300094: trigger 1
+    3300096: trigger.safeguard
+    3300098: trigger.selector
+    3300100: pin.duplivert|pin.mirrored|Dupli|0.19.0.0.0.0.0.0.0.0
+    3300102: pin.duplivert|pin.mirrored|Dupli|1.19.0.0.0.0.0.0.0.0
+    3300104: pin.duplivert|pin.mirrored|Dupli|2.19.0.0.0.0.0.0.0.0
+    3300106: pin.duplivert|pin.mirrored|Dupli|3.19.0.0.0.0.0.0.0.0
+    3300108: pin.duplivert|pin.mirrored|Dupli|4.19.0.0.0.0.0.0.0.0
+    3300110: pin.duplivert|pin.mirrored|Dupli|5.19.0.0.0.0.0.0.0.0
+    3300112: pin.duplivert|pin.mirrored|Dupli|6.19.0.0.0.0.0.0.0.0
+    3300114: pin.duplivert|pin.mirrored|Dupli|7.19.0.0.0.0.0.0.0.0
+    3300116: screw_hexagon.duplifa|screw_hxagon|Dupli|0.28.0.0.0.0.0.0.0.0
+    3300118: screw_hexagon.duplifa|screw_hxagon|Dupli|1.28.0.0.0.0.0.0.0.0
+    3300120: screw_hexagon.duplifa|screw_hxagon|Dupli|2.28.0.0.0.0.0.0.0.0
+    3300122: screw_hexagon.duplifa|screw_hxagon|Dupli|3.28.0.0.0.0.0.0.0.0
+    3300124: sight
+    3300126: trigger
     4300000: enemymaleMesh
     4300002: short04Mesh
     4300004: high-polyMesh
@@ -141,6 +462,53 @@ ModelImporter:
     4300008: eyelashes01Mesh
     4300010: shoes04Mesh
     4300012: male_elegantsuit01Mesh
+    4300014: barrel
+    4300016: bolt.catch
+    4300018: bolt.hinge
+    4300020: bolt.pull.001
+    4300022: bstock.hinge.receiver
+    4300024: buttstock.pin
+    4300026: pin.duplivert
+    4300028: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+    4300030: pin.mirrored
+    4300032: pin.receiver
+    4300034: pin.unmirrored
+    4300036: receiver.lower
+    4300038: receiver.middle.003
+    4300040: receiver.middle
+    4300042: receiver.upper
+    4300044: ris.vertical
+    4300046: screw_hexagon.duplifa
+    4300048: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+    4300050: screw_hxagon
+    4300052: sight.dial.002
+    4300054: sight.dial
+    4300056: sight.front
+    4300058: slinge.front
+    4300060: slinge.front.001
+    4300062: trigger.safeguard
+    4300064: clip_.45ACP_25.001
+    4300066: 45ACP_bullet.001
+    4300068: 45ACP_case.001
+    4300070: Magpul.001
+    4300072: bstock.hinge
+    4300074: bstock
+    4300076: bstock.rubber
+    4300078: buttstock_release
+    4300080: sight
+    4300082: trigger.selector
+    4300084: trigger
+    4300086: clip.drop
+    4300088: bolt.pull
+    4300090: receiver.middle.001
+    4300092: tactical_foregrip
+    4300094: pin.duplivert|pin.mirrored|Dupli|0.19.0.0.0.0.0.0.0.0
+    4300096: screw_hexagon.duplifa|screw_hxagon|Dupli|0.28.0.0.0.0.0.0.0.0
+    7400000: HK_UMP45|HK_UMP45Action
+    7400002: HK_UMP45|Lamp.Key.TrackAction
+    7400004: Game_engine|Game_engineAction
+    7400006: Game_engine|HK_UMP45Action
+    7400008: Game_engine|Lamp.Key.TrackAction
     9500000: //RootNode
     13700000: enemymaleMesh
     13700002: eyebrow004Mesh
@@ -236,7 +604,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.099999994
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -695,274 +1063,698 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Root
       parentName: Game_engine
-      position: {x: -0, y: 0, z: -0.026579998}
+      position: {x: -0, y: 0, z: -0.002658}
       rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: pelvis
       parentName: Root
-      position: {x: -0.9669364, y: 0.033500496, z: 0}
+      position: {x: -0.09669364, y: 0.0033500497, z: 0}
       rotation: {x: 0.57943046, y: -0.40529042, z: -0.57943046, w: -0.40529042}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_01
       parentName: pelvis
-      position: {x: 2.1350937e-19, y: 0.09497062, z: -9.096721e-10}
+      position: {x: 2.1350937e-20, y: 0.009497062, z: -9.096721e-11}
       rotation: {x: 0.23949379, y: 2.2373e-11, z: -9.069925e-11, w: 0.9708979}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_02
       parentName: spine_01
-      position: {x: -1.5645132e-17, y: 0.073063426, z: -0.0000000027719662}
+      position: {x: -1.5645132e-18, y: 0.0073063425, z: -2.7719663e-10}
       rotation: {x: -0.13141185, y: 1.9670337e-11, z: 3.3360215e-10, w: 0.9913279}
       scale: {x: 1, y: 1, z: 1}
     - name: spine_03
       parentName: spine_02
-      position: {x: -2.536669e-19, y: 0.064145975, z: -0.0000000034951066}
+      position: {x: -2.536669e-20, y: 0.0064145974, z: -3.4951067e-10}
       rotation: {x: -0.014469869, y: -3.2861432e-11, z: 3.2772174e-10, w: 0.99989533}
       scale: {x: 1, y: 1, z: 1}
     - name: clavicle_l
       parentName: spine_03
-      position: {x: -0.023521073, y: 0.2644993, z: 0.095117524}
+      position: {x: -0.0023521073, y: 0.026449932, z: 0.009511753}
       rotation: {x: -0.006502146, y: -0.035774827, z: 0.76398957, w: 0.6442033}
       scale: {x: 1, y: 1, z: 1}
     - name: upperarm_l
       parentName: clavicle_l
-      position: {x: 5.4741295e-10, y: 0.1705753, z: -1.0325906e-10}
+      position: {x: 5.4741295e-11, y: 0.01705753, z: -1.0325906e-11}
       rotation: {x: 0.024385875, y: -0.015902212, z: -0.06363821, w: 0.99754834}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_l
       parentName: upperarm_l
-      position: {x: 0.0000000057950427, y: 0.26280564, z: 5.521175e-10}
+      position: {x: 5.795043e-10, y: 0.026280565, z: 5.5211752e-11}
       rotation: {x: 0.0257924, y: 0.008688348, z: -0.02096356, w: 0.9994098}
       scale: {x: 1, y: 1, z: 1}
     - name: hand_l
       parentName: lowerarm_l
-      position: {x: 0.000000007492419, y: 0.26848206, z: -0.0000000024557791}
-      rotation: {x: 0.099177904, y: -0.42791682, z: 0.0066334405, w: 0.89833564}
+      position: {x: 7.4924195e-10, y: 0.026848206, z: -2.4557792e-10}
+      rotation: {x: 0.09917791, y: -0.42791682, z: 0.006633441, w: 0.89833564}
       scale: {x: 1, y: 1, z: 1}
     - name: index_01_l
       parentName: hand_l
-      position: {x: 0.012569255, y: 0.118963905, z: 0.012336734}
+      position: {x: 0.0012569255, y: 0.0118963905, z: 0.0012336734}
       rotation: {x: 0.046200003, y: -0.4801448, z: 0.028674139, w: 0.8755024}
       scale: {x: 1, y: 1, z: 1}
     - name: index_02_l
       parentName: index_01_l
-      position: {x: -0.000000011828113, y: 0.029368224, z: 0.000000016101279}
+      position: {x: -0.0000000011828113, y: 0.0029368224, z: 0.0000000016101279}
       rotation: {x: 0.038518485, y: -0.002516805, z: -0.00285928, w: 0.99925065}
       scale: {x: 1, y: 1, z: 1}
     - name: index_03_l
       parentName: index_02_l
-      position: {x: -0.000000011877676, y: 0.026577894, z: 0.000000012926375}
-      rotation: {x: 0.05974512, y: -0.00005668052, z: -0.016828874, w: 0.99807185}
+      position: {x: -0.0000000011877676, y: 0.0026577895, z: 0.0000000012926374}
+      rotation: {x: 0.03899852, y: -0.000056733585, z: -0.010984789, w: 0.9991789}
+      scale: {x: 1, y: 1, z: 1}
+    - name: index_03_l_end
+      parentName: index_03_l
+      position: {x: -0, y: 0.0026577944, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_01_l
       parentName: hand_l
-      position: {x: -0.005378673, y: 0.11514894, z: -0.011213808}
+      position: {x: -0.0005378673, y: 0.011514894, z: -0.0011213808}
       rotation: {x: 0.026651701, y: -0.419131, z: 0.089526325, w: 0.90310794}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_l
       parentName: middle_01_l
-      position: {x: 2.569983e-10, y: 0.03874476, z: 3.6280737e-10}
+      position: {x: 2.5699831e-11, y: 0.0038744758, z: 3.628074e-11}
       rotation: {x: 0.030934641, y: -0.0013815458, z: -0.02648568, w: 0.99916947}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_03_l
       parentName: middle_02_l
-      position: {x: -0.000000012457951, y: 0.03063778, z: 0.000000011187034}
-      rotation: {x: 0.062727876, y: -0.0000022782267, z: 0.0064254743, w: 0.99801004}
+      position: {x: -0.0000000012457951, y: 0.0030637782, z: 0.0000000011187035}
+      rotation: {x: 0.04026419, y: -0.000002089538, z: 0.0041239606, w: 0.9991806}
+      scale: {x: 1, y: 1, z: 1}
+    - name: middle_03_l_end
+      parentName: middle_03_l
+      position: {x: -0, y: 0.0030637812, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_01_l
       parentName: hand_l
-      position: {x: -0.040011805, y: 0.09354633, z: -0.033968445}
+      position: {x: -0.0040011806, y: 0.009354633, z: -0.0033968445}
       rotation: {x: -0.0141874505, y: -0.31280303, z: 0.10521651, w: 0.9438658}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_02_l
       parentName: pinky_01_l
-      position: {x: -0.000000004202084, y: 0.023946496, z: 0.000000004660991}
+      position: {x: -4.202084e-10, y: 0.0023946497, z: 4.660991e-10}
       rotation: {x: 0.037743602, y: -0.0005308983, z: -0.012726659, w: 0.9992063}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_03_l
       parentName: pinky_02_l
-      position: {x: -0.000000012766647, y: 0.01768503, z: 0.0000000081820835}
+      position: {x: -0.0000000012766648, y: 0.001768503, z: 8.1820833e-10}
       rotation: {x: 0.014787933, y: 0.000026325291, z: 0.015130964, w: 0.9997762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pinky_03_l_end
+      parentName: pinky_03_l
+      position: {x: -0, y: 0.0017684842, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_01_l
       parentName: hand_l
-      position: {x: -0.02085588, y: 0.1060589, z: -0.02556663}
+      position: {x: -0.002085588, y: 0.01060589, z: -0.002556663}
       rotation: {x: 0.0016193682, y: -0.3986751, z: 0.10658427, w: 0.9108762}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_02_l
       parentName: ring_01_l
-      position: {x: 4.759832e-10, y: 0.033981867, z: -4.4155787e-10}
+      position: {x: 4.759832e-11, y: 0.0033981868, z: -4.4155787e-11}
       rotation: {x: 0.025847662, y: -0.0006471868, z: -0.031368826, w: 0.99917346}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_03_l
       parentName: ring_02_l
-      position: {x: 0.0000000095049, y: 0.028031487, z: -0.000000009692775}
-      rotation: {x: 0.07104594, y: 0.000066512934, z: 0.027948847, w: 0.99708146}
+      position: {x: 9.5049e-10, y: 0.0028031487, z: -9.692774e-10}
+      rotation: {x: 0.037035644, y: 0.000066681474, z: 0.014570929, w: 0.9992077}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ring_03_l_end
+      parentName: ring_03_l
+      position: {x: -0, y: 0.0028031443, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_01_l
       parentName: hand_l
-      position: {x: 0.016150495, y: 0.045402687, z: 0.01663905}
+      position: {x: 0.0016150496, y: 0.004540269, z: 0.001663905}
       rotation: {x: -0.017458992, y: 0.72623974, z: 0.35639486, w: -0.58758295}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_l
       parentName: thumb_01_l
-      position: {x: 0.000000004942533, y: 0.035115946, z: 0.00000009198314}
+      position: {x: 4.942533e-10, y: 0.0035115946, z: 0.000000009198314}
       rotation: {x: 0.0090045575, y: 0.014846498, z: 0.03225953, w: 0.99932873}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_03_l
       parentName: thumb_02_l
-      position: {x: -0.0000000031240388, y: 0.04143908, z: -0.00000002232167}
-      rotation: {x: 0.16931245, y: 0.006178036, z: 0.035937488, w: 0.9848876}
+      position: {x: -3.1240388e-10, y: 0.004143908, z: -0.0000000022321671}
+      rotation: {x: 0.03408604, y: 0.006269279, z: 0.0072354507, w: 0.9993731}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thumb_03_l_end
+      parentName: thumb_03_l
+      position: {x: -0, y: 0.0041439063, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: clavicle_r
       parentName: spine_03
-      position: {x: 0.023521073, y: 0.2644993, z: 0.095117524}
+      position: {x: 0.0023521073, y: 0.026449932, z: 0.009511753}
       rotation: {x: -0.006502146, y: 0.035774827, z: -0.76398957, w: 0.6442033}
       scale: {x: 1, y: 1, z: 1}
     - name: upperarm_r
       parentName: clavicle_r
-      position: {x: -5.4741295e-10, y: 0.1705753, z: -1.0325906e-10}
+      position: {x: -5.4741295e-11, y: 0.01705753, z: -1.0325906e-11}
       rotation: {x: 0.024385853, y: 0.015902216, z: 0.06363826, w: 0.99754834}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_r
       parentName: upperarm_r
-      position: {x: -0.0000000057950427, y: 0.26280564, z: 5.521175e-10}
+      position: {x: -5.795043e-10, y: 0.026280565, z: 5.5211752e-11}
       rotation: {x: 0.025792418, y: -0.008688393, z: 0.02096363, w: 0.9994098}
       scale: {x: 1, y: 1, z: 1}
     - name: hand_r
       parentName: lowerarm_r
-      position: {x: -0.000000007492419, y: 0.26848206, z: -0.0000000024557791}
-      rotation: {x: 0.099177904, y: 0.42791682, z: -0.0066334405, w: 0.89833564}
+      position: {x: -7.4924195e-10, y: 0.026848206, z: -2.4557792e-10}
+      rotation: {x: 0.09917791, y: 0.42791682, z: -0.006633441, w: 0.89833564}
       scale: {x: 1, y: 1, z: 1}
     - name: index_01_r
       parentName: hand_r
-      position: {x: -0.012569255, y: 0.118963905, z: 0.012336734}
+      position: {x: -0.0012569255, y: 0.0118963905, z: 0.0012336734}
       rotation: {x: 0.04620406, y: 0.4801446, z: -0.028673049, w: 0.87550235}
       scale: {x: 1, y: 1, z: 1}
     - name: index_02_r
       parentName: index_01_r
-      position: {x: 0.000000011828113, y: 0.029368224, z: 0.000000016101279}
+      position: {x: 0.0000000011828113, y: 0.0029368224, z: 0.0000000016101279}
       rotation: {x: 0.038516942, y: 0.002516984, z: 0.0028584981, w: 0.99925077}
       scale: {x: 1, y: 1, z: 1}
     - name: index_03_r
       parentName: index_02_r
-      position: {x: 0.000000011877676, y: 0.026577894, z: 0.000000012926375}
-      rotation: {x: 0.05974512, y: 0.00005668052, z: 0.016828874, w: 0.99807185}
+      position: {x: 0.0000000011877676, y: 0.0026577895, z: 0.0000000012926374}
+      rotation: {x: 0.038997263, y: 0.00005678013, z: 0.010984026, w: 0.999179}
+      scale: {x: 1, y: 1, z: 1}
+    - name: index_03_r_end
+      parentName: index_03_r
+      position: {x: -0, y: 0.0026577944, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_01_r
       parentName: hand_r
-      position: {x: 0.005378673, y: 0.11514894, z: -0.011213808}
+      position: {x: 0.0005378673, y: 0.011514894, z: -0.0011213808}
       rotation: {x: 0.026647573, y: 0.41913122, z: -0.08952428, w: 0.9031082}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_r
       parentName: middle_01_r
-      position: {x: -2.569983e-10, y: 0.03874476, z: 3.6280737e-10}
+      position: {x: -2.5699831e-11, y: 0.0038744758, z: 3.628074e-11}
       rotation: {x: 0.030935127, y: 0.0013817544, z: 0.026486015, w: 0.99916947}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_03_r
       parentName: middle_02_r
-      position: {x: 0.000000012457951, y: 0.03063778, z: 0.000000011187034}
-      rotation: {x: 0.062727876, y: 0.0000022782267, z: -0.0064254743, w: 0.99801004}
+      position: {x: 0.0000000012457951, y: 0.0030637782, z: 0.0000000011187035}
+      rotation: {x: 0.04025912, y: 0.0000023696327, z: -0.004123561, w: 0.99918085}
+      scale: {x: 1, y: 1, z: 1}
+    - name: middle_03_r_end
+      parentName: middle_03_r
+      position: {x: -0, y: 0.0030637812, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_01_r
       parentName: hand_r
-      position: {x: 0.040011805, y: 0.09354633, z: -0.033968445}
-      rotation: {x: -0.014188122, y: 0.312803, z: -0.10521599, w: 0.9438657}
+      position: {x: 0.0040011806, y: 0.009354633, z: -0.0033968445}
+      rotation: {x: -0.014188123, y: 0.31280303, z: -0.105216, w: 0.9438658}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_02_r
       parentName: pinky_01_r
-      position: {x: 0.000000004202084, y: 0.023946496, z: 0.000000004660991}
+      position: {x: 4.202084e-10, y: 0.0023946497, z: 4.660991e-10}
       rotation: {x: 0.037737526, y: 0.0005310773, z: 0.012725251, w: 0.9992065}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_03_r
       parentName: pinky_02_r
-      position: {x: 0.000000012766647, y: 0.01768503, z: 0.0000000081820835}
+      position: {x: 0.0000000012766648, y: 0.001768503, z: 8.1820833e-10}
       rotation: {x: 0.014787933, y: -0.000026325291, z: -0.015130964, w: 0.9997762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pinky_03_r_end
+      parentName: pinky_03_r
+      position: {x: -0, y: 0.0017684842, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_01_r
       parentName: hand_r
-      position: {x: 0.02085588, y: 0.1060589, z: -0.02556663}
+      position: {x: 0.002085588, y: 0.01060589, z: -0.002556663}
       rotation: {x: 0.0016199938, y: 0.39867556, z: -0.10658386, w: 0.91087604}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_02_r
       parentName: ring_01_r
-      position: {x: -4.759832e-10, y: 0.033981867, z: -4.4155787e-10}
+      position: {x: -4.759832e-11, y: 0.0033981868, z: -4.4155787e-11}
       rotation: {x: 0.025848178, y: 0.00064712734, z: 0.03136758, w: 0.99917346}
       scale: {x: 1, y: 1, z: 1}
     - name: ring_03_r
       parentName: ring_02_r
-      position: {x: -0.0000000095049, y: 0.028031487, z: -0.000000009692775}
-      rotation: {x: 0.07104594, y: -0.000066512934, z: -0.027948847, w: 0.99708146}
+      position: {x: -9.5049e-10, y: 0.0028031487, z: -9.692774e-10}
+      rotation: {x: 0.03704546, y: -0.00006672579, z: -0.014572623, w: 0.9992073}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ring_03_r_end
+      parentName: ring_03_r
+      position: {x: -0, y: 0.0028031443, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_01_r
       parentName: hand_r
-      position: {x: -0.016150495, y: 0.045402687, z: 0.01663905}
+      position: {x: -0.0016150496, y: 0.004540269, z: 0.001663905}
       rotation: {x: 0.017457847, y: 0.7262395, z: 0.35639524, w: 0.58758307}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_r
       parentName: thumb_01_r
-      position: {x: -0.000000004942533, y: 0.035115946, z: 0.00000009198314}
+      position: {x: -4.942533e-10, y: 0.0035115946, z: 0.000000009198314}
       rotation: {x: 0.009003102, y: -0.014846439, z: -0.03226033, w: 0.99932873}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_03_r
       parentName: thumb_02_r
-      position: {x: 0.0000000031240388, y: 0.04143908, z: -0.00000002232167}
-      rotation: {x: 0.16931245, y: -0.006178036, z: -0.035937488, w: 0.9848876}
+      position: {x: 3.1240388e-10, y: 0.004143908, z: -0.0000000022321671}
+      rotation: {x: 0.034084912, y: -0.006269061, z: -0.007234758, w: 0.9993731}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thumb_03_r_end
+      parentName: thumb_03_r
+      position: {x: -0, y: 0.0041439063, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: neck_01
       parentName: spine_03
-      position: {x: 1.4397965e-10, y: 0.34202278, z: 0.09477194}
+      position: {x: 1.4397965e-11, y: 0.034202278, z: 0.0094771935}
       rotation: {x: 0.23444293, y: -9.974453e-10, z: -5.738172e-10, w: 0.9721299}
       scale: {x: 1, y: 1, z: 1}
     - name: head
       parentName: neck_01
-      position: {x: -1.489357e-18, y: 0.10339428, z: -7.291787e-10}
+      position: {x: -1.489357e-19, y: 0.010339428, z: -7.291787e-11}
       rotation: {x: -0.15824592, y: 0.0000000010135635, z: 3.1166666e-10, w: 0.98739976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_end
+      parentName: head
+      position: {x: -0, y: 0.010339436, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_l
       parentName: pelvis
-      position: {x: -0.11170637, y: -0.0016933761, z: -0.012005112}
-      rotation: {x: 0.96898615, y: -0.07545043, z: 0.20128126, w: -0.1218972}
+      position: {x: -0.011170637, y: -0.00016933761, z: -0.0012005112}
+      rotation: {x: 0.96898615, y: -0.075450435, z: 0.20128126, w: -0.121897206}
       scale: {x: 1, y: 1, z: 1}
     - name: calf_l
       parentName: thigh_l
-      position: {x: 7.5199025e-10, y: 0.4472079, z: 0.0000000027081362}
+      position: {x: 7.519903e-11, y: 0.04472079, z: 2.7081362e-10}
       rotation: {x: 0.0528314, y: -0.22714898, z: 0.012319498, w: 0.9723479}
       scale: {x: 1, y: 1, z: 1}
     - name: foot_l
       parentName: calf_l
-      position: {x: -0.0000000061519314, y: 0.44569528, z: 0.0000000015293744}
+      position: {x: -6.151932e-10, y: 0.04456953, z: 1.5293744e-10}
       rotation: {x: -0.53826636, y: 0.00000005293858, z: 0.000000087742386, w: 0.8427748}
       scale: {x: 1, y: 1, z: 1}
     - name: ball_l
       parentName: foot_l
-      position: {x: -9.7353674e-11, y: 0.14677589, z: -0.0000000012659814}
+      position: {x: -9.735368e-12, y: 0.014677589, z: -1.2659815e-10}
       rotation: {x: -0.27280483, y: -0.016891524, z: -0.006287589, w: 0.9619006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ball_l_end
+      parentName: ball_l
+      position: {x: -0, y: 0.014677593, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_r
       parentName: pelvis
-      position: {x: 0.11170637, y: -0.0016933761, z: -0.012005112}
-      rotation: {x: 0.96898615, y: 0.07545043, z: -0.20128126, w: -0.1218972}
+      position: {x: 0.011170637, y: -0.00016933761, z: -0.0012005112}
+      rotation: {x: 0.96898615, y: 0.075450435, z: -0.20128126, w: -0.121897206}
       scale: {x: 1, y: 1, z: 1}
     - name: calf_r
       parentName: thigh_r
-      position: {x: -7.5199025e-10, y: 0.4472079, z: 0.0000000027081362}
+      position: {x: -7.519903e-11, y: 0.04472079, z: 2.7081362e-10}
       rotation: {x: 0.0528314, y: 0.22714898, z: -0.012319498, w: 0.9723479}
       scale: {x: 1, y: 1, z: 1}
     - name: foot_r
       parentName: calf_r
-      position: {x: 0.0000000061519314, y: 0.44569528, z: 0.0000000015293744}
+      position: {x: 6.151932e-10, y: 0.04456953, z: 1.5293744e-10}
       rotation: {x: -0.53826636, y: -0.00000005293858, z: -0.000000087742386, w: 0.8427748}
       scale: {x: 1, y: 1, z: 1}
     - name: ball_r
       parentName: foot_r
-      position: {x: 9.7353674e-11, y: 0.14677589, z: -0.0000000012659814}
+      position: {x: 9.735368e-12, y: 0.014677589, z: -1.2659815e-10}
       rotation: {x: -0.27280483, y: 0.016891524, z: 0.006287589, w: 0.9619006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ball_r_end
+      parentName: ball_r
+      position: {x: -0, y: 0.014677593, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: high-polyMesh
       parentName: EnemyMale(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: HK_UMP45
+      parentName: EnemyMale(Clone)
+      position: {x: 0.16150771, y: 1.1877273, z: 0.39913952}
+      rotation: {x: -0.5669157, y: -2.8517217e-17, z: 2.8517214e-17, w: 0.8237758}
+      scale: {x: 86.71824, y: 86.71824, z: 86.71824}
+    - name: grip
+      parentName: HK_UMP45
+      position: {x: -7.8561714e-12, y: 6.670307e-11, z: 0.000000006972581}
+      rotation: {x: -0.5064594, y: -1.21393945e-11, z: 6.745126e-11, w: 0.8622638}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: barrel
+      parentName: grip
+      position: {x: -0, y: -0.0014895102, z: -0.0014448911}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: bolt.catch
+      parentName: grip
+      position: {x: -0.00021119951, y: -0.0009239897, z: -0.00077903684}
+      rotation: {x: 0.5052256, y: -0.06014852, z: -0.035328824, w: 0.86016345}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: bolt.hinge
+      parentName: grip
+      position: {x: -0.00021666019, y: -0.0009385213, z: -0.00076958357}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: bolt.pull.001
+      parentName: grip
+      position: {x: 0.00018613607, y: -0.0012332448, z: -0.0009012192}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bone
+      parentName: grip
+      position: {x: -0.00013463543, y: -0.0020639994, z: -0.002063701}
+      rotation: {x: 0.6843623, y: -0.17790504, z: -0.684361, w: 0.1778993}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: bolt.pull
+      parentName: Bone
+      position: {x: -0.000033163873, y: 0.00010679051, z: 0.000034728346}
+      rotation: {x: -0.50000006, y: 0.4999999, z: 0.49999988, w: 0.5000001}
+      scale: {x: 1.0000001, y: 1.0000005, z: 0.99999994}
+    - name: receiver.middle.001
+      parentName: bolt.pull
+      position: {x: 0.000040038376, y: -0.000045558212, z: 0.0000055646897}
+      rotation: {x: -0.000000014901161, y: 0.0000030407523, z: -0.00000014870082,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Bone_end
+      parentName: Bone
+      position: {x: -0, y: 0.00019209668, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bstock.hinge.receiver
+      parentName: grip
+      position: {x: 0.00019556432, y: -0.0002654013, z: 0.0009832829}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: buttstock
+      parentName: grip
+      position: {x: 0.00019558193, y: -0.0002561165, z: 0.0009780587}
+      rotation: {x: 0.50646037, y: -3.6819398e-10, z: -8.945815e-10, w: 0.8622633}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bstock.hinge
+      parentName: buttstock
+      position: {x: -0.000000017732381, y: 0.000000041127205, z: 0.000010662078}
+      rotation: {x: -3.5432236e-30, y: -7.644272e-12, z: 3.2155886e-11, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: bstock
+      parentName: bstock.hinge
+      position: {x: -0.00019556447, y: -0.00003256634, z: -0.00003224492}
+      rotation: {x: -0.00000017881395, y: -2.7854288e-10, z: -7.2070866e-10, w: 1}
+      scale: {x: 0.99999976, y: 1, z: 0.9999999}
+    - name: bstock.rubber
+      parentName: bstock
+      position: {x: -0, y: 0.0024648367, z: -0.0003702545}
+      rotation: {x: -0.0000009462238, y: 6.9211897e-12, z: -3.1807154e-11, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: buttstock_end
+      parentName: buttstock
+      position: {x: -0, y: 0.002365215, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: buttstock_release
+      parentName: buttstock
+      position: {x: -0.00034872023, y: 0.00014823794, z: -0.00010194897}
+      rotation: {x: -0.0000011324881, y: 7.6442e-12, z: -3.215458e-11, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: buttstock.pin
+      parentName: grip
+      position: {x: 0.00019556924, y: -0.0002654287, z: 0.0009832346}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Cartridge Ejector
+      parentName: grip
+      position: {x: 7.704799e-12, y: -0.0005996332, z: -0.0009970695}
+      rotation: {x: -0.34369, y: -0.00000010381007, z: 0.000000038143963, w: 0.93908316}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Cartridge Ejector_end
+      parentName: Cartridge Ejector
+      position: {x: -0, y: 0.00029257423, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clip.drop
+      parentName: Cartridge Ejector
+      position: {x: -0, y: 0.000021061971, z: 0.0000031900406}
+      rotation: {x: 0.77195895, y: 0.00000007606289, z: -0.00000008736263, w: 0.6356724}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: clip
+      parentName: grip
+      position: {x: -2.9660623e-12, y: -0.0011178907, z: -0.0009031489}
+      rotation: {x: -0.3592613, y: -0.00000016795236, z: 0.000000064499154, w: 0.933237}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: clip_.45ACP_25.001
+      parentName: clip
+      position: {x: 2.9802322e-10, y: 0.00021899282, z: 0.0014165539}
+      rotation: {x: 0.7824246, y: 0.000000048654385, z: -0.00000005979411, w: 0.6227453}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: bullets.001
+      parentName: clip_.45ACP_25.001
+      position: {x: -0, y: -0.0018260193, z: -0.0016931999}
+      rotation: {x: -0.000000004322233, y: 0.994179, z: -0.10774088, w: -0.000000043498915}
+      scale: {x: -0.72710794, y: -0.7271082, z: -0.72710824}
+    - name: 45ACP_bullet.001
+      parentName: bullets.001
+      position: {x: -0, y: 5.9604643e-10, z: -0.0000000011920929}
+      rotation: {x: -0.0000000037252903, y: 0.000000002311836, z: -2.6357758e-10,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: 45ACP_case.001
+      parentName: bullets.001
+      position: {x: -0, y: 5.9604643e-10, z: -0.0000000011920929}
+      rotation: {x: -0.0000000037252903, y: 0.000000002311836, z: -2.6357758e-10,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Magpul.001
+      parentName: clip_.45ACP_25.001
+      position: {x: -0, y: -0.0018017873, z: -0.0015331542}
+      rotation: {x: -0.10210894, y: -0.000000013542802, z: -0.000000102882105, w: 0.99477327}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1}
+    - name: clip_end
+      parentName: clip
+      position: {x: -0, y: 0.0023513676, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: fire_selector
+      parentName: grip
+      position: {x: 7.810549e-12, y: -0.0004253502, z: -0.000015407864}
+      rotation: {x: 0.5064594, y: -3.2247083e-10, z: -9.42236e-10, w: 0.8622638}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: fire_selector_end
+      parentName: fire_selector
+      position: {x: -0, y: 0.00021141223, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: trigger.selector
+      parentName: fire_selector
+      position: {x: -0, y: 0.000017389972, z: -0.000019495486}
+      rotation: {x: -0.0000000372529, y: -0.0000000033058618, z: 3.996738e-10, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: pin.duplivert
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: pin.duplivert|pin.mirrored|Dupli|0.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: -0.0001534377, y: -0.00037238485, z: 0.00031595214}
+      rotation: {x: 0.7071068, y: 0.000000030908616, z: -0.7071067, w: 0.000000030908623}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.003437564}
+    - name: pin.duplivert|pin.mirrored|Dupli|1.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: 0.00015343755, y: -0.00037238485, z: 0.00031595214}
+      rotation: {x: -0.49999997, y: 0.49999994, z: -0.49999997, w: 0.5000001}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.0034375638}
+    - name: pin.duplivert|pin.mirrored|Dupli|2.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: -0.0001534377, y: -0.00037238514, z: 0.00022393509}
+      rotation: {x: 0.7071068, y: 0.000000030908616, z: -0.7071067, w: 0.000000030908623}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.003437564}
+    - name: pin.duplivert|pin.mirrored|Dupli|3.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: 0.00015343755, y: -0.00037238514, z: 0.00022393509}
+      rotation: {x: -0.49999997, y: 0.49999994, z: -0.49999997, w: 0.5000001}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.0034375638}
+    - name: pin.duplivert|pin.mirrored|Dupli|4.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: -0.0001534377, y: -0.00066515035, z: 0.00038292838}
+      rotation: {x: 0.7071068, y: 0.000000030908616, z: -0.7071067, w: 0.000000030908623}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.003437564}
+    - name: pin.duplivert|pin.mirrored|Dupli|5.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: 0.00015343755, y: -0.00066515035, z: 0.00038292838}
+      rotation: {x: -0.49999997, y: 0.49999994, z: -0.49999997, w: 0.5000001}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.0034375638}
+    - name: pin.duplivert|pin.mirrored|Dupli|6.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: -0.0001534377, y: -0.0009518165, z: 0.00031595258}
+      rotation: {x: 0.7071068, y: 0.000000030908616, z: -0.7071067, w: 0.000000030908623}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.003437564}
+    - name: pin.duplivert|pin.mirrored|Dupli|7.21.0.0.0.0.0.0.0.0
+      parentName: pin.duplivert
+      position: {x: 0.00015343755, y: -0.0009518165, z: 0.00031595258}
+      rotation: {x: -0.49999997, y: 0.49999994, z: -0.49999997, w: 0.5000001}
+      scale: {x: 0.0034375642, y: 0.0034375642, z: 0.0034375638}
+    - name: pin.mirrored
+      parentName: pin.duplivert
+      position: {x: -0, y: -1.4901161e-10, z: 0.0000000011920929}
+      rotation: {x: 0.000000008466411, y: -2.0004137e-17, z: -2.000414e-18, w: 1}
+      scale: {x: 0.0034375642, y: 0.0034375645, z: 0.0034375645}
+    - name: pin.receiver
+      parentName: grip
+      position: {x: -0, y: -0.0011889776, z: -0.0013425297}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 0.003437565, y: 0.0034375647, z: 0.0034375647}
+    - name: pin.unmirrored
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 0.003437565, y: 0.0034375647, z: 0.0034375647}
+    - name: receiver.lower
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: receiver.middle
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: receiver.middle.003
+      parentName: grip
+      position: {x: 0.00018829733, y: -0.0011762056, z: -0.0007952982}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: receiver.upper
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ris.vertical
+      parentName: grip
+      position: {x: -0, y: -0.0017941722, z: -0.0010064476}
+      rotation: {x: 0.5064594, y: 1.2139387e-11, z: -6.745128e-11, w: 0.86226386}
+      scale: {x: 0.018110927, y: 0.02621271, z: 0.022845058}
+    - name: screw_hexagon.duplifa
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064593, y: 1.2139389e-11, z: -6.745127e-11, w: 0.86226386}
+      scale: {x: 0.023798151, y: 0.02379815, z: 0.023798147}
+    - name: screw_hexagon.duplifa|screw_hxagon|Dupli|0.30.0.0.0.0.0.0.0.0
+      parentName: screw_hexagon.duplifa
+      position: {x: 0.0000000047683715, y: -0.08176644, z: 0.046420097}
+      rotation: {x: 5.7848173e-16, y: -1.8387919e-23, z: 1, w: 0.0000000754979}
+      scale: {x: 51.19333, y: 51.193325, z: 51.193325}
+    - name: screw_hexagon.duplifa|screw_hxagon|Dupli|1.30.0.0.0.0.0.0.0.0
+      parentName: screw_hexagon.duplifa
+      position: {x: 0.0000000047683715, y: -0.0016338062, z: 0.046420097}
+      rotation: {x: -5.6885076e-16, y: -0.000000018628931, z: 1, w: 0.0000000754979}
+      scale: {x: 51.193195, y: 51.193188, z: 51.193188}
+    - name: screw_hexagon.duplifa|screw_hxagon|Dupli|2.30.0.0.0.0.0.0.0.0
+      parentName: screw_hexagon.duplifa
+      position: {x: 0.0000000047683715, y: -0.09181626, z: 0.015534334}
+      rotation: {x: -0.00000004371139, y: 1, z: -0.00000003725809, w: 0.000000043711392}
+      scale: {x: 51.19287, y: 51.192867, z: 51.192867}
+    - name: screw_hexagon.duplifa|screw_hxagon|Dupli|3.30.0.0.0.0.0.0.0.0
+      parentName: screw_hexagon.duplifa
+      position: {x: 0.0000000047683715, y: -0.1359899, z: 0.015534314}
+      rotation: {x: -0.00000004371139, y: 1, z: -0.00000003725809, w: 0.000000043711392}
+      scale: {x: 51.19287, y: 51.192867, z: 51.192867}
+    - name: screw_hxagon
+      parentName: screw_hexagon.duplifa
+      position: {x: -0, y: 0.0000000047683715, z: -0.000000038146972}
+      rotation: {x: 0.000000022695685, y: 0.000000038777774, z: 0.000000038745696,
+        w: 1}
+      scale: {x: 42.020077, y: 42.020073, z: 42.020077}
+    - name: sight
+      parentName: grip
+      position: {x: 7.8259005e-12, y: -0.0009305124, z: 0.0007453271}
+      rotation: {x: 0.9672036, y: -0.000000029888348, z: -0.000000101263694, w: 0.2540022}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.99999994}
+    - name: sight 1
+      parentName: sight
+      position: {x: -1.4901161e-10, y: 0.000001056781, z: -0.00000022411346}
+      rotation: {x: -0.70534277, y: 0.00000007391061, z: 0.00000007468085, w: 0.7088664}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: sight_end
+      parentName: sight
+      position: {x: -0, y: 0.00011507096, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sight.dial
+      parentName: grip
+      position: {x: -0, y: -0.0007964942, z: 0.00088898063}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: sight.dial.002
+      parentName: grip
+      position: {x: -0, y: -0.00093094434, z: 0.0007451862}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: sight.front
+      parentName: grip
+      position: {x: -0, y: -0.0024806962, z: -0.0022313844}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: slinge.front
+      parentName: grip
+      position: {x: -0, y: -0.0020681533, z: -0.0026345812}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: slinge.front.001
+      parentName: slinge.front
+      position: {x: -1.4901161e-10, y: 0, z: 0}
+      rotation: {x: 0.000000014901161, y: -2.8849495e-10, z: -7.5434164e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tactical Foregrip
+      parentName: grip
+      position: {x: -0.00013463535, y: -0.0006179724, z: -0.002676652}
+      rotation: {x: -0.6843615, y: 0.17790252, z: 0.6843619, w: -0.17790152}
+      scale: {x: 0.99999976, y: 0.99999994, z: 1}
+    - name: Tactical Foregrip_end
+      parentName: Tactical Foregrip
+      position: {x: -0, y: 0.0011085081, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tactical_foregrip
+      parentName: Tactical Foregrip
+      position: {x: -0.000000192523, y: 0.0011085452, z: -0.00013463586}
+      rotation: {x: -0.50000024, y: 0.49999976, z: 0.4999998, w: 0.50000024}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: trigger
+      parentName: grip
+      position: {x: 7.8014175e-12, y: -0.00030982905, z: -0.00025234857}
+      rotation: {x: -0.3245886, y: 0.00000013283268, z: -0.000000045493017, w: 0.9458553}
+      scale: {x: 1, y: 1, z: 1}
+    - name: trigger 1
+      parentName: trigger
+      position: {x: -0, y: -0.000031284613, z: -0.0000015181303}
+      rotation: {x: 0.75891834, y: -0.0000000935034, z: 0.000000105009136, w: 0.6511858}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: trigger_end
+      parentName: trigger
+      position: {x: -0, y: 0.00031668128, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: trigger.safeguard
+      parentName: grip
+      position: {x: -0, y: 0.0000000062584875, z: -0.000000004172325}
+      rotation: {x: 0.5064594, y: 1.2139385e-11, z: -6.7451274e-11, w: 0.86226386}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Left IK
+      parentName: HK_UMP45
+      position: {x: -0.00029080195, y: 0.000101697144, z: -0.00033177136}
+      rotation: {x: 0.3511673, y: -0.021818768, z: 0.92813134, w: 0.12156343}
+      scale: {x: 1.15316, y: 1.15316, z: 1.1531601}
+    - name: Right IK
+      parentName: HK_UMP45
+      position: {x: 0.00028873695, y: -0.0019223639, z: -0.0009479987}
+      rotation: {x: -0.42770684, y: 0.17851424, z: 0.8850991, w: 0.042416245}
+      scale: {x: 1.15316, y: 1.1531601, z: 1.15316}
     - name: male_elegantsuit01Mesh
       parentName: EnemyMale(Clone)
       position: {x: -0, y: 0, z: 0}
