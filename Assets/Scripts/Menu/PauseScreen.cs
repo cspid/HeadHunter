@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseScreen : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PauseScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))// || Input.GetButton("Start"))
+        if (Input.GetKeyDown(KeyCode.Escape))// || Input.GetButtonDown("Start"))
         {
             if (IsPaused)
                 Resume();
@@ -31,6 +32,7 @@ public class PauseScreen : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        Camera.main.GetComponent<AudioSource>().volume = 0;
         IsPaused = true;
     }
 
