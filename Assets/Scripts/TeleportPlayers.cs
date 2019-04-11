@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class TeleportPlayers : MonoBehaviour
 {
-    public Transform teleDestination;
     public GameObject player;
     public GameObject nextPlayer;
-
-    void Start()
-    {
-
-    }
+    public GameObject cameraPos;
 
     void OnTriggerEnter(Collider other)
     {
@@ -22,5 +17,7 @@ public class TeleportPlayers : MonoBehaviour
         player.SetActive(false);
         nextPlayer.SetActive(true);
         //lerp camera to next level segment
+        Camera.main.transform.position = cameraPos.transform.position;
+        Camera.main.transform.rotation = cameraPos.transform.rotation;
     }
 }
