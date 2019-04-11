@@ -172,7 +172,8 @@ public class ErdemGun : MonoBehaviour
             Vector3 nearestPos = NearestPointOnLine(linePnt, lineDir, enemy.transform.position);
             if (Vector3.Distance(nearestPos, enemy.transform.position) <= MAX_SUPRESS_DISTANCE) // Close enough to supress
             {
-                enemy.getSupressed(MAX_SUPPRESSION_PERC * (Vector3.Distance(nearestPos, enemy.transform.position) / MAX_SUPRESS_DISTANCE));
+                //
+                //enemy.getSupressed(MAX_SUPPRESSION_PERC * (Vector3.Distance(nearestPos, enemy.transform.position) / MAX_SUPRESS_DISTANCE));
             }
 
         }

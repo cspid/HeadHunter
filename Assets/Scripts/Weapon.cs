@@ -7,6 +7,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject target;
 
     [SerializeField] Transform pivot;
+
+    [SerializeField] Transform firePoint;
+
     float LOCK_ANGLE = 40f;
 
     float MAX_SUPRESS_DISTANCE = 10f;
@@ -26,10 +29,14 @@ public class Weapon : MonoBehaviour
     float reloadCounter = 0;
 
     bool isShooting = false;
+    GameObject muzzleFlash;
+
+
     // Start is called before the first frame update
     void Start()
     {
         ammo = MAX_AMMO;
+        muzzleFlash = firePoint.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -44,11 +51,13 @@ public class Weapon : MonoBehaviour
         if (!isShooting && Input.GetAxis("Fire1") > 0.2f)
         {
             isShooting = true;
+            muzzleFlash.SetActive(true);
             //startShooting();
         }
         else if (isShooting && Input.GetAxis("Fire1") < 0.2f)
         {
             isShooting = false;
+            muzzleFlash.SetActive(false);
         }
 
 
@@ -61,7 +70,7 @@ public class Weapon : MonoBehaviour
                 shoot();
                 ammo--;
                 shootCounter = 0;
-                Debug.Log("ammo: " + ammo);
+               // Debug.Log("ammo: " + ammo);
 
                 if (ammo <= 0)
                 {
@@ -89,10 +98,10 @@ public class Weapon : MonoBehaviour
         Enemy lockedEnemy = null;
         foreach (Enemy enemy in Enemies)
         {
-            if (Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position) < minAngle
-                && Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position) < LOCK_ANGLE)
+            if (Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position) < minAngle
+                && Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position) < LOCK_ANGLE)
             {
-                minAngle = Vector3.Angle(pivot.forward, enemy.transform.position - this.transform.position);
+                minAngle = Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position);
                 lockedEnemy = enemy;
             }
         }
@@ -124,13 +133,14 @@ public class Weapon : MonoBehaviour
         Debug.Log("Pew pew");
         if (target)
         {
-            supress(this.transform.position, target.transform.position - this.transform.position);
+            supress(pivot.transform.position, target.transform.position - pivot.transform.position);
 
             if (target.GetComponent<Enemy>())
             {
-                if (target.GetComponent<Enemy>().isFlanked(this.transform.position, this.gameObject))
+                if (target.GetComponent<Enemy>().isFlanked(pivot.transform.position, this.gameObject))
                 {
                     target.GetComponent<Enemy>().takeDamage();
+
                 }
 
             }
@@ -150,12 +160,13 @@ public class Weapon : MonoBehaviour
         foreach (Enemy enemy in enemies)
         {
             if (Vector3.Distance(enemy.transform.position, target.transform.position) <= MAX_SUPRESS_DISTANCE
-                && Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position) <= maxSuppressionAngle)
+                && Vector3.Angle(target.transform.position - pivot.transform.position, enemy.transform.position - pivot.transform.position) <= maxSuppressionAngle)
             {
                 enemy.getSupressed(MAX_SUPPRESSION_PERC * 
                     ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE)
-                    * ((maxSuppressionAngle - Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position)) / maxSuppressionAngle));
-                Debug.Log("suppression: " + MAX_SUPPRESSION_PERC + " * " + ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE) + " * " + (maxSuppressionAngle - Vector3.Angle(target.transform.position - this.transform.position, enemy.transform.position - this.transform.position) / maxSuppressionAngle));
+                    * ((maxSuppressionAngle - Vector3.Angle(target.transform.position - pivot.transform.position, enemy.transform.position - pivot.transform.position)) / maxSuppressionAngle),
+                    pivot.transform.position);
+               // Debug.Log("suppression: " + MAX_SUPPRESSION_PERC + " * " + ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE) + " * " + (maxSuppressionAngle - Vector3.Angle(target.transform.position - pivot.transform.position, enemy.transform.position - pivot.transform.position) / maxSuppressionAngle));
             }
         }
 

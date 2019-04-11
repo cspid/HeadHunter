@@ -5,22 +5,24 @@ using RootMotion.FinalIK;
 
 public class Crouch : MonoBehaviour
 {
-    FullBodyBipedIK IK;
+    public PierInputManager manager;
+    public PierInputManager.ButtonName crouch;
+    //    FullBodyBipedIK IK;
     float crouchWeight;
     public bool isCrouching;
     public bool forceCrouch;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        IK = GetComponent<FullBodyBipedIK>();
-    }
+        animator = GetComponent<Animator>();    }
 
     // Update is called once per frame
     void Update()
     {
         if (forceCrouch == false)
         {
-            if (Input.GetButton("Crouch"))
+            if (manager.GetButton(crouch))
             {
                 isCrouching = true;
             }
@@ -36,23 +38,15 @@ public class Crouch : MonoBehaviour
 
         if (isCrouching == true)
         {
-            print("Crouching");
-
-            if (crouchWeight < 0.144)
-            {
-                crouchWeight += Time.deltaTime;
-            }
+            animator.SetLayerWeight(3, 0.7f);
         }
         else
-        {
-            if (crouchWeight > 0)
-            {
-                crouchWeight -= Time.deltaTime;
-            }
+        {            
+            animator.SetLayerWeight(3, 0);            
         }
 
 
-        IK.solver.bodyEffector.positionWeight = crouchWeight;
+        //IK.solver.bodyEffector.positionWeight = crouchWeight;
     }
 
 }

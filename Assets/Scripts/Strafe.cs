@@ -70,7 +70,6 @@ public class Strafe : MonoBehaviour {
 		{
 			// calculate camera relative direction to move:
 			m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-
 		}
 		else
 		{
@@ -79,11 +78,10 @@ public class Strafe : MonoBehaviour {
 		}
 
 		// _newVelocity = new Vector3();
-
 		_newVelocity = v * m_CamForward * vel + h * m_Cam.right * vel;
 
 		rb.velocity = _newVelocity;
-//        print(_newVelocity);
+        // print(_newVelocity);
 
 		if (Input.GetButton("Run"))
 		{
@@ -126,9 +124,5 @@ public class Strafe : MonoBehaviour {
 				catchUp = false; 
 			}
         }
-
-
-
-
 	}
 }

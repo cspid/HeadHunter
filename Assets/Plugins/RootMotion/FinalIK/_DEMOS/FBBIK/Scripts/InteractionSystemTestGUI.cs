@@ -46,25 +46,25 @@ namespace RootMotion.Demos {
                 interactionSystem.StartInteraction(e, interactionObject, true);
             }
         }
-        void OnGUI() {
-			if (interactionSystem == null) return;
+  //      void OnGUI() {
+		//	if (interactionSystem == null) return;
 
-			if (GUILayout.Button("Start Interaction With " + interactionObject.name)) {
-				if (effectors.Length == 0) Debug.Log("Please select the effectors to interact with.");
+		//	if (GUILayout.Button("Start Interaction With " + interactionObject.name)) {
+		//		if (effectors.Length == 0) Debug.Log("Please select the effectors to interact with.");
 
-				foreach (FullBodyBipedEffector e in effectors) {
-					interactionSystem.StartInteraction(e, interactionObject, true);
-				}
-			}
+		//		foreach (FullBodyBipedEffector e in effectors) {
+		//			interactionSystem.StartInteraction(e, interactionObject, true);
+		//		}
+		//	}
 
-			if (effectors.Length == 0) return;
+		//	if (effectors.Length == 0) return;
 
-			if (interactionSystem.IsPaused(effectors[0])) {
-				if (GUILayout.Button("Resume Interaction With " + interactionObject.name)) {
+		//	if (interactionSystem.IsPaused(effectors[0])) {
+		//		if (GUILayout.Button("Resume Interaction With " + interactionObject.name)) {
 
-					interactionSystem.ResumeAll();
-				}
-			}
-		}
+		//			interactionSystem.ResumeAll();
+		//		}
+		//	}
+		//}
 	}
 }

@@ -5,8 +5,7 @@ using UnityEngine;
 public class NewBehaviourScriptforcarl : MonoBehaviour
 {
     public PierInputManager manager;
-
-   public PierInputManager.ButtonName myButton;
+    public PierInputManager.ButtonName myButton;
     // Start is called before the first frame update
     void Start()
     {
