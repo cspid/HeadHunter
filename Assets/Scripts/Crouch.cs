@@ -9,6 +9,9 @@ public class Crouch : MonoBehaviour
     float crouchWeight;
     public bool isCrouching;
     public bool forceCrouch;
+    public AudioClip clip;
+
+    private bool crouchSoundPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class Crouch : MonoBehaviour
             else
             {
                 isCrouching = false;
+                crouchSoundPlayed = false;
             }
         }
         else
@@ -36,6 +40,11 @@ public class Crouch : MonoBehaviour
 
         if (isCrouching == true)
         {
+            if (clip != null && crouchSoundPlayed == false)
+            {
+                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+                crouchSoundPlayed = true;
+            }
             print("Crouching");
 
             if (crouchWeight < 0.144)

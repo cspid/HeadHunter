@@ -7,6 +7,7 @@ public class TeleportPlayers : MonoBehaviour
     public GameObject player;
     public GameObject nextPlayer;
     public GameObject cameraPos;
+    public AudioClip clip;
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,5 +20,9 @@ public class TeleportPlayers : MonoBehaviour
         //lerp camera to next level segment
         Camera.main.transform.position = cameraPos.transform.position;
         Camera.main.transform.rotation = cameraPos.transform.rotation;
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+        }
     }
 }

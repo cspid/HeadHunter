@@ -26,6 +26,9 @@ public class Weapon : MonoBehaviour
     float reloadCounter = 0;
 
     bool isShooting = false;
+    float soundDelay = 0.1f;
+
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +38,14 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(soundDelay);
         // TOO EXPENSIVE >>> DECREASE CALL AMOUNT LATER >>>>
         findTarget();
+
+        if (soundDelay < 0.1f)
+        {
+            soundDelay += Time.deltaTime;
+        }
 
 
 
@@ -55,6 +64,11 @@ public class Weapon : MonoBehaviour
         if (isShooting && !isReloading)
         {
             shootCounter += Time.deltaTime;
+            if (soundDelay >= 0.1f)
+            {
+                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+                soundDelay = 0f;
+            }
 
             if (shootCounter >= fireRate)
             {
