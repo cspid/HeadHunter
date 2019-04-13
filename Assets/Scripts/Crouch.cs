@@ -12,6 +12,7 @@ public class Crouch : MonoBehaviour
     public bool isCrouching;
     public bool forceCrouch;
     Animator animator;
+    public bool isEnemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +23,17 @@ public class Crouch : MonoBehaviour
     {
         if (forceCrouch == false)
         {
-            if (manager.GetButton(crouch))
+            //Only check controller input if this is a player
+            if (isEnemy == false)
             {
-                isCrouching = true;
-            }
-            else
-            {
-                isCrouching = false;
+                if (manager.GetButton(crouch))
+                {
+                    isCrouching = true;
+                }
+                else
+                {
+                    isCrouching = false;
+                }
             }
         }
         else
