@@ -60,7 +60,6 @@ public class Gun : MonoBehaviour
                     if (broadcaster != null)
                     {
                         broadcaster.Hit(unpin, ray.direction * force, hit.point);
-
                         blood.transform.position = hit.point;
                         blood.transform.rotation = Quaternion.LookRotation(ray.direction);
                         blood.Emit(20);
