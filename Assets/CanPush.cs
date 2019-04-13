@@ -12,12 +12,14 @@ public class CanPush : MonoBehaviour
     public bool isMetal;
     public bool isFlesh;
     public bool isWood;
+    public bool isTile;
     GameObject particles;
     float Timer;
     ParticleSystem particleEmitter;
     ParticleSystem.EmissionModule emmisionModule;
     bool isemitting;
     public float emissionRate = 10f;
+    public int hitCount;
 
 
 
@@ -71,7 +73,15 @@ public class CanPush : MonoBehaviour
         {
             print(particles.name);
             particles.transform.forward = angleToPlayer;
-        }       
+        }
+        if (isTile)
+        {
+            hitCount++;
+           if(hitCount >= 2)
+            {
+                GetComponent<Rigidbody>().isKinematic = false;
+            }
+        }
     }
     public void StartParticles()
     {
@@ -90,6 +100,10 @@ public class CanPush : MonoBehaviour
         if (isSand)
         {
 
+        }
+        if (isTile)
+        {
+            particles.SetActive(true);
         }
     }
 
