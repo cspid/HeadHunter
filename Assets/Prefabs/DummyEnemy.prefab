@@ -199,8 +199,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -402,6 +402,8 @@ MonoBehaviour:
   LoadingBar: {fileID: 3708317082441091756}
   targetIcon: {fileID: 2880667415634833836}
   aimPos: {fileID: 0}
+  strikableRadius: 3
+  debrisTimer: 0.2
   flankCheckPos: {fileID: 1857024484920583197}
 --- !u!1 &1950075018844117489
 GameObject:
@@ -688,21 +690,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02879418
       objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.70864
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.70864
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.70864
-      objectReference: {fileID: 0}
     - target: {fileID: 3077066111305908576, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -717,6 +704,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.55208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.70864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.70864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.70864
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8, type: 3}

@@ -5,32 +5,39 @@ using RootMotion.FinalIK;
 
 public class Crouch : MonoBehaviour
 {
-    FullBodyBipedIK IK;
+    public PierInputManager manager;
+    public PierInputManager.ButtonName crouch;
+    //    FullBodyBipedIK IK;
     float crouchWeight;
     public bool isCrouching;
     public bool forceCrouch;
-    public AudioClip clip;
+    Animator animator;
+    public bool isEnemy;
 
-    private bool crouchSoundPlayed = false;
+    public AudioClip crouchSound;
+    bool crouchSoundPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
-        IK = GetComponent<FullBodyBipedIK>();
-    }
+        animator = GetComponent<Animator>();    }
 
     // Update is called once per frame
     void Update()
     {
         if (forceCrouch == false)
         {
-            if (Input.GetButton("Crouch"))
+            //Only check controller input if this is a player
+            if (isEnemy == false)
             {
-                isCrouching = true;
-            }
-            else
-            {
-                isCrouching = false;
-                crouchSoundPlayed = false;
+                if (manager.GetButton(crouch))
+                {
+                    isCrouching = true;
+                }
+                else
+                {
+                    isCrouching = false;
+                    crouchSoundPlayed = false;
+                }
             }
         }
         else
@@ -40,28 +47,20 @@ public class Crouch : MonoBehaviour
 
         if (isCrouching == true)
         {
-            if (clip != null && crouchSoundPlayed == false)
+            animator.SetLayerWeight(3, 0.7f);
+            if (crouchSound != null && crouchSoundPlayed == false)
             {
-                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+                AudioSource.PlayClipAtPoint(crouchSound, Camera.main.transform.position);
                 crouchSoundPlayed = true;
-            }
-            print("Crouching");
-
-            if (crouchWeight < 0.144)
-            {
-                crouchWeight += Time.deltaTime;
             }
         }
         else
-        {
-            if (crouchWeight > 0)
-            {
-                crouchWeight -= Time.deltaTime;
-            }
+        {            
+            animator.SetLayerWeight(3, 0);            
         }
 
 
-        IK.solver.bodyEffector.positionWeight = crouchWeight;
+        //IK.solver.bodyEffector.positionWeight = crouchWeight;
     }
 
 }
