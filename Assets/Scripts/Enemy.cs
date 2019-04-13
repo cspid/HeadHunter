@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+//MAIN ENEMY BEHAVIOUR
 public class Enemy : MonoBehaviour
 {
     [SerializeField] Image LoadingBar;
