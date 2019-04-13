@@ -163,6 +163,7 @@ public class Enemy : MonoBehaviour
             {
                 debrisTimer = debrisTimerAtStart;
                 canStrike = true;
+                if(selectedTarget)
                 selectedTarget.StopParticles();
             }
         }

@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class Weapon : MonoBehaviour
 {
+    [SerializeField] int playerId = 0;
     [SerializeField] GameObject target;
+    
 
     [SerializeField] Transform pivot;
 
-    [SerializeField] Transform firePoint;
+    //[SerializeField] Transform firePoint;
+    [SerializeField] ParticleSystem muzzleEffect;
 
     float LOCK_ANGLE = 40f;
 
@@ -31,12 +35,13 @@ public class Weapon : MonoBehaviour
     bool isShooting = false;
     GameObject muzzleFlash;
 
-
+    Player player;
     // Start is called before the first frame update
     void Start()
     {
+        player = ReInput.players.GetPlayer(playerId);
         ammo = MAX_AMMO;
-        muzzleFlash = firePoint.GetChild(0).gameObject;
+        //muzzleFlash = firePoint.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -48,16 +53,18 @@ public class Weapon : MonoBehaviour
 
 
 
-        if (!isShooting && Input.GetAxis("Fire1") > 0.2f)
+        if (!isShooting && player.GetButtonDown("R2"))
+            //Input.GetAxis("Fire1") > 0.2f)
         {
             isShooting = true;
-            muzzleFlash.SetActive(true);
+            //muzzleFlash.SetActive(true);
             //startShooting();
         }
-        else if (isShooting && Input.GetAxis("Fire1") < 0.2f)
+        else if (isShooting && player.GetButtonUp("R2"))
+            //Input.GetAxis("Fire1") < 0.2f)
         {
             isShooting = false;
-            muzzleFlash.SetActive(false);
+            //muzzleFlash.SetActive(false);
         }
 
 
@@ -131,6 +138,7 @@ public class Weapon : MonoBehaviour
     void shoot()
     {
         Debug.Log("Pew pew");
+        muzzleEffect.Play();
         if (target)
         {
             supress(pivot.transform.position, target.transform.position - pivot.transform.position);

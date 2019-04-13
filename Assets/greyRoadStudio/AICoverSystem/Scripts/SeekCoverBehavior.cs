@@ -295,8 +295,23 @@ public class SeekCoverBehavior : MonoBehaviour
 
     public void GoToCover(Vector3 coverPos)
     {
+        if (agent)
+        {
         agent.stoppingDistance = 0.5f;
-        agent.SetDestination(coverPosition);
+            if (agent.SetDestination(coverPosition))
+            {
+                Debug.Log("Destination assigned");
+            }else
+	        {
+                Debug.Log("Can't set destination");
+            }
+        
+
+        }
+        else
+        {
+            Debug.Log("I dont have an agent!");
+        }
     }
 
     private void Flee()
