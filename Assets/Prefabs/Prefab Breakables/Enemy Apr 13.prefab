@@ -341,14 +341,14 @@ RectTransform:
   m_GameObject: {fileID: 2068003619}
   m_LocalRotation: {x: -0, y: -0.70960623, z: -0, w: -0.7045985}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.11829007, y: 0.11829, z: 0.11829007}
+  m_LocalScale: {x: 0.11829009, y: 0.11829, z: 0.11829009}
   m_Children:
   - {fileID: 1036782573}
   - {fileID: 8147646508718099100}
   - {fileID: 1410279892}
   - {fileID: 1328105902}
-  m_Father: {fileID: 7542463637013800532}
-  m_RootOrder: 1
+  m_Father: {fileID: 7542463636447080008}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -902,7 +902,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000001928056, y: 0.15965287, z: 0.033977326}
+  m_ConnectedAnchor: {x: -0.00000017790444, y: 0.15965222, z: 0.033979118}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -3361,7 +3361,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.19134375, y: 0.30242565, z: 0.07750112}
+  m_ConnectedAnchor: {x: 0.19134377, y: 0.30242553, z: 0.07750301}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -5445,6 +5445,7 @@ Transform:
   - {fileID: 7542463636598314713}
   - {fileID: 7542463636535311365}
   - {fileID: 7542463637285170908}
+  - {fileID: 2068003620}
   m_Father: {fileID: 7886914225962057478}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6154,7 +6155,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -6197,7 +6198,13 @@ MonoBehaviour:
   myAiType: 0
   myCoverScript: {fileID: 2009939497}
   startPos: {fileID: 0}
-  advancePos: []
+  advancePos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   muzzleFlash: {fileID: 6440687400714177194}
   gunCheckPos: {fileID: 7542463637156270223}
 --- !u!1 &7542463636448111333
@@ -6692,7 +6699,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.111706644, y: -0.0016932115, z: -0.012005529}
+  m_ConnectedAnchor: {x: 0.11170666, y: -0.0016938657, z: -0.0120037375}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -7401,7 +7408,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000004533236, y: 0.50212145, z: 0.1292823}
+  m_ConnectedAnchor: {x: -0.00000046822475, y: 0.50212157, z: 0.12928039}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -9505,7 +9512,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7542463637092137231}
-  - {fileID: 2068003620}
   m_Father: {fileID: 7886914225962057478}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10324,7 +10330,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 28.75908, y: 1.5409365, z: -11.3700485}
+  m_ConnectedAnchor: {x: 46.34308, y: 0.9369369, z: -11.3700485}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -11249,7 +11255,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.19134389, y: 0.30242568, z: 0.07750098}
+  m_ConnectedAnchor: {x: -0.19134389, y: 0.3024258, z: 0.07750098}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -11900,7 +11906,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: -0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000007994822, y: 0.26848245, z: -0.000000029802322}
+  m_ConnectedAnchor: {x: -0.00000024365727, y: 0.26848108, z: -0.0000013411045}
   serializedVersion: 2
   m_SecondaryAxis: {x: 1, y: 0, z: 0}
   m_XMotion: 0
@@ -13794,6 +13800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 0
   target: {fileID: 0}
+  muzzlePos: {fileID: 0}
   pivot: {fileID: 7542463635595803682}
   muzzleEffect: {fileID: 0}
 --- !u!114 &7886914225962057501
@@ -13825,6 +13832,7 @@ MonoBehaviour:
   LoadingBar: {fileID: 8147646508874832409}
   targetIcon: {fileID: 1328105903}
   aimPos: {fileID: 7542463635610703894}
+  chest: {fileID: 7542463635610703895}
   strikableRadius: 1
   debrisTimer: 0.2
   flankCheckPos: {fileID: 7542463637686410387}
@@ -13947,9 +13955,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &6606474200030624740 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!198 &6440405611431692812 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198515452120210940, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 6602749876354455536}
   m_PrefabAsset: {fileID: 0}
@@ -13959,9 +13967,9 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 6602749876354455536}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &6440405611431692812 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198515452120210940, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!4 &6606474200030624740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 6602749876354455536}
   m_PrefabAsset: {fileID: 0}
@@ -14129,12 +14137,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8, type: 3}
---- !u!224 &8147646508718099100 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3077066112212451587, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-    type: 3}
-  m_PrefabInstance: {fileID: 6602749876395101087}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8147646508874832409 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3077066112192958854, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
@@ -14147,3 +14149,9 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8147646508718099100 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3077066112212451587, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6602749876395101087}
+  m_PrefabAsset: {fileID: 0}

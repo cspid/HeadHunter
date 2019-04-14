@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using RootMotion.Dynamics;
 
 public class PlayerDanger : MonoBehaviour
 {
+    [SerializeField] Image LoadingBar;
+
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the player
     [SerializeField] float dangerLevel = 0f;
     float dangerNormSpeed = 0.05f;
@@ -30,6 +34,7 @@ public class PlayerDanger : MonoBehaviour
             }
 
         }
+        LoadingBar.fillAmount = dangerLevel;
     }
 
     public bool isFlanked(Vector3 gunCheckPos, GameObject attacker)
@@ -62,7 +67,8 @@ public class PlayerDanger : MonoBehaviour
         if (dangerLevel > 1 && isFlanked)
         {
             // DEATH!!!!
-
+            Debug.Log("player dead");
+            GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
         }
     }
 

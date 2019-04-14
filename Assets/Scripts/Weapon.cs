@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] int playerId = 0;
     [SerializeField] GameObject target;
-    
+    [SerializeField] Transform muzzlePos;
 
     [SerializeField] Transform pivot;
 
@@ -105,10 +105,10 @@ public class Weapon : MonoBehaviour
         Enemy lockedEnemy = null;
         foreach (Enemy enemy in Enemies)
         {
-            if (Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position) < minAngle
-                && Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position) < LOCK_ANGLE)
+            if (Vector3.Angle(pivot.forward, enemy.getChest().transform.position - pivot.transform.position) < minAngle
+                && Vector3.Angle(pivot.forward, enemy.getChest().transform.position - pivot.transform.position) < LOCK_ANGLE)
             {
-                minAngle = Vector3.Angle(pivot.forward, enemy.transform.position - pivot.transform.position);
+                minAngle = Vector3.Angle(pivot.forward, enemy.getChest().transform.position - pivot.transform.position);
                 lockedEnemy = enemy;
             }
         }
@@ -117,7 +117,7 @@ public class Weapon : MonoBehaviour
         {
             if ((lockedEnemy && target != lockedEnemy.gameObject) || (lockedEnemy == null))
             {
-                target.GetComponent<Enemy>().cancelTarget();
+                target.GetComponentInParent<Enemy>().cancelTarget();
             }
         }
 
@@ -126,8 +126,9 @@ public class Weapon : MonoBehaviour
         {
             //lookAtScript.solver.target = lockedEnemy.getAimPos();
             //lookAtScript.solver.IKPositionWeight = 0.5f;
-            target = lockedEnemy.gameObject;
-            target.GetComponent<Enemy>().getTargeted();
+            target = lockedEnemy.getChest();
+            //target.GetComponent<Enemy>().getTargeted();
+            lockedEnemy.getTargeted();
         }
         else
         {
@@ -141,14 +142,13 @@ public class Weapon : MonoBehaviour
         muzzleEffect.Play();
         if (target)
         {
-            supress(pivot.transform.position, target.transform.position - pivot.transform.position);
+            supress(muzzlePos.transform.position, target.transform.position - pivot.transform.position);
 
-            if (target.GetComponent<Enemy>())
+            //if (target.GetComponent<Enemy>())
             {
-                if (target.GetComponent<Enemy>().isFlanked(pivot.transform.position, this.gameObject))
+                if (target.GetComponentInParent<Enemy>().isFlanked(muzzlePos.position, this.transform.gameObject))
                 {
-                    target.GetComponent<Enemy>().takeDamage();
-
+                    target.GetComponentInParent<Enemy>().takeDamage();
                 }
 
             }
