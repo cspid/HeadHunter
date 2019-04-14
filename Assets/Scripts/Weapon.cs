@@ -173,7 +173,7 @@ public class Weapon : MonoBehaviour
                 enemy.getSupressed(MAX_SUPPRESSION_PERC * 
                     ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE)
                     * ((maxSuppressionAngle - Vector3.Angle(target.transform.position - pivot.transform.position, enemy.transform.position - pivot.transform.position)) / maxSuppressionAngle),
-                    pivot.transform.position);
+                    muzzlePos.transform.position);
                // Debug.Log("suppression: " + MAX_SUPPRESSION_PERC + " * " + ((MAX_SUPRESS_DISTANCE - Vector3.Distance(enemy.transform.position, target.transform.position)) / MAX_SUPRESS_DISTANCE) + " * " + (maxSuppressionAngle - Vector3.Angle(target.transform.position - pivot.transform.position, enemy.transform.position - pivot.transform.position) / maxSuppressionAngle));
             }
         }
