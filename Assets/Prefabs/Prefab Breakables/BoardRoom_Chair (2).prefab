@@ -18667,3 +18667,4 @@ MonoBehaviour:
   isTile: 0
   emissionRate: 10
   hitCount: 0
+  trail: {fileID: 2905806570752359852, guid: 2918befede8ecf04a895ad382c678e58, type: 3}

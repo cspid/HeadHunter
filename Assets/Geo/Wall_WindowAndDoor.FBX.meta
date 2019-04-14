@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Wall_WindowAndDoor
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WatterCoolerBase
+    second: {fileID: 2100000, guid: 2a7d7ed568eb32c4593b08ac550c12d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wttercooler
+    second: {fileID: 2100000, guid: f4b230bfc27731541b18897e2a397837, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

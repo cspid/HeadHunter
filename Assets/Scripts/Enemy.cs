@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     bool issuppressed = false;  // Not the bool for actual mechanic
     bool canStrike = true;      // Again, not related to mechanics
     int randomItem;
-    public float debrisTimer = 0.2f;
+    public float debrisTimer = 0.35f;
     float debrisTimerAtStart;
     CanPush selectedTarget;
     
