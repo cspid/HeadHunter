@@ -75,8 +75,19 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy has taken damage");
         if (suppression >= 0.99f)
         {
-            GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
-            GetComponentInChildren<EnemyBehavior>().enabled = false;
+            if (GetComponentInChildren<PuppetMaster>())
+            {
+                GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
+            }
+            else    // just for dummies
+            {
+                Debug.Log("Ugh. Im dead");
+            }
+            if (GetComponentInChildren<EnemyBehavior>())
+            {
+                GetComponentInChildren<EnemyBehavior>().enabled = false;
+            }
+            
             this.enabled = false;
         }
     }

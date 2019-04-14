@@ -1,26 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1617622555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c9076222b22c44080b00f3e2445118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 10
-  isSand: 0
-  isStone: 0
-  isMetal: 0
-  isFlesh: 0
-  isWood: 1
-  isTile: 0
-  emissionRate: 10
-  hitCount: 0
 --- !u!1 &93787050314511607
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079730113141538875}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.6125622, y: 1.7676809, z: 0.06551862}
+  m_LocalPosition: {x: -3.82, y: 1.7676809, z: 5.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -207,12 +186,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3882507844627888750}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.864563, y: 1.7246809, z: 0.06551862}
+  m_LocalPosition: {x: -2.46, y: 1.7246809, z: -0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1617622555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c9076222b22c44080b00f3e2445118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 10
+  isSand: 0
+  isStone: 0
+  isMetal: 0
+  isFlesh: 0
+  isWood: 1
+  isTile: 0
+  emissionRate: 10
+  hitCount: 0
+  trail: {fileID: 0}
 --- !u!1001 &2507396257649382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -916,11 +917,6 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[2].emitter
       value: 
       objectReference: {fileID: 3839535025618984245}
-    - target: {fileID: 457766023019259452, guid: 46cf9cb3fb817824caf7050bd1e01968,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cf9cb3fb817824caf7050bd1e01968, type: 3}
 --- !u!198 &3839731122466467543 stripped
@@ -1230,11 +1226,6 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[2].emitter
       value: 
       objectReference: {fileID: 4789345666719067049}
-    - target: {fileID: 457766023019259452, guid: 46cf9cb3fb817824caf7050bd1e01968,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cf9cb3fb817824caf7050bd1e01968, type: 3}
 --- !u!198 &4789376033239122423 stripped
@@ -1448,11 +1439,6 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[2].emitter
       value: 
       objectReference: {fileID: 5308093896185735045}
-    - target: {fileID: 457766023019259452, guid: 46cf9cb3fb817824caf7050bd1e01968,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cf9cb3fb817824caf7050bd1e01968, type: 3}
 --- !u!4 &854856839560386220 stripped
@@ -1551,6 +1537,26 @@ PrefabInstance:
       value: 0.74
       objectReference: {fileID: 0}
     - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 5.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033911270, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
       value: 
       objectReference: {fileID: 5824572260655378795}
@@ -1562,6 +1568,18 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[2].emitter
       value: 
       objectReference: {fileID: 5824572259791221517}
+    - target: {fileID: 113006870, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859462512, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 977178598, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c4ee17cb6420d41bfcdb826a903942, type: 3}
 --- !u!4 &400000 stripped
@@ -1781,11 +1799,6 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[2].emitter
       value: 
       objectReference: {fileID: 7396906271396875010}
-    - target: {fileID: 457766023019259452, guid: 46cf9cb3fb817824caf7050bd1e01968,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cf9cb3fb817824caf7050bd1e01968, type: 3}
 --- !u!4 &2652685680721197611 stripped

@@ -11,74 +11,27 @@ public class soundController : MonoBehaviour
     public AudioClip elevator;
     public AudioClip footstep;
     public AudioClip grunt;
-    //public AudioClip crouch;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void playSound(AudioClip clip)
     {
-        
+        if (clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.Log("No" + clip + "sound!");
+        }
     }
 
-    void crouchSound()
-    {
-        if (crouch != null)
-        {
-            audioSource.PlayOneShot(crouch);
-        }
-        else
-        {
-            Debug.Log("No crouch sound!");
-        }
-    }
-    void shootSound()
-    {
-        if (shoot != null)
-        {
-            audioSource.PlayOneShot(shoot);
-        }
-        else
-        {
-            Debug.Log("No shoot sound!");
-        }
-    }
-    void elevatorSound()
-    {
-        if (elevator != null)
-        {
-            audioSource.PlayOneShot(elevator);
-        }
-        else
-        {
-            Debug.Log("No elevator sound!");
-        }
-    }
-    void footstepSound()
-    {
-        if (footstep != null)
-        {
-            audioSource.PlayOneShot(footstep);
-        }
-        else
-        {
-            Debug.Log("No footstep sound!");
-        }
-    }
-    void gruntSound()
-    {
-        if (grunt != null)
-        {
-            audioSource.PlayOneShot(grunt);
-        }
-        else
-        {
-            Debug.Log("No grunt sound!");
-        }
-    }
+    /*INSTRUCTION
+     soundController AudioController;
+     AudioController = GameObject.Find("SoundsController").GetComponent<soundController>();
+     AudioController.playSound(AudioController.CLIP);*/
 }

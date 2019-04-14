@@ -87,14 +87,20 @@ public class Strafe : MonoBehaviour {
 
 		if (manager.GetButton(run))
 		{
-			print("RUN");
-			    vel = runVel;
-			    strafeAnimSpeed = strafeAnimStartSpeed * (vel/startVel);
+            if (vel == startVel)
+            {
+                print("RUN");
+                vel = runVel;
+                strafeAnimSpeed = strafeAnimStartSpeed * (vel / startVel);
+            }
 		} else {
-            print("Stop Run");
-			    vel = startVel;
-			    strafeAnimSpeed = strafeAnimStartSpeed;
-	         }
+            if (vel == runVel)
+            {
+                print("RUN");
+                vel = startVel;
+                strafeAnimSpeed = strafeAnimStartSpeed;
+            }
+	    }
         
 		//show movement
         Color color1 = new Color(255, 255, 1, 1);

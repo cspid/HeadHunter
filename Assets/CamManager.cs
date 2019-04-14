@@ -5,6 +5,8 @@ using UnityEngine;
 public class CamManager : MonoBehaviour
 {
     public lerpPosition lerpPosScript;
+    public lerpRotation lerpRotScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +15,17 @@ public class CamManager : MonoBehaviour
 
     public void MoveCam(Transform newPos)
     {
+        //position
         lerpPosScript.startPositon = lerpPosScript.transform.position;
         lerpPosScript.endPosition = newPos.position;
+
+        //rotation
+        lerpRotScript.startRotation = lerpPosScript.transform.rotation;
+        lerpRotScript.endRotation = newPos.rotation;
+
         lerpPosScript.isLerping = true;
+        lerpRotScript.isLerping = true;
+
     }
 
     // Update is called once per frame
@@ -24,6 +34,10 @@ public class CamManager : MonoBehaviour
         if (transform.position == lerpPosScript.endPosition)
         {
             lerpPosScript.isLerping = false;
+        }
+        if (transform.rotation == lerpRotScript.endRotation)
+        {
+            lerpRotScript.isLerping = false;
         }
     }
 }

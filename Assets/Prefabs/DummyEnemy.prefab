@@ -402,7 +402,8 @@ MonoBehaviour:
   LoadingBar: {fileID: 3708317082441091756}
   targetIcon: {fileID: 2880667415634833836}
   aimPos: {fileID: 0}
-  strikableRadius: 3
+  chest: {fileID: 1857024486100393531}
+  strikableRadius: 1
   debrisTimer: 0.2
   flankCheckPos: {fileID: 1857024484920583197}
 --- !u!1 &1950075018844117489

@@ -60,10 +60,10 @@ public class CanPush : MonoBehaviour
             WaitToStart();
         }
 
-        if (stopDelaybool == true)
-        {
-            WaitToEnd();
-        }
+        //if (stopDelaybool == true)
+        //{
+        //    WaitToEnd();
+        //}
     }
 
     // Update is called once per frame
@@ -74,6 +74,7 @@ public class CanPush : MonoBehaviour
 
     public void getHit(Vector3 shooterPos)
     {
+        Debug.Log("Im an innocent object. stop hitting me.");
         if (particles != null)
         {
             particles.gameObject.SetActive(true);
@@ -109,17 +110,29 @@ public class CanPush : MonoBehaviour
                 }
             }
         }
-        bullet = Instantiate(trail, shooterPos, Quaternion.identity);
-        lerpPosScript = bullet.GetComponent<lerpPosition>();
-        lerpPosScript.startPositon = shooterPos;
-        lerpPosScript.endPosition = transform.position;
-        lerpPosScript.lerpDuration = 0.2f;
-        lerpPosScript.isLerping = true;
+        if (trail)
+        {
+            bullet = Instantiate(trail, shooterPos, Quaternion.identity);
+            lerpPosScript = bullet.GetComponent<lerpPosition>();
+            if (shooterPos != null)
+            {
+                lerpPosScript.startPositon = shooterPos;
+            }
+            lerpPosScript.endPosition = transform.position;
+            lerpPosScript.lerpDuration = 0.2f;
+            lerpPosScript.isLerping = true;
+        }
+        else
+        {
+            Debug.Log("I dont have a trail? how come?");
+        }
+        
 
     }
     public void StartParticles()
     {
         startDelaybool = true;
+
     }
 
     public void StopParticles()
@@ -128,16 +141,22 @@ public class CanPush : MonoBehaviour
     }
     void WaitToStart()
     {
-        startDelay -= Time.deltaTime;
-        if(startDelay <= 0)
-        {
+        if(particleEmitter != null)
+        { 
+            startDelay -= Time.deltaTime;
 
-            //isemitting = true;
-            //particleEmitter.Play();
-            //particles.gameObject.SetActive(true);
+
+            if (startDelay <= 0)
+            {
+
+            isemitting = true;
+            particleEmitter.Play();
+            particles.gameObject.SetActive(true);
             if (isWood)
             {
                 emmisionModule.rateOverTime = emissionRate;
+                //particleEmitter.Play();
+
                 //print("Emit " + gameObject.name);
             }
             if (isMetal)
@@ -161,18 +180,20 @@ public class CanPush : MonoBehaviour
                     }
                     emmisionModule.rateOverTime = emissionRate;
                 }
+                //particleEmitter.Play();
             }
             startDelaybool = false;
-        }
+            }
+        }   
     }
 
     void WaitToEnd()
     {
         if (particles != null)
         {
-            //isemitting = false;
-            //particleEmitter.Stop();
-            //particles.gameObject.SetActive(false);
+            isemitting = false;
+            particleEmitter.Stop();
+            particles.gameObject.SetActive(false);
 
             print("Stop Emit " + gameObject.name);
             if (isWood)
@@ -192,7 +213,7 @@ public class CanPush : MonoBehaviour
             if (isTile)
             {
                 emmisionModule.rateOverTime = 0;
-                //particles.SetActive(false);
+                particles.SetActive(false);
             }
         }
         stopDelaybool = false;
