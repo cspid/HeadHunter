@@ -77,9 +77,10 @@ public class CanPush : MonoBehaviour
         if (isTile)
         {
             hitCount++;
-           if(hitCount >= 2)
+           if(hitCount >= 1)
             {
                 GetComponent<Rigidbody>().isKinematic = false;
+                print("fall");
             }
         }
     }
@@ -103,7 +104,11 @@ public class CanPush : MonoBehaviour
         }
         if (isTile)
         {
-            particles.SetActive(true);
+            if (particles.activeSelf == false)
+            {
+                particles.SetActive(true);
+            }
+            emmisionModule.rateOverTime = emissionRate;
         }
     }
 
@@ -125,9 +130,13 @@ public class CanPush : MonoBehaviour
         }
         if (isSand)
         {
-            particles.SetActive(false);
             emmisionModule.rateOverTime = 0;
-
+            particles.SetActive(false);
+        }
+        if (isTile)
+        {
+            emmisionModule.rateOverTime = 0;
+            //particles.SetActive(false);
         }
     }
 }

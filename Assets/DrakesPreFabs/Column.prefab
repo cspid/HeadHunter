@@ -57,8 +57,8 @@ Transform:
   m_LocalPosition: {x: -16.848654, y: -2.7852, z: -7.524189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 399836852835064151}
   - {fileID: 2300101710887331386}
+  - {fileID: 399836852835064151}
   - {fileID: 590932624023074950}
   - {fileID: 8324719895502346211}
   - {fileID: 3895594877837480943}
@@ -176,11 +176,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 4894471762197059512}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 4869276348115787268}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 4868966019233561466}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &5751579082993900596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 89755823732772421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4869276348115787268 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 89755823732772421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4868966019233561466 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 89755823732772421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4894471762197059512 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 89755823732772421}
   m_PrefabAsset: {fileID: 0}
@@ -251,11 +289,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 4850526300560755811}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 4841100014540654047}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 4840847426118983841}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &4850526300560755811 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 108877661814642078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5723399381082277871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 108877661814642078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4841100014540654047 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 108877661814642078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4840847426118983841 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 108877661814642078}
   m_PrefabAsset: {fileID: 0}
@@ -326,8 +402,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 5073427647241677926}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 5050754788584908250}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 5050449974002630820}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &5050449974002630820 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 340628428104316315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5050754788584908250 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 340628428104316315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5073427647241677926 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 340628428104316315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5356311585045932010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -401,11 +515,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 5929671970916329484}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 5923887267206029744}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 5923587915954013390}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &5923587915954013390 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195746851953586673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6807036548434518912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195746851953586673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5923887267206029744 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195746851953586673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5929671970916329484 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 1195746851953586673}
   m_PrefabAsset: {fileID: 0}
@@ -476,11 +628,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 6187142047322073171}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 6170681089062560239}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 6170923282585437329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &6170923282585437329 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1661666332760945070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6187142047322073171 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1661666332760945070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6476240551598842847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1661666332760945070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6170681089062560239 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 1661666332760945070}
   m_PrefabAsset: {fileID: 0}
@@ -551,11 +741,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 6620156098809314796}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 6602287831633278032}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 6602600357389963566}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &6620156098809314796 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1805324103840228369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6332793852343006816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1805324103840228369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6602287831633278032 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1805324103840228369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6602600357389963566 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 1805324103840228369}
   m_PrefabAsset: {fileID: 0}
@@ -626,11 +854,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 6657353675017483526}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 6637222616266865850}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 6637471371829729732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &6637471371829729732 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2211799261320588539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5791265682679824010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2211799261320588539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6637222616266865850 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2211799261320588539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6657353675017483526 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 2211799261320588539}
   m_PrefabAsset: {fileID: 0}
@@ -675,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df08b6cca08bfaa409b4add34b07dfc9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df08b6cca08bfaa409b4add34b07dfc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -764,8 +1030,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 7425981597589562471}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 7454002482807664091}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 7453668514023032997}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &7454002482807664091 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2728102459780840858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7453668514023032997 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2728102459780840858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7425981597589562471 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2728102459780840858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7724654651302047723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -839,11 +1143,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 7663089074178473832}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 7649170184520677076}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 7648906600713229226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &7378545976011732196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2921299835718428309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7663089074178473832 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2921299835718428309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7649170184520677076 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2921299835718428309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7648906600713229226 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 2921299835718428309}
   m_PrefabAsset: {fileID: 0}
@@ -914,8 +1256,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 7560536676639252061}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 7535614147131447265}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 7535312598101111455}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &7535312598101111455 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3043910376788314016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7535614147131447265 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3043910376788314016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7560536676639252061 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3043910376788314016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7264713695209559505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -989,11 +1369,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 7607313776020234566}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 7632781931798046970}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 7632538674863639940}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &7327221369456536266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3116723774337972411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7607313776020234566 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3116723774337972411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7632538674863639940 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3116723774337972411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7632781931798046970 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 3116723774337972411}
   m_PrefabAsset: {fileID: 0}
@@ -1064,11 +1482,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 7807838003654618193}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 7792509811411150317}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 7792812462366146707}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &6946272300495038429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3353293978590131628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7792812462366146707 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3353293978590131628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7792509811411150317 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3353293978590131628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7807838003654618193 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 3353293978590131628}
   m_PrefabAsset: {fileID: 0}
@@ -1139,8 +1595,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 8342745380917418777}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 8338678112356504229}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 8338907662568634331}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &8342745380917418777 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3536780260101047012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8338907662568634331 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3536780260101047012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8338678112356504229 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3536780260101047012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9221819705593532565 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -1214,11 +1708,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 8091367793588448807}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 8085611747838830491}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 8085354197493646053}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &8085354197493646053 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3645690784332838874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8085611747838830491 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3645690784332838874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8968723710356006315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3645690784332838874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8091367793588448807 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 3645690784332838874}
   m_PrefabAsset: {fileID: 0}
@@ -1289,11 +1821,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 8156337481964068584}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 8164652914160473940}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 8164889060668518954}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &8164889060668518954 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3738948566209447701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8164652914160473940 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3738948566209447701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9010646398162998628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3738948566209447701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8156337481964068584 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 3738948566209447701}
   m_PrefabAsset: {fileID: 0}
@@ -1364,11 +1934,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 8840000965247727111}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 8850262809179324347}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 8850519827849272005}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &8543575453543693707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4071173086521700346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8840000965247727111 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4071173086521700346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8850519827849272005 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4071173086521700346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8850262809179324347 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 4071173086521700346}
   m_PrefabAsset: {fileID: 0}
@@ -1439,11 +2047,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 8797234577289350537}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 8820725475683140661}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 8820489894895755595}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &8514917852847343109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4090471797872350324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8797234577289350537 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4090471797872350324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8820489894895755595 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4090471797872350324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8820725475683140661 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 4090471797872350324}
   m_PrefabAsset: {fileID: 0}
@@ -1514,11 +2160,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 9212144166843314242}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 9198480636336765438}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 9198248889249127552}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &8351084239149956046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4398420479385479615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9212144166843314242 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4398420479385479615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9198248889249127552 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4398420479385479615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9198480636336765438 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 4398420479385479615}
   m_PrefabAsset: {fileID: 0}
@@ -1589,11 +2273,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 9195122761797791510}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 9215541623832209066}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 9215773868329944020}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &8333557060399817882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4416319567876470507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9195122761797791510 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4416319567876470507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9215773868329944020 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4416319567876470507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9215541623832209066 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 4416319567876470507}
   m_PrefabAsset: {fileID: 0}
@@ -1664,11 +2386,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 9203745972630314095}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 9206988326492919251}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 9206735172982894765}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &8324719895502346211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4424802449563125138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9203745972630314095 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4424802449563125138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9206735172982894765 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4424802449563125138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9206988326492919251 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 4424802449563125138}
   m_PrefabAsset: {fileID: 0}
@@ -1739,8 +2499,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 9196855107326346966}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 9213880875394273130}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 9214197783401998868}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &9213880875394273130 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4428026545426030379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9214197783401998868 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4428026545426030379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9196855107326346966 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4428026545426030379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8330766985770569050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -1814,11 +2612,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 327487484171741882}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 357179690617266950}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 357432328731215480}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &357179690617266950 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5069136118285579079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &627802108157354294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5069136118285579079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &357432328731215480 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5069136118285579079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &327487484171741882 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5069136118285579079}
   m_PrefabAsset: {fileID: 0}
@@ -1889,11 +2725,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 292299146353783562}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 320311576871156406}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 319991319762280392}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &320311576871156406 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5106022971250830071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &590932624023074950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5106022971250830071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &292299146353783562 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5106022971250830071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &319991319762280392 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5106022971250830071}
   m_PrefabAsset: {fileID: 0}
@@ -1964,8 +2838,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 828884981737329869}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 864488093243448689}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 864243151608395791}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &864488093243448689 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5283428452759686448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &864243151608395791 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5283428452759686448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &828884981737329869 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5283428452759686448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &557836049806040897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -2039,11 +2951,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 605192821318059071}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 583671911679987075}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 583411059716860157}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &583671911679987075 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5383028586426228162}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &313859147307356083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5383028586426228162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &605192821318059071 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5383028586426228162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &583411059716860157 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5383028586426228162}
   m_PrefabAsset: {fileID: 0}
@@ -2097,7 +3047,7 @@ PrefabInstance:
     - target: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
         type: 3}
@@ -2114,8 +3064,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 698515264368317147}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 706522834843999079}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 706850736896359961}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &706850736896359961 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5432422786854177574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &706522834843999079 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5432422786854177574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &698515264368317147 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5432422786854177574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &399836852835064151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -2189,11 +3177,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 697815796071499404}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 707257470354394928}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 707488635478157902}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &707488635478157902 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5439622210372067185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &707257470354394928 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5439622210372067185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &401450754838826240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5439622210372067185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &697815796071499404 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5439622210372067185}
   m_PrefabAsset: {fileID: 0}
@@ -2264,11 +3290,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 655187939628888919}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 677858665096264427}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 678094226143158165}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &372302767088711899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5460044611265358506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &655187939628888919 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5460044611265358506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &678094226143158165 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5460044611265358506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &677858665096264427 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5460044611265358506}
   m_PrefabAsset: {fileID: 0}
@@ -2339,8 +3403,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 881894711621751052}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 883430902544865456}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 883757208841502158}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &881894711621751052 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5687860245036026097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &883757208841502158 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5687860245036026097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &883430902544865456 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5687860245036026097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &400000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -2414,11 +3516,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 1313568006884374967}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 1316517893271302155}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 1316205346835633525}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &2163880346291909179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5830177397380210762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1313568006884374967 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5830177397380210762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1316205346835633525 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5830177397380210762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1316517893271302155 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5830177397380210762}
   m_PrefabAsset: {fileID: 0}
@@ -2489,11 +3629,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 1223363223178273615}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 1190585783608273651}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 1190323249123413901}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &2073728201772099779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5919992766064212658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1223363223178273615 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5919992766064212658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1190585783608273651 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5919992766064212658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1190323249123413901 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 5919992766064212658}
   m_PrefabAsset: {fileID: 0}
@@ -2564,11 +3742,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 1597657539618735800}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 1608779273382629124}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 1608532734249118330}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &1878312756666928436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6124417488114540357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1608779273382629124 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6124417488114540357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1608532734249118330 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6124417488114540357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1597657539618735800 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 6124417488114540357}
   m_PrefabAsset: {fileID: 0}
@@ -2639,11 +3855,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 1460599958965309473}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 1457647597880301981}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 1457957924614798563}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &1763169689922919341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6239561070271334876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1457647597880301981 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6239561070271334876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1457957924614798563 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6239561070271334876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1460599958965309473 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 6239561070271334876}
   m_PrefabAsset: {fileID: 0}
@@ -2714,11 +3968,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 1574086308818125794}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 1560437899615373918}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 1560186963286011680}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &1865996272346695790 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6271842443299904031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1574086308818125794 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6271842443299904031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1560186963286011680 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6271842443299904031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1560437899615373918 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 6271842443299904031}
   m_PrefabAsset: {fileID: 0}
@@ -2789,11 +4081,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2150417323721920812}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2137059184246659216}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2137366796841795054}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &2137059184246659216 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6847047553754089681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2150417323721920812 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6847047553754089681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1291072635812059808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6847047553754089681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2137366796841795054 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 6847047553754089681}
   m_PrefabAsset: {fileID: 0}
@@ -2864,11 +4194,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2419107148615600449}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2444865304604426493}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2444548380666750339}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &2444865304604426493 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7151766179942863036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2444548380666750339 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7151766179942863036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3291985862120948429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7151766179942863036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2419107148615600449 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7151766179942863036}
   m_PrefabAsset: {fileID: 0}
@@ -2939,11 +4307,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2425167888141089249}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2438805235110375517}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2439068319763387683}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &3286206922915705453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7166815839426420764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2425167888141089249 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7166815839426420764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2439068319763387683 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7166815839426420764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2438805235110375517 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7166815839426420764}
   m_PrefabAsset: {fileID: 0}
@@ -3014,11 +4420,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2387633010806917692}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2404111561530278784}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2403850710360139518}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &2387633010806917692 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7201497431473017793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2404111561530278784 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7201497431473017793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3251472503777788336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7201497431473017793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2403850710360139518 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7201497431473017793}
   m_PrefabAsset: {fileID: 0}
@@ -3089,11 +4533,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2687137934664369933}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2681098210628144817}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2680771356715854799}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &2988067055189691521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7464973558043074288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2687137934664369933 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7464973558043074288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2680771356715854799 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7464973558043074288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2681098210628144817 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7464973558043074288}
   m_PrefabAsset: {fileID: 0}
@@ -3164,8 +4646,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 2668098425261883418}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 2700312911792507302}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 2700013045411818712}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &2700312911792507302 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7481804103655447015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2700013045411818712 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7481804103655447015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2668098425261883418 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7481804103655447015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2971219003273841558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -3239,11 +4759,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 3443458546695380504}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 3437955591296194468}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 3438284611912544986}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &2590838469769762196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7862114095543961573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3443458546695380504 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7862114095543961573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3438284611912544986 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7862114095543961573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3437955591296194468 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7862114095543961573}
   m_PrefabAsset: {fileID: 0}
@@ -3314,11 +4872,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 3435776902945868132}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 3445774656854556888}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 3445524251986503078}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &3435776902945868132 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7889212203602432153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2563474468874748648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7889212203602432153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3445774656854556888 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7889212203602432153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3445524251986503078 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 7889212203602432153}
   m_PrefabAsset: {fileID: 0}
@@ -3389,8 +4985,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 3638139211183432929}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 3603664198078999901}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 3603977807680538659}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &3603664198078999901 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8119721876117323036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3603977807680538659 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8119721876117323036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3638139211183432929 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8119721876117323036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4485685041376440173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
@@ -3464,11 +5098,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 3679080328854129376}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 3706802491446444892}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 3706492178366260770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &3706802491446444892 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8204696785533834013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4554166718280155500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8204696785533834013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3679080328854129376 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8204696785533834013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3706492178366260770 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 8204696785533834013}
   m_PrefabAsset: {fileID: 0}
@@ -3539,11 +5211,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 3501422637141317300}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 3524067252554522376}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 3524400654412118646}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &3524067252554522376 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8234204126593093449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3524400654412118646 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8234204126593093449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4371468871640898872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8234204126593093449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3501422637141317300 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 8234204126593093449}
   m_PrefabAsset: {fileID: 0}
@@ -3614,11 +5324,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 4008901244642294652}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 4025645607267791552}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 4025330347355199422}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &4025645607267791552 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8462318819970687617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4025330347355199422 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8462318819970687617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4296263484733321456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8462318819970687617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4008901244642294652 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 8462318819970687617}
   m_PrefabAsset: {fileID: 0}
@@ -3689,11 +5437,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 4193678599172200547}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 4201151876455567839}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 4200823369897325729}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
 --- !u!4 &3895594877837480943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8710164157231776158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4201151876455567839 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8710164157231776158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4200823369897325729 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8710164157231776158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4193678599172200547 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 8710164157231776158}
   m_PrefabAsset: {fileID: 0}
@@ -3764,11 +5550,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.994
       objectReference: {fileID: 0}
+    - target: {fileID: 6819681011692681287, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: isTile
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 4322000162410367611}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitter
+      value: 
+      objectReference: {fileID: 4288932176833938375}
+    - target: {fileID: 4805332740721812649, guid: 1dc0e3c472d279e43aaac161da14885f,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitter
+      value: 
+      objectReference: {fileID: 4288683386200139449}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dc0e3c472d279e43aaac161da14885f, type: 3}
+--- !u!198 &4288683386200139449 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804473004694205759, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8730399878839292806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4019404045287555575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5687860245036421745, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8730399878839292806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4322000162410367611 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4814990462378236413, guid: 1dc0e3c472d279e43aaac161da14885f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8730399878839292806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4288932176833938375 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4804713498619301953, guid: 1dc0e3c472d279e43aaac161da14885f,
     type: 3}
   m_PrefabInstance: {fileID: 8730399878839292806}
   m_PrefabAsset: {fileID: 0}

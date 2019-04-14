@@ -6422,7 +6422,7 @@ InputManager:
     axis: 0
     joyNum: 11
   - serializedVersion: 3
-    m_Name: Joy11Button15
+    m_Name: joy11button14
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -6635,6 +6635,22 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: mouse 5
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: MouseButton6
+    descriptiveName: Mouse Button 6
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: mouse 6
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0

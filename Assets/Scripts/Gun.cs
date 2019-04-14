@@ -45,6 +45,8 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             print("fire");
+            GetComponent<AudioSource>().Play();
+
             //recoilAnimator.SetTrigger("Go");
             var ray = new Ray(firePoint.position, firePoint.forward);
 
