@@ -18536,7 +18536,6 @@ GameObject:
   - component: {fileID: 676466795}
   - component: {fileID: 676466796}
   - component: {fileID: 676466798}
-  - component: {fileID: 676466799}
   m_Layer: 11
   m_Name: BoardRoom_Chair (2)
   m_TagString: Untagged
@@ -18665,30 +18664,6 @@ MonoBehaviour:
   isMetal: 0
   isFlesh: 0
   isWood: 0
+  isTile: 0
   emissionRate: 10
---- !u!114 &676466799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3512882584601482277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4cc0970947b8944a8522729f480c703, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  front:
-  - coverTransform: {fileID: 0}
-    isOccupied: 0
-    canCrouch: 1
-  - coverTransform: {fileID: 0}
-    isOccupied: 0
-    canCrouch: 1
-  rear:
-  - coverTransform: {fileID: 0}
-    isOccupied: 0
-    canCrouch: 1
-  - coverTransform: {fileID: 0}
-    isOccupied: 0
-    canCrouch: 1
+  hitCount: 0

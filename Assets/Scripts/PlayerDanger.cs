@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerDanger : MonoBehaviour
 {
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the player
-    float dangerLevel = 0f;
+    [SerializeField] float dangerLevel = 0f;
     float dangerNormSpeed = 0.05f;
 
 
