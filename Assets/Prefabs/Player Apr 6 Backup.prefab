@@ -13345,6 +13345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flankCheckPos: {fileID: 1048906574}
+  dangerLevel: 0
 --- !u!114 &1595315053
 MonoBehaviour:
   m_ObjectHideFlags: 0

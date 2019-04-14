@@ -13,8 +13,8 @@ public class Enemy : MonoBehaviour
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
     public float strikableRadius = 1;
-    bool issuppressed = false;
-    bool canStrike = true;
+    bool issuppressed = false;  // Not the bool for actual mechanic
+    bool canStrike = true;      // Again, not related to mechanics
     int randomItem;
     public float debrisTimer = 0.2f;
     float debrisTimerAtStart;

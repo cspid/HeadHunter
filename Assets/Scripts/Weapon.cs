@@ -21,8 +21,8 @@ public class Weapon : MonoBehaviour
 
     float maxSuppressionAngle = 30f;
 
-    float MAX_AMMO = 30;
-    float ammo;
+    int MAX_AMMO = 30;
+    int ammo;
 
     float fireRate = 0.1f;
     float shootCounter = 0;
@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
     float reloadCounter = 0;
 
     bool isShooting = false;
-    GameObject muzzleFlash;
+    //GameObject muzzleFlash;
 
     Player player;
     // Start is called before the first frame update

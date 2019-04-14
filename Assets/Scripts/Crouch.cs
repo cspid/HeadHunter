@@ -54,4 +54,9 @@ public class Crouch : MonoBehaviour
         //IK.solver.bodyEffector.positionWeight = crouchWeight;
     }
 
+
+    public void setCrouch(bool set)
+    {
+        isCrouching = set;
+    }
 }
