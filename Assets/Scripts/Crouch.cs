@@ -13,9 +13,6 @@ public class Crouch : MonoBehaviour
     public bool forceCrouch;
     Animator animator;
     public bool isEnemy;
-
-    public AudioClip crouchSound;
-    bool crouchSoundPlayed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +33,6 @@ public class Crouch : MonoBehaviour
                 else
                 {
                     isCrouching = false;
-                    crouchSoundPlayed = false;
                 }
             }
         }
@@ -48,11 +44,6 @@ public class Crouch : MonoBehaviour
         if (isCrouching == true)
         {
             animator.SetLayerWeight(3, 0.7f);
-            if (crouchSound != null && crouchSoundPlayed == false)
-            {
-                AudioSource.PlayClipAtPoint(crouchSound, Camera.main.transform.position);
-                crouchSoundPlayed = true;
-            }
         }
         else
         {            
@@ -63,4 +54,9 @@ public class Crouch : MonoBehaviour
         //IK.solver.bodyEffector.positionWeight = crouchWeight;
     }
 
+
+    public void setCrouch(bool set)
+    {
+        isCrouching = set;
+    }
 }

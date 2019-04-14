@@ -6,7 +6,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Strafe : MonoBehaviour {
 
-	private Transform m_Cam;                  // A reference to the main camera in the scenes transform
+    public PierInputManager manager;
+    public PierInputManager.ButtonName run;
+    private Transform m_Cam;                  // A reference to the main camera in the scenes transform
     private Vector3 m_CamForward;             // The current forward direction of the camera
 	public Vector3 m_Move;
 	float vel = 1;
@@ -19,7 +21,7 @@ public class Strafe : MonoBehaviour {
 	public bool catchUp;
 	public Vector3 _newVelocity;
 	public float startVel = 1;
-	public float runVel = 2;
+	public float runVel = 1.75f;
 	StrafeAnimController strafeAnimController;
 	float strafeAnimSpeed;
 	float strafeAnimStartSpeed;
@@ -83,12 +85,13 @@ public class Strafe : MonoBehaviour {
 		rb.velocity = _newVelocity;
         // print(_newVelocity);
 
-		if (Input.GetButton("Run"))
+		if (manager.GetButton(run))
 		{
 			print("RUN");
 			    vel = runVel;
 			    strafeAnimSpeed = strafeAnimStartSpeed * (vel/startVel);
 		} else {
+            print("Stop Run");
 			    vel = startVel;
 			    strafeAnimSpeed = strafeAnimStartSpeed;
 	         }

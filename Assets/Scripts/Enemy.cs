@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using RootMotion.Dynamics;
 
 //MAIN ENEMY BEHAVIOUR
 public class Enemy : MonoBehaviour
@@ -12,11 +13,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform aimPos;
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
+
+    [SerializeField] GameObject chest;
+
+    float suppNormDelay = 0.5f;
+    float suppNormCounter = 0;
+
     public float strikableRadius = 1;
-    bool issuppressed = false;
-    bool canStrike = true;
+    bool issuppressed = false;  // Not the bool for actual mechanic
+    bool canStrike = true;      // Again, not related to mechanics
     int randomItem;
-    public float debrisTimer = 0.2f;
+    public float debrisTimer = 0.35f;
     float debrisTimerAtStart;
     CanPush selectedTarget;
     
@@ -34,14 +41,22 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (suppression > 0)
+        if (suppNormCounter > suppNormDelay)    // Dont normalize immediately
         {
-            suppression -= Time.deltaTime * suppressionNormSpeed;
-
-            if (suppression < 0)
+            if (suppression > 0)
             {
-                suppression = 0;
+                suppression -= Time.deltaTime * suppressionNormSpeed;
+
+                if (suppression < 0)    // Can't be less than 0
+                {
+                    suppression = 0;
+                }
             }
+            
+        }
+        else
+        {
+            suppNormCounter += Time.deltaTime;
         }
         LoadingBar.fillAmount = suppression;
 
@@ -58,6 +73,12 @@ public class Enemy : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("Enemy has taken damage");
+        if (suppression >= 0.99f)
+        {
+            GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
+            GetComponentInChildren<EnemyBehavior>().enabled = false;
+            this.enabled = false;
+        }
     }
 
     public Transform getAimPos()
@@ -68,16 +89,18 @@ public class Enemy : MonoBehaviour
     public bool isFlanked(Vector3 gunCheckPos, GameObject attacker)
     {
         RaycastHit hit;
-        Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.green);
-
-        if (Physics.Raycast(flankCheckPos.position, gunCheckPos - flankCheckPos.position, out hit, Mathf.Infinity))
+        Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.blue, 1.5f);
+        Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity);
+        Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject);
+        if (Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity))
         {
-            if (hit.transform.gameObject == attacker)
+            if (hit.transform.IsChildOf(attacker.transform) || hit.transform.gameObject == attacker || hit.transform.gameObject == attacker.transform.parent)
             {
                 Debug.Log("flanked.");
                 return true;
             }
         }
+        Debug.Log("not flanked");
         return false;
     }
 
@@ -85,9 +108,12 @@ public class Enemy : MonoBehaviour
     {
         //Debug.Log("Getting suppressed by: " + amount);
         suppression += amount;
+        suppNormCounter = 0;
 
         if (suppression > 1)
         {
+
+
             suppression = 1;
         }
         
@@ -163,8 +189,19 @@ public class Enemy : MonoBehaviour
             {
                 debrisTimer = debrisTimerAtStart;
                 canStrike = true;
+                if(selectedTarget)
                 selectedTarget.StopParticles();
             }
         }
+    }
+
+    public float getSuppressionVar()
+    {
+        return suppression;
+    }
+
+    public GameObject getChest()
+    {
+        return chest;
     }
 }
