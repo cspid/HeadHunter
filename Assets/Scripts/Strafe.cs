@@ -85,7 +85,7 @@ public class Strafe : MonoBehaviour {
 		rb.velocity = _newVelocity;
         // print(_newVelocity);
 
-		if (manager.GetButton(run))
+		if (manager && manager.GetButton(run))
 		{
             if (vel == startVel)
             {

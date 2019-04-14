@@ -113,7 +113,7 @@ public class Weapon : MonoBehaviour
             }
         }
 
-        if (target)
+        if (target && target.GetComponentInParent<Enemy>())
         {
             if ((lockedEnemy && target != lockedEnemy.gameObject) || (lockedEnemy == null))
             {
@@ -149,6 +149,7 @@ public class Weapon : MonoBehaviour
                 if (target.GetComponentInParent<Enemy>().isFlanked(muzzlePos.position, this.transform.gameObject))
                 {
                     target.GetComponentInParent<Enemy>().takeDamage();
+                    findTarget();
                 }
 
             }
