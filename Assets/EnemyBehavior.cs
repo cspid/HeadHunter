@@ -213,6 +213,10 @@ public class EnemyBehavior : MonoBehaviour
     void shoot()
     {
         PlayerDanger targetPlayer = findTarget();
+        Vector3 temp = targetPlayer.getEyePos().position;
+        temp.y = this.transform.position.y;
+        this.transform.LookAt(temp);
+
         //Debug.Log("take that you evil player character!");
 
         RaycastHit hit;
