@@ -9,6 +9,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] aiType myAiType;
     Enemy enemyScript;
     Crouch crouchScript;
+    bool isFiring;
 
     float maxSuppressionToManeuver = 0.3f;
     float maxSuppressionToFire = 0.9f;
@@ -49,6 +50,9 @@ public class EnemyBehavior : MonoBehaviour
     NavMeshAgent myNavAgent;
 
     float suppressionValue = 0.05f;
+
+    public AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -154,7 +158,14 @@ public class EnemyBehavior : MonoBehaviour
 
             if (shootCounter >= fireRate)
             {
-                shoot();
+                if(isFiring == false)
+                {
+                    audioSource.Play();
+                    print("enemy firing");
+                    isFiring = true;
+                }
+                    shoot();
+
                 ammo--;
                 shootCounter = 0;
 
@@ -164,9 +175,17 @@ public class EnemyBehavior : MonoBehaviour
                     hunkerDown();
                 }
             }
+            else
+            {
+
+            }
         }
         else  //isReloading
         {
+
+            isFiring = false;
+            audioSource.Stop();
+            print("enemy stop firing");
 
             reloadCounter += Time.deltaTime;
 
@@ -181,6 +200,7 @@ public class EnemyBehavior : MonoBehaviour
     }
 
     void hunkerDown() {
+        audioSource.Stop();
         crouchScript.setCrouch(true);
     }
 
@@ -197,6 +217,7 @@ public class EnemyBehavior : MonoBehaviour
 
         targetPlayer.getSuppressed(suppressionValue, targetPlayer.isFlanked(gunCheckPos.position, this.transform.parent.gameObject));
         muzzleFlash.Play();
+
     }
 
     PlayerDanger findTarget()
