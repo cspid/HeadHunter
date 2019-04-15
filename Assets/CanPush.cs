@@ -29,13 +29,14 @@ public class CanPush : MonoBehaviour
     public GameObject trail;
     GameObject bullet;
     lerpPosition lerpPosScript;
-
+    soundController AudioController;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        AudioController = GameObject.Find("SoundsController").GetComponent<soundController>();
         startDelayAtStart = startDelay;
 
         stopDelayAtStart = stopDelay;
@@ -74,7 +75,9 @@ public class CanPush : MonoBehaviour
 
     public void getHit(Vector3 shooterPos)
     {
-        Debug.Log("Im an innocent object. stop hitting me.");
+        AudioController.playSound(AudioController.ricochet); 
+
+    Debug.Log("Im an innocent object. stop hitting me.");
         if (particles != null)
         {
             particles.gameObject.SetActive(true);

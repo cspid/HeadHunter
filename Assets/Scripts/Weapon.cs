@@ -36,9 +36,15 @@ public class Weapon : MonoBehaviour
     //GameObject muzzleFlash;
 
     Player player;
-    // Start is called before the first frame update
+
+    //soundController AudioController;
+    AudioSource audioSource;
+        
+        // Start is called before the first frame update
     void Start()
     {
+        //AudioController = GameObject.Find("SoundsController").GetComponent<soundController>();
+        audioSource = GetComponent<AudioSource>();
         player = ReInput.players.GetPlayer(playerId);
         ammo = MAX_AMMO;
         //muzzleFlash = firePoint.GetChild(0).gameObject;
@@ -65,6 +71,7 @@ public class Weapon : MonoBehaviour
             //Input.GetAxis("Fire1") > 0.2f)
         {
             isShooting = true;
+            audioSource.Play();
             //muzzleFlash.SetActive(true);
             //startShooting();
         }
@@ -72,6 +79,7 @@ public class Weapon : MonoBehaviour
             //Input.GetAxis("Fire1") < 0.2f)
         {
             isShooting = false;
+            audioSource.Stop();
             //muzzleFlash.SetActive(false);
         }
 
