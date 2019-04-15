@@ -213,9 +213,21 @@ public class EnemyBehavior : MonoBehaviour
     void shoot()
     {
         PlayerDanger targetPlayer = findTarget();
-        Debug.Log("take that you evil player character!");
+        Vector3 temp = targetPlayer.getEyePos().position;
+        temp.y = this.transform.position.y;
+        this.transform.LookAt(temp);
 
-        targetPlayer.getSuppressed(suppressionValue, targetPlayer.isFlanked(gunCheckPos.position, this.transform.parent.gameObject));
+        //Debug.Log("take that you evil player character!");
+
+        RaycastHit hit;
+        Physics.Raycast(GetComponentInParent<Enemy>().getEyePos().position, 
+            targetPlayer.getEyePos().position - GetComponentInParent<Enemy>().getEyePos().position, out hit, Mathf.Infinity);
+
+        if (hit.transform.IsChildOf(targetPlayer.transform) || hit.transform.gameObject == targetPlayer.transform || hit.transform == targetPlayer.transform.parent)
+        {
+            targetPlayer.getSuppressed(suppressionValue, targetPlayer.isFlanked(gunCheckPos.position, this.transform.parent.gameObject));
+        }
+            
         muzzleFlash.Play();
 
     }
@@ -230,7 +242,17 @@ public class EnemyBehavior : MonoBehaviour
                 return player;
             }
         }
+        foreach (PlayerDanger player in players)
+        {
+            RaycastHit hit;
+            Physics.Raycast(GetComponentInParent<Enemy>().getEyePos().position,
+            player.getEyePos().position - GetComponentInParent<Enemy>().getEyePos().position, out hit, Mathf.Infinity);
+            if (hit.transform.IsChildOf(player.transform) || hit.transform.gameObject == player.transform || hit.transform == player.transform.parent)
+            {
+                return player;
+            }
 
+        }
         return players[Random.Range(0, players.Length)];
     }
 

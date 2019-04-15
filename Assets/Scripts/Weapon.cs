@@ -158,17 +158,26 @@ public class Weapon : MonoBehaviour
         muzzleEffect.Play();
         if (target)
         {
-            supress(muzzlePos.transform.position, target.transform.position - pivot.transform.position);
-
-            //if (target.GetComponent<Enemy>())
+            RaycastHit hit;
+            Physics.Raycast(GetComponent<PlayerDanger>().getEyePos().position, target.GetComponentInParent<Enemy>().getEyePos().position - GetComponent<PlayerDanger>().getEyePos().position, out hit, Mathf.Infinity);
+            Debug.DrawRay(GetComponent<PlayerDanger>().getEyePos().position, target.GetComponentInParent<Enemy>().getEyePos().position - GetComponent<PlayerDanger>().getEyePos().position, Color.yellow, 10f);
+            //Debug.Log("eyeline check: " + hit.transform.gameObject);
+            if (hit.transform.IsChildOf(target.transform) || hit.transform.gameObject == target.transform || hit.transform == target.transform.parent)
             {
-                if (target.GetComponentInParent<Enemy>().isFlanked(muzzlePos.position, this.transform.gameObject))
-                {
-                    target.GetComponentInParent<Enemy>().takeDamage();
-                    findTarget();
-                }
+                supress(muzzlePos.transform.position, target.transform.position - pivot.transform.position);
 
+                //if (target.GetComponent<Enemy>())
+                {
+                    if (target.GetComponentInParent<Enemy>().isFlanked(muzzlePos.position, this.transform.gameObject))
+                    {
+                        target.GetComponentInParent<Enemy>().takeDamage();
+                        findTarget();
+                    }
+
+                }
             }
+
+            
         }
         
     }
