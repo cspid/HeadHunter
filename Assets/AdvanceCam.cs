@@ -10,6 +10,8 @@ public class AdvanceCam : MonoBehaviour
     public Transform pos;
     bool canTrigger = true;
     public bool force;
+    public GameObject enableThis;
+    public int NumberNeededToAdvance;
 
     // Start is called before the first frame update
     void Update()
@@ -20,7 +22,7 @@ public class AdvanceCam : MonoBehaviour
             {
                 playerCount++;
                 print(playerCount);
-                if (playerCount >= 2)
+                if (playerCount >= NumberNeededToAdvance)
                 {
                     camManager.MoveCam(pos);
                     canTrigger = false;
@@ -38,10 +40,14 @@ public class AdvanceCam : MonoBehaviour
             {
                 playerCount++;
                 print(playerCount);
-                if (playerCount >= 2)
+                if (playerCount >= NumberNeededToAdvance)
                 {
                     camManager.MoveCam(pos);
                     canTrigger = false;
+                }
+                if(enableThis != null)
+                {
+                    enableThis.SetActive(true);
                 }
             }
         }

@@ -8,6 +8,7 @@ using RootMotion.Dynamics;
 //MAIN ENEMY BEHAVIOUR
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] GameObject canvas;
     [SerializeField] Image LoadingBar;
     [SerializeField] Image targetIcon;
     [SerializeField] Transform aimPos;
@@ -73,22 +74,21 @@ public class Enemy : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("Enemy has taken damage");
-        if (suppression >= 0.99f)
+        if (suppression >= 0.9f)
         {
             if (GetComponentInChildren<PuppetMaster>())
             {
+                Debug.Log("enemy ded.");
                 GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
+                Destroy(GetComponentInChildren<EnemyBehavior>());
+                Destroy(canvas);
+                Destroy(this);
             }
             else    // just for dummies
             {
-                Debug.Log("Ugh. Im dead");
+                Debug.Log("Ugh. Im dead. i was a dummy");
             }
-            if (GetComponentInChildren<EnemyBehavior>())
-            {
-                GetComponentInChildren<EnemyBehavior>().enabled = false;
-            }
-            
-            this.enabled = false;
+
         }
     }
 
@@ -100,16 +100,25 @@ public class Enemy : MonoBehaviour
     public bool isFlanked(Vector3 gunCheckPos, GameObject attacker)
     {
         RaycastHit hit;
-        Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.blue, 1.5f);
         Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity);
-        Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject);
-        if (Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity))
+        Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject + "Compared to attacker: " + attacker);
+        //if (Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity))
+        Debug.DrawRay(gunCheckPos, flankCheckPos.position - gunCheckPos, Color.red, 1.5f);
+
+        if (Physics.Raycast(gunCheckPos, flankCheckPos.position - gunCheckPos, out hit, Mathf.Infinity))
         {
-            if (hit.transform.IsChildOf(attacker.transform) || hit.transform.gameObject == attacker || hit.transform.gameObject == attacker.transform.parent)
+            //Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.blue, 1.5f);
+           // Debug.DrawLine(flankCheckPos.position, hit.point,Color.blue,10);
+            if (hit.transform.IsChildOf(this.transform) || hit.transform.gameObject == this.gameObject || hit.transform.gameObject == this.transform.parent)
             {
                 Debug.Log("flanked.");
                 return true;
             }
+        }
+        else
+        {
+            Debug.DrawRay(flankCheckPos.position, gunCheckPos - flankCheckPos.position, Color.red, 1.5f);
+
         }
         Debug.Log("not flanked");
         return false;
@@ -133,7 +142,7 @@ public class Enemy : MonoBehaviour
         if (targetIcon.enabled == true)
         {
             print("should work");
-          StrikableObjects(transform.position, strikableRadius, shooterPos);
+            StrikableObjects(transform.position, strikableRadius, shooterPos);
         }
     }
 
