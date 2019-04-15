@@ -185,7 +185,7 @@ public class Enemy : MonoBehaviour
         targetIcon.enabled = false;
     }
 
-    void StrikableObjects(Vector3 center, float radius, Vector3 shooterPos)
+    public void StrikableObjects(Vector3 center, float radius, Vector3 shooterPos)
     {
         if (canStrike == true)
         {

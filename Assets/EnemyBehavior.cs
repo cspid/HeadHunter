@@ -217,6 +217,8 @@ public class EnemyBehavior : MonoBehaviour
         temp.y = this.transform.position.y;
         this.transform.LookAt(temp);
 
+        targetPlayer.GetComponentInChildren<PlayerDestructibles>().StrikableObjects(targetPlayer.GetComponentInChildren<PlayerDestructibles>().transform.position, 2, muzzleFlash.transform.position);
+
         //Debug.Log("take that you evil player character!");
 
         RaycastHit hit;

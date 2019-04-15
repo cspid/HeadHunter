@@ -158,6 +158,8 @@ public class Weapon : MonoBehaviour
         muzzleEffect.Play();
         if (target)
         {
+            target.GetComponentInParent<Enemy>().StrikableObjects(target.GetComponentInParent<Enemy>().getEyePos().position, 1.5f, muzzlePos.transform.position);
+
             RaycastHit hit;
             Physics.Raycast(GetComponent<PlayerDanger>().getEyePos().position, target.GetComponentInParent<Enemy>().getEyePos().position - GetComponent<PlayerDanger>().getEyePos().position, out hit, Mathf.Infinity);
             Debug.DrawRay(GetComponent<PlayerDanger>().getEyePos().position, target.GetComponentInParent<Enemy>().getEyePos().position - GetComponent<PlayerDanger>().getEyePos().position, Color.yellow, 10f);
