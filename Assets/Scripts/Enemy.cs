@@ -81,6 +81,7 @@ public class Enemy : MonoBehaviour
             }
             else    // just for dummies
             {
+
                 Debug.Log("Ugh. Im dead");
             }
             if (GetComponentInChildren<EnemyBehavior>())
