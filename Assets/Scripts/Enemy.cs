@@ -27,7 +27,8 @@ public class Enemy : MonoBehaviour
     public float debrisTimer = 0.35f;
     float debrisTimerAtStart;
     CanPush selectedTarget;
-    
+    soundController AudioController;
+
     //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the enemy
 
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour
         targetIcon.enabled = false;
 
         debrisTimerAtStart = debrisTimer;
+        AudioController = GameObject.Find("SoundsController").GetComponent<soundController>();
     }
 
     // Update is called once per frame
@@ -74,10 +76,13 @@ public class Enemy : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("Enemy has taken damage");
+        AudioController.playSound(AudioController.grunt);
         if (suppression >= 0.9f)
         {
             if (GetComponentInChildren<PuppetMaster>())
             {
+                AudioController.playSound(AudioController.die);
+
                 Debug.Log("enemy ded.");
                 GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
                 Destroy(GetComponentInChildren<EnemyBehavior>());

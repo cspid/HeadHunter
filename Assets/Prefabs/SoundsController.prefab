@@ -145,3 +145,4 @@ MonoBehaviour:
   elevator: {fileID: 8300000, guid: d0569d37b4aeb934c8b7e4d799c3d3ab, type: 3}
   footstep: {fileID: 8300000, guid: 39ba1d67eb9796444a95fbb4ad27e5c8, type: 3}
   grunt: {fileID: 8300000, guid: ed1f19d3e3baf4940b78d6559e744a08, type: 3}
+  die: {fileID: 8300000, guid: b437bd9ce956e8d4785e7cc0009be9c8, type: 3}

@@ -11,6 +11,7 @@ public class soundController : MonoBehaviour
     public AudioClip elevator;
     public AudioClip footstep;
     public AudioClip grunt;
+    public AudioClip die;
 
     void Start()
     {
