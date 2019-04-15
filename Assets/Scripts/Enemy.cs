@@ -97,6 +97,18 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void die()
+    {
+        if (GetComponentInChildren<PuppetMaster>())
+        {
+            Debug.Log("enemy ded.");
+            GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
+            Destroy(GetComponentInChildren<EnemyBehavior>());
+            Destroy(canvas);
+            Destroy(this);
+        }
+    }
+
     public Transform getAimPos()
     {
         return aimPos;
@@ -106,7 +118,7 @@ public class Enemy : MonoBehaviour
     {
         RaycastHit hit;
         Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity);
-        Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject + "Compared to attacker: " + attacker);
+        //Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject + "Compared to attacker: " + attacker);
         //if (Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity))
         Debug.DrawRay(gunCheckPos, flankCheckPos.position - gunCheckPos, Color.red, 1.5f);
 
