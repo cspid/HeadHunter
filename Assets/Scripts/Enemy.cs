@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     public float debrisTimer = 0.35f;
     float debrisTimerAtStart;
     CanPush selectedTarget;
+    public AudioSource audioSource;
     
     //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the enemy
@@ -42,7 +43,9 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (suppNormCounter > suppNormDelay)    // Dont normalize immediately
+
+
+            if (suppNormCounter > suppNormDelay)    // Dont normalize immediately
         {
             if (suppression > 0)
             {
@@ -80,6 +83,9 @@ public class Enemy : MonoBehaviour
             {
                 Debug.Log("enemy ded.");
                 GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
+                audioSource.Stop();
+                Destroy(GetComponentInChildren<PivotHeight>().gameObject);
+
                 Destroy(GetComponentInChildren<EnemyBehavior>());
                 Destroy(canvas);
                 Destroy(this);
@@ -96,6 +102,8 @@ public class Enemy : MonoBehaviour
     {
         if (GetComponentInChildren<PuppetMaster>())
         {
+            audioSource.Stop();
+            Destroy (GetComponentInChildren<PivotHeight>().gameObject);
             Debug.Log("enemy ded.");
             GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
             Destroy(GetComponentInChildren<EnemyBehavior>());

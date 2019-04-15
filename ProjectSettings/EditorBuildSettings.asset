@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IanLevel1.unity
     guid: 9917c95510575154cacf486970f1a78b
+  - enabled: 1
+    path: Assets/Scenes/Drake Carl Merger.unity
+    guid: ecd014dec32579b4ea6af61769ccf101
   m_configObjects: {}
