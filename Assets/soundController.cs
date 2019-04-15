@@ -10,8 +10,8 @@ public class soundController : MonoBehaviour
     public AudioClip shoot;
     public AudioClip elevator;
     public AudioClip footstep;
-    public AudioClip grunt;
-    public AudioClip die;
+    public AudioClip death;
+    public AudioClip[] grunts;
 
     void Start()
     {

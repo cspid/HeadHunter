@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     public float debrisTimer = 0.35f;
     float debrisTimerAtStart;
     CanPush selectedTarget;
+    float gruntTimer = 0f;
     soundController AudioController;
 
     //[SerializeField] TextMeshProUGUI suppText;  //Placeholder stuff
@@ -66,6 +67,11 @@ public class Enemy : MonoBehaviour
 
         WaitAndStrike();
         //suppText.text = suppression.ToString();
+
+        if (gruntTimer <= 2f)
+        {
+            gruntTimer += Time.deltaTime;
+        }
     }
     private void LateUpdate()
     {
@@ -76,12 +82,11 @@ public class Enemy : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("Enemy has taken damage");
-        AudioController.playSound(AudioController.grunt);
         if (suppression >= 0.9f)
         {
             if (GetComponentInChildren<PuppetMaster>())
             {
-                AudioController.playSound(AudioController.die);
+                AudioController.playSound(AudioController.death);
 
                 Debug.Log("enemy ded.");
                 GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
@@ -97,18 +102,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void die()
-    {
-        if (GetComponentInChildren<PuppetMaster>())
-        {
-            Debug.Log("enemy ded.");
-            GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
-            Destroy(GetComponentInChildren<EnemyBehavior>());
-            Destroy(canvas);
-            Destroy(this);
-        }
-    }
-
     public Transform getAimPos()
     {
         return aimPos;
@@ -118,7 +111,7 @@ public class Enemy : MonoBehaviour
     {
         RaycastHit hit;
         Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity);
-        //Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject + "Compared to attacker: " + attacker);
+        Debug.Log("flank check: :" + hit.transform.gameObject + " " + hit.transform.parent.gameObject + "Compared to attacker: " + attacker);
         //if (Physics.Raycast(gunCheckPos - flankCheckPos.position, flankCheckPos.position, out hit, Mathf.Infinity))
         Debug.DrawRay(gunCheckPos, flankCheckPos.position - gunCheckPos, Color.red, 1.5f);
 
@@ -145,6 +138,12 @@ public class Enemy : MonoBehaviour
     {
         //Debug.Log("Getting suppressed by: " + amount);
         suppression += amount;
+        if (gruntTimer >= 1f)
+        {
+            AudioController.playSound(AudioController.grunts[Random.Range(0, AudioController.grunts.Length)]);
+            gruntTimer = 0f;
+        }
+
         suppNormCounter = 0;
 
         if (suppression > 1)

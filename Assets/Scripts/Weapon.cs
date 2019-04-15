@@ -55,7 +55,7 @@ public class Weapon : MonoBehaviour
             muzzleEffect.Play();
             if (target)
             {
-                target.GetComponentInParent<Enemy>().die();
+                //target.GetComponentInParent<Enemy>().die();
                 findTarget();
             }
         }
