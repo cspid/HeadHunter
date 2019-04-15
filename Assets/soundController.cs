@@ -12,6 +12,7 @@ public class soundController : MonoBehaviour
     public AudioClip footstep;
     public AudioClip death;
     public AudioClip[] grunts;
+    public AudioClip[] hurt;
 
     void Start()
     {

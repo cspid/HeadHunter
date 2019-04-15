@@ -11,6 +11,8 @@ public class PlayerDanger : MonoBehaviour
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the player
     [SerializeField] float dangerLevel = 0f;
     float dangerNormSpeed = 0.05f;
+    float hurtTimer = 0f;
+    soundController AudioController;
 
 
     float coverDangerMultiplier = 0.6f;
@@ -18,7 +20,7 @@ public class PlayerDanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioController = GameObject.Find("SoundsController").GetComponent<soundController>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,10 @@ public class PlayerDanger : MonoBehaviour
 
         }
         LoadingBar.fillAmount = dangerLevel;
+        if (hurtTimer <= 3f)
+        {
+            hurtTimer += Time.deltaTime;
+        }
     }
 
     public bool isFlanked(Vector3 gunCheckPos, GameObject attacker)
@@ -63,6 +69,11 @@ public class PlayerDanger : MonoBehaviour
         }
 
         dangerLevel += amount;
+        if (hurtTimer >= 3f)
+        {
+            AudioController.playSound(AudioController.grunts[Random.Range(0, AudioController.hurt.Length)]);
+            hurtTimer = 0f;
+        }
 
         if (dangerLevel > 1 && isFlanked)
         {

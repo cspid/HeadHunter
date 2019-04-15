@@ -144,5 +144,20 @@ MonoBehaviour:
   shoot: {fileID: 8300000, guid: ee98ecfca6d434c4596fb08a2bf54020, type: 3}
   elevator: {fileID: 8300000, guid: d0569d37b4aeb934c8b7e4d799c3d3ab, type: 3}
   footstep: {fileID: 8300000, guid: 39ba1d67eb9796444a95fbb4ad27e5c8, type: 3}
-  grunt: {fileID: 8300000, guid: ed1f19d3e3baf4940b78d6559e744a08, type: 3}
-  die: {fileID: 8300000, guid: b437bd9ce956e8d4785e7cc0009be9c8, type: 3}
+  death: {fileID: 8300000, guid: b437bd9ce956e8d4785e7cc0009be9c8, type: 3}
+  grunts:
+  - {fileID: 8300000, guid: ed1f19d3e3baf4940b78d6559e744a08, type: 3}
+  - {fileID: 8300000, guid: 498c742787f019d468507332de1b1d91, type: 3}
+  - {fileID: 8300000, guid: d7b9b2c8e5c02e8489286035c40c94cd, type: 3}
+  - {fileID: 8300000, guid: 30e00aedcdda24e4d8545af590de3b39, type: 3}
+  - {fileID: 8300000, guid: 735120768f24ac547bde5f2b1d068275, type: 3}
+  - {fileID: 8300000, guid: 62c303d37b148cb438ad1eb9a88516a7, type: 3}
+  - {fileID: 8300000, guid: 2b0632b49c1e55b49a7215fd3a5b65a6, type: 3}
+  - {fileID: 8300000, guid: 42e717a0f390675408c2ae1e24106be7, type: 3}
+  - {fileID: 8300000, guid: 5f1a428424a519a4a9b350366e3c467b, type: 3}
+  - {fileID: 8300000, guid: 9055e88a668daba408949d13905ff529, type: 3}
+  - {fileID: 8300000, guid: 03a37fb7ff626bd43bac348fe6d4c19f, type: 3}
+  - {fileID: 8300000, guid: 2d24dc07c06629149a3c360b69a34b7c, type: 3}
+  hurt:
+  - {fileID: 8300000, guid: f55ce6f5a14c7d3449b0951b89d999da, type: 3}
+  - {fileID: 8300000, guid: 21ae5fb0f9ab456498134fd8c09c2173, type: 3}
