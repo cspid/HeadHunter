@@ -7,6 +7,7 @@ using RootMotion.Dynamics;
 public class PlayerDanger : MonoBehaviour
 {
     [SerializeField] Image LoadingBar;
+    [SerializeField] Transform eyePos;
 
     [SerializeField] Transform flankCheckPos;   //This should be near the bottom of the player
     [SerializeField] float dangerLevel = 0f;
@@ -70,6 +71,11 @@ public class PlayerDanger : MonoBehaviour
             Debug.Log("player dead");
             GetComponentInChildren<PuppetMaster>().state = PuppetMaster.State.Dead;
         }
+    }
+
+    public Transform getEyePos()
+    {
+        return eyePos;
     }
 
 }

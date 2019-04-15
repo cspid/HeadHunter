@@ -934,7 +934,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000024869223, y: 0.15965222, z: 0.033979118}
+  m_ConnectedAnchor: {x: -0.00000026173075, y: 0.15965287, z: 0.033977326}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -1553,7 +1553,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.111706726, y: -0.0016937279, z: -0.012004116}
+  m_ConnectedAnchor: {x: -0.11170674, y: -0.0016930737, z: -0.012005907}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -1881,7 +1881,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000010430813, y: 0.447208, z: -0.0000011473894}
+  m_ConnectedAnchor: {x: -0.0000006891787, y: 0.44720787, z: 0.0000005811453}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -4966,7 +4966,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000036507845, y: 0.44569534, z: 0.0000016577542}
+  m_ConnectedAnchor: {x: -0.0000003017485, y: 0.44569522, z: -0.00000023469329}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -6733,7 +6733,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.11170664, y: -0.0016936972, z: -0.012004199}
+  m_ConnectedAnchor: {x: 0.11170662, y: -0.0016930429, z: -0.012005991}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -7442,7 +7442,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000002595794, y: 0.50212157, z: 0.12928039}
+  m_ConnectedAnchor: {x: -0.00000024467823, y: 0.5021213, z: 0.12928228}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -8056,7 +8056,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000001490115, y: 0.26280567, z: -0.0000017657878}
+  m_ConnectedAnchor: {x: 0.0000001490115, y: 0.26280567, z: 0.00000013411046}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -10364,7 +10364,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 39.72308, y: 0.9879957, z: -10.360048}
+  m_ConnectedAnchor: {x: 28.39308, y: 0.9369369, z: -11.3700485}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -10971,7 +10971,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000014333636, y: 0.2684831, z: 0.0000008493662}
+  m_ConnectedAnchor: {x: 0.00000007993367, y: 0.26848176, z: -0.0000005364418}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -11130,7 +11130,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000038742988, y: 0.2628055, z: 0.00000091735285}
+  m_ConnectedAnchor: {x: -0.00000019371494, y: 0.26280552, z: -0.0000009750948}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -13630,7 +13630,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000028125942, y: 0.44569522, z: -0.0000010877848}
+  m_ConnectedAnchor: {x: -0.00000024400651, y: 0.44569543, z: 0.00000074505806}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -13866,6 +13866,7 @@ MonoBehaviour:
   LoadingBar: {fileID: 8147646508874832409}
   targetIcon: {fileID: 1328105903}
   aimPos: {fileID: 7542463635610703894}
+  eyePos: {fileID: 7542463636651408225}
   chest: {fileID: 7542463635610703895}
   strikableRadius: 2.5
   debrisTimer: 0.2
@@ -13881,6 +13882,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: MuzzleFlash01
       objectReference: {fileID: 0}
+    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+        type: 3}
+      propertyPath: UVModule.flipV
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitter
+      value: 
+      objectReference: {fileID: 6440405611431692812}
     - target: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09
@@ -13937,26 +13958,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.8767
       objectReference: {fileID: 0}
-    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-        type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-        type: 3}
-      propertyPath: UVModule.flipV
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-        type: 3}
-      propertyPath: SubModule.subEmitters.Array.data[0].emitter
-      value: 
-      objectReference: {fileID: 6440405611431692812}
     - target: {fileID: 199409127382122440, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
         type: 3}
       propertyPath: m_Flip.y
@@ -14139,21 +14140,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02879418
       objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.70864
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.70864
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.70864
-      objectReference: {fileID: 0}
     - target: {fileID: 3077066111305908576, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14168,6 +14154,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.55208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.70864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.70864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077066112192958855, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.70864
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ffc2a9e7dc72854fb5981eafbbdadd8, type: 3}

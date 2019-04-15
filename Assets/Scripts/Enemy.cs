@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Image LoadingBar;
     [SerializeField] Image targetIcon;
     [SerializeField] Transform aimPos;
+    [SerializeField] Transform eyePos;
     float suppression = 0;
     float suppressionNormSpeed = 0.1f;
 
@@ -144,8 +145,6 @@ public class Enemy : MonoBehaviour
 
         if (suppression > 1)
         {
-
-
             suppression = 1;
         }
         
@@ -235,5 +234,10 @@ public class Enemy : MonoBehaviour
     public GameObject getChest()
     {
         return chest;
+    }
+
+    public Transform getEyePos()
+    {
+        return eyePos;
     }
 }
