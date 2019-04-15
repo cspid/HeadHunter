@@ -56,7 +56,15 @@ public class Weapon : MonoBehaviour
         // TOO EXPENSIVE >>> DECREASE CALL AMOUNT LATER >>>>
         findTarget();
 
-
+        if (player.GetButtonDown("R1")) //HACK
+        {
+            muzzleEffect.Play();
+            if (target)
+            {
+                target.GetComponentInParent<Enemy>().die();
+                findTarget();
+            }
+        }
 
 
         if (!isShooting && player.GetButtonDown("R2"))
